@@ -1,8 +1,12 @@
 # The Keys — game showcase
 
+[Live website](https://zwewh.github.io/the-keys-game/) · [Five Keys student outcomes](https://zwewh.github.io/the-keys-game/?edition=five#next-chapter)
+
 A standalone static website for The Five Keys (Godot) and The Eight Keys (Unreal), prepared for a separate GitHub Pages repository.
 
 The two switchable editions contain their own story, all mission descriptions, controls, screenshot gallery and videos. Option 1 links to the existing [playable Godot browser demo](https://the-five-keys-demo.decent-bat-2665.chatgpt.site/). Option 2 clearly distinguishes the playable Unreal exploration prototype from its planned mission challenges.
+
+The Five Keys **Your next step** section explains the planned student report-card handout, career exploration, suggested BCA Academy study options and role badge keepsakes. It includes the actual demonstration report interface and 3D previews of the five badge designs. Game strengths provide a starting point for exploration; the report is not a career aptitude assessment. The website's course suggestions are separate from the Godot game's existing generic course link.
 
 ## Preview
 
@@ -33,6 +37,7 @@ All asset paths are relative. A repository project URL such as `https://OWNER.gi
 
 - `public/content.js`: edition copy, missions, controls, images and video clips.
 - `public/styles.css`: layout, colour, responsive styles and reduced-motion support.
+- `public/outcomes.css`: Five Keys report, learning-path and badge sections.
 - `public/app.js`: edition tabs, mission tabs, media dialogs and navigation.
 - `public/assets/`: optimized screenshot derivatives, supplied logo, concept artwork and finished gameplay clips.
 - `public/fonts.css` and `public/assets/fonts/`: self-hosted fonts and their SIL OFL licenses.

@@ -1,0 +1,79 @@
+.outcomes-teaser {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-top: 20px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #071b1850;
+}
+.outcomes-teaser:focus-visible { outline-color: var(--ink); }
+.outcomes { background: #0c221e; }
+.outcomes-heading { max-width: 1000px; margin: 28px 0 50px; }
+.outcomes-heading .display { color: var(--gold); margin: 18px 0 25px; font-size: clamp(55px, 6.5vw, 94px); }
+.outcomes-heading > p { max-width: 770px; font-size: 14px; line-height: 1.9; color: #c4d1c7; }
+.report-layout { display: grid; grid-template-columns: .7fr 1.3fr; align-items: center; gap: 6%; }
+.report-step { display: grid; grid-template-columns: 26px 1fr; gap: 13px; padding: 20px 0; border-top: 1px solid var(--line); }
+.report-step .number { font-size: 9px; color: var(--gold); letter-spacing: 1px; margin-top: 4px; }
+.report-step h3 { font-family: var(--display); font-size: 28px; text-transform: uppercase; margin: 0 0 9px; line-height: 1; }
+.report-step p { color: var(--muted); font-size: 11px; line-height: 1.9; margin: 0; }
+.report-preview, .badge-preview { margin: 0; min-width: 0; }
+.outcome-image { display: block; position: relative; width: 100%; padding: 0; background: var(--ink); overflow: hidden; }
+.outcome-image > img { width: 100%; height: auto; transition: transform .6s ease; }
+.outcome-image:hover > img { transform: scale(1.025); }
+.enlarge-label { position: absolute; bottom: 14px; left: 14px; right: 14px; display: flex; align-items: center; justify-content: space-between; background: #071b18df; padding: 11px 14px; font-size: 8px; font-weight: 600; letter-spacing: 1.4px; color: var(--gold); }
+.enlarge-label > span { font-size: 15px; }
+.report-preview figcaption, .badge-preview figcaption { color: var(--muted); font-size: 9px; line-height: 1.8; margin-top: 11px; }
+.report-context { font-size: 10px; line-height: 1.9; color: var(--muted); border-left: 1px solid #efd28d70; padding-left: 16px; margin: 30px 0 0; max-width: 900px; }
+.pathway-heading { margin: 80px 0 35px; }
+.pathway-heading .display { font-size: clamp(42px, 5.5vw, 72px); margin: 15px 0; }
+.pathway-heading > p { font-size: 12px; line-height: 1.8; color: var(--muted); max-width: 650px; }
+.pathway-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.pathway-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--line); border-top: 3px solid var(--role-color); padding: 25px; background: #ffffff03; }
+.pathway-number { font-size: 8px; letter-spacing: 1.4px; color: var(--role-color); }
+.pathway-card h4 { font-family: var(--display); font-size: 31px; text-transform: uppercase; line-height: 1; margin: 18px 0 12px; }
+.pathway-card > p { font-size: 11px; line-height: 1.9; color: var(--muted); margin: 0 0 25px; }
+.pathway-course { padding-top: 19px; margin-top: auto; border-top: 1px solid var(--line); }
+.pathway-course > span { display: block; font-size: 7px; letter-spacing: 1.5px; color: var(--muted); }
+.pathway-course > strong { display: block; font-size: 12px; line-height: 1.6; font-weight: 600; margin: 8px 0 18px; }
+.pathway-course > a { display: flex; align-items: center; justify-content: space-between; gap: 15px; font-size: 10px; font-weight: 600; color: var(--gold); padding: 4px 0; }
+.pathway-course > a:hover { color: var(--cream); }
+.pathway-note { color: var(--muted); font-size: 10px; line-height: 1.9; max-width: 900px; margin: 23px 0 0; }
+.badge-layout { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 7%; margin-top: 85px; padding-top: 65px; border-top: 1px solid var(--line); }
+.badge-copy .display { font-size: clamp(45px, 5.4vw, 80px); margin: 18px 0 25px; color: var(--gold); }
+.badge-copy > p { color: #c4d1c7; font-size: 13px; line-height: 1.9; }
+.badge-roles { display: flex; flex-wrap: wrap; gap: 9px 16px; margin-top: 25px; }
+.badge-roles > span { font-size: 9px; line-height: 1.8; padding-left: 10px; border-left: 2px solid var(--role-color); color: #c4d1c7; }
+@media (max-width: 1000px) {
+  .report-layout { grid-template-columns: 1fr 1.2fr; gap: 5%; }
+  .pathway-grid { grid-template-columns: repeat(2, 1fr); }
+  .badge-layout { gap: 5%; }
+  .pathway-card { padding: 22px; }
+}
+@media (max-width: 720px) {
+  .outcomes-heading { margin: 25px 0 35px; }
+  .outcomes-heading > .eyebrow { font-size: 8px; letter-spacing: 1.8px; }
+  .outcomes-heading .display { font-size: clamp(49px, 12vw, 70px); }
+  .outcomes-heading > p { font-size: 12px; }
+  .outcomes-teaser { font-size: 10px; gap: 12px; }
+  .report-layout, .badge-layout { grid-template-columns: 1fr; gap: 30px; }
+  .report-step { padding: 19px 0; }
+  .report-step h3 { font-size: 27px; }
+  .report-step p { font-size: 11px; }
+  .report-context { font-size: 9px; }
+  .enlarge-label { left: 10px; right: 10px; bottom: 10px; padding: 9px 10px; font-size: 7px; letter-spacing: 1px; }
+  .pathway-heading { margin-top: 55px; }
+  .pathway-heading .display { font-size: 46px; }
+  .pathway-heading > p { font-size: 11px; }
+  .pathway-grid { grid-template-columns: 1fr; gap: 15px; }
+  .pathway-card { padding: 24px; }
+  .pathway-card h4 { font-size: 32px; }
+  .pathway-card > p { margin-bottom: 20px; }
+  .pathway-course > strong { font-size: 12px; }
+  .pathway-note { font-size: 9px; }
+  .badge-layout { margin-top: 55px; padding-top: 45px; }
+  .badge-copy .display { font-size: 55px; }
+  .badge-copy > p { font-size: 12px; }
+}

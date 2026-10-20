@@ -7,7 +7,8 @@
     "Unreal imagery shows development prototypes. Full missions, ordered keys, scoring and finale remain pending.",
     "The Unreal courtyard movement clip is historical v015 footage, separate from the current Jewel map.",
     "Encoding frame rates are not measured game performance. Full local source/receipt identities remain in ignored notes.",
-    "Supplied artwork and branding retain their existing project rights. Font licenses are bundled in public/assets/fonts."
+    "Supplied artwork and branding retain their existing project rights. Font licenses are bundled in public/assets/fonts.",
+    "Five-role badge images are 3D renders of actual exported STL meshes. No physical sample print or photograph of a printed badge has been verified."
   ],
   "assets": [
     {
@@ -494,6 +495,46 @@
       "caption": "Actual Godot demo capture: QAQC Engineer Build and Check.",
       "transform": {
         "operation": "byte-for-byte extraction of the named finished archived MP4; no re-encode"
+      }
+    },
+    {
+      "file": "assets/godot-badges-product.webp",
+      "edition": "five-keys",
+      "kind": "3D render of actual five-role badge STL meshes",
+      "sha256": "1df7f5f5450ed70529f0983b3f54c7543b1a04c6c9d2ad53a6f69cf587da1c2a",
+      "bytes": 127012,
+      "dimensions": [
+        1920,
+        1363
+      ],
+      "caption": "Product-view 3D render of the five circular Woh Hup role badge designs; not a photograph of printed badges.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-badges-front.webp",
+      "edition": "five-keys",
+      "kind": "3D render of actual five-role badge STL meshes",
+      "sha256": "75ade4cac388b54183cadb5257f46fc1aaa32b1e5e8e61f00cc7d677bf480533",
+      "bytes": 135624,
+      "dimensions": [
+        1920,
+        1363
+      ],
+      "caption": "Front-view 3D render of the five circular Woh Hup role badge designs; not a photograph of printed badges.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
       }
     }
   ]

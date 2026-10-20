@@ -25,6 +25,30 @@ window.KEYS_CONTENT = {
       {src:'godot-planning.mp4',poster:'godot-planning.webp',title:'Plan the Build',label:'GODOT GAMEPLAY · PLANNING ENGINEER',caption:'Actual Godot gameplay capture: arrange the construction sequence and respond to a delivery delay. Historical scripted demonstration · approximately 15 seconds.'},
       {src:'godot-qaqc.mp4',poster:'godot-qaqc.webp',title:'Build & Check',label:'GODOT GAMEPLAY · QAQC ENGINEER',caption:'Actual Godot gameplay capture: inspect the training room, choose corrections and reinspect. Historical scripted demonstration · approximately 26 seconds.'}
     ],
+    afterGame:{
+      title:'YOUR GAME ENDS.\nYOUR NEXT CHAPTER BEGINS.',
+      intro:'Complete The Five Keys at the open house and we’ll give you a student report card and a construction role badge. Your card will connect the strengths you showed in the game with roles to explore and a suggested learning path for your future.',
+      reportImage:'godot-team-report.webp',
+      reportCaption:'Example Godot report · demonstration results, not a student’s personal report.',
+      reportSteps:[
+        ['Discover your strengths','See the role or tied roles where your in-game decisions stood out. Explore how those strengths connect with real construction work.'],
+        ['Explore your future','Learn what the role involves and consider how it fits your interests. Your game results are a starting point for a conversation about your future career.'],
+        ['Find a learning path','Your report handout will point you towards subjects and course options to discuss with a BCA Academy course adviser.']
+      ],
+      reportNote:'The current demo compares decision accuracy for Site, Technical, Planning and QAQC. BIM completion is recorded separately. The printed report card and study-pathway guidance form part of the planned open-house experience.',
+      paths:[
+        {role:'BIM Coordinator',focus:'BIM, digital models and coordinating building services.',course:'Diploma in Digital Engineering',url:'https://www.bcaa.edu.sg/what-we-offer/academic-programmes/Details/diploma-in-digital-engineering',color:'#62a9d4'},
+        {role:'Site Engineer',focus:'Construction methods, engineering fundamentals and site coordination.',course:'Diploma in Construction Engineering (Digital)',url:'https://www.bcaa.edu.sg/what-we-offer/academic-programmes/diploma/diploma-list/Details/diploma-in-construction-engineering-%28digital%29',color:'#f5ad54'},
+        {role:'Technical Engineer',focus:'Engineering drawings, technical information and digital construction.',course:'Diploma in Construction Engineering (Digital)',url:'https://www.bcaa.edu.sg/what-we-offer/academic-programmes/diploma/diploma-list/Details/diploma-in-construction-engineering-%28digital%29',color:'#81c5a4'},
+        {role:'Planning Engineer',focus:'Construction management, project coordination and scheduling.',course:'Diploma in Construction Engineering (Digital)',url:'https://www.bcaa.edu.sg/what-we-offer/academic-programmes/diploma/diploma-list/Details/diploma-in-construction-engineering-%28digital%29',color:'#b39bd6'},
+        {role:'QAQC Engineer',focus:'Construction quality, inspection and checking work against specifications.',course:'Diploma in Construction Engineering (Digital)',url:'https://www.bcaa.edu.sg/what-we-offer/academic-programmes/diploma/diploma-list/Details/diploma-in-construction-engineering-%28digital%29',color:'#e99d91'}
+      ],
+      pathwayNote:'Suggested study options for exploration. These are our role-to-course suggestions; check the official programme pages for current entry requirements and speak with a course adviser about further study and industry experience.',
+      badgeTitle:'TAKE YOUR\nNEXT CHAPTER HOME.',
+      badgeText:'Students will receive a construction role badge as an open-house keepsake, alongside their report card. Each of the five designs celebrates a different way to help build our world.',
+      badgeImage:'godot-badges-product.webp',
+      badgeCaption:'3D previews of the five role badge designs. Finished badge photographs will replace these previews when available.'
+    },
     gallery:[
       ['godot-hub.webp','The journey begins','The original Jewel-inspired hub and the five-key door.'],
       ['godot-shrink.webp','A different perspective','Shrink to explore the hidden building services.'],
@@ -33,7 +57,10 @@ window.KEYS_CONTENT = {
       ['godot-planning.webp','Plan what happens next','Choose the right construction sequence.'],
       ['godot-qaqc.webp','Check every detail','Inspect, correct and reinspect the room.'],
       ['godot-gear-repair.webp','The final repair','Repair the fictional flow gear beyond the door.'],
-      ['godot-waterfall.webp','Bring the flow back','The waterfall at the heart of the adventure.']
+      ['godot-waterfall.webp','Bring the flow back','The waterfall at the heart of the adventure.'],
+      ['godot-team-report.webp','Your strengths, revealed','Example Godot report using demonstration results.','GODOT · EXAMPLE REPORT'],
+      ['godot-badges-product.webp','A role to take home','3D render of the five role badge designs planned as student keepsakes.','ROLE BADGES · 3D DESIGN PREVIEW'],
+      ['godot-badges-front.webp','Five roles. Five designs.','Front-view 3D render of BIM, Site, Technical, Planning and QAQC badges.','ROLE BADGES · 3D DESIGN PREVIEW']
     ],
     controls:[['MOVE / LOOK','WASD + mouse','Sticks'],['SPRINT','Shift','L3'],['DOUBLE JUMP','Space','A'],['SHRINK / GROW','Q','B'],['INTERACT','E','X'],['PAUSE','Esc','Menu']],
     endLabel:'YOUR FIRST KEY IS WAITING', endTitle:'READY TO\nFIND YOUR ROLE?', endText:'Five roles. Five keys. One shared adventure.',
@@ -60,7 +87,7 @@ window.KEYS_CONTENT = {
       {id:'quantity',role:'Quantity Surveyor',title:'Measure & Budget',tag:'VALUE IS IN THE DETAILS.',description:'Measure or count from the supplied drawing or model. Use training quantities and rates to calculate a cost, then compare quotes for the same scope.',actions:['Take off a small quantity with the right units.','Calculate the cost using the supplied rate.','Compare like-for-like quotes.'],learning:'Units, scope, cost and value.',image:'unreal-terraces.webp',alt:'Actual Unreal development environment overlooking the planted terraces.',caption:'Current Unreal environment · Proposed new mission',isNew:true},
       {id:'geotechnical',role:'Geotechnical Engineer',title:'Read the Ground',tag:'EVERY GREAT BUILD STARTS BELOW.',description:'Read soil layers and borehole information, match an illustrated foundation option to a training brief and flag unexpected ground conditions.',actions:['Read the ground investigation evidence.','Match a reviewed foundation option.','Flag unexpected conditions for investigation.'],learning:'Ground evidence, foundations and escalation.',image:'unreal-terraces.webp',alt:'Actual Unreal environment screenshot, shown as development context.',caption:'Current Unreal environment · Proposed new mission',isNew:true}
     ],
-    gameplayTitle:'A NEW WORLD.\nTAKING SHAPE.',gameplayText:'Explore the current Jewel hub, character movement, shrinking and tiny jetpack flight. Eight portal routes lead to temporary role rooms. The full mission progression and story finale are still being built.',
+    gameplayTitle:'A NEW WORLD.\nTAKING SHAPE.',gameplayText:'Explore the current Jewel hub, character movement, shrinking and tiny jetpack flight. Eight portal routes lead to temporary role rooms. The full mission progression and story finale are still being built. We’ll expand this showcase with the complete mission gameplay after The Eight Keys is finished.',
     video:{src:'unreal-movement-study.mp4',poster:'unreal-movement-poster.webp',title:'Portal Hub movement study',label:'HISTORICAL UNREAL PROTOTYPE',caption:'Recorded native Unreal courtyard locomotion and coat study (v015). This earlier silent clip demonstrates character movement; it does not show current Jewel gameplay or finished missions.'},
     gallery:[
       ['unreal-hero.webp','Welcome to Jewel','Native Unreal environment and Portal Hub character capture · v023.'],

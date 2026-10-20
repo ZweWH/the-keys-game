@@ -41,6 +41,23 @@
     return `<button class="video-card" id="watch-video" type="button" aria-label="Watch ${escape(video.title)}"><img src="${asset(video.poster)}" alt="${escape(video.title)} video preview" width="1600" height="900" loading="lazy"><span class="video-play"><span class="play-triangle" aria-hidden="true"></span></span><span class="video-info"><span><span class="eyebrow">${escape(video.label)}</span><strong>${escape(video.title)}</strong></span><span>WATCH FILM ↗</span></span></button>${data.videos?.length > 1 ? `<div class="clip-list" aria-label="Gameplay clips">${data.videos.map((v,i)=>`<button type="button" class="clip-button" data-clip="${i}" aria-pressed="${i === selectedVideo}">${escape(v.title)}</button>`).join('')}</div>` : ''}<p class="video-note">${escape(video.caption)}</p>`;
   }
 
+  function afterGameSection(data) {
+    const after = data.afterGame;
+    if (!after) return '';
+    const reportIndex = data.gallery.findIndex(item=>item[0] === after.reportImage);
+    const badgeIndex = data.gallery.findIndex(item=>item[0] === after.badgeImage);
+    return `<section class="chapter outcomes" id="next-chapter" aria-labelledby="outcomes-title">
+      <div class="chapter-number">05 / BEYOND THE GAME</div>
+      <div class="outcomes-heading reveal"><span class="eyebrow">YOUR REPORT CARD · YOUR LEARNING PATH · YOUR ROLE BADGE</span><h2 class="display" id="outcomes-title">${lines(after.title)}</h2><p>${escape(after.intro)}</p></div>
+      <div class="report-layout"><div class="report-steps">${after.reportSteps.map(([title,text],i)=>`<article class="report-step reveal"><span class="number">0${i+1}</span><div><h3>${escape(title)}</h3><p>${escape(text)}</p></div></article>`).join('')}</div><figure class="report-preview reveal"><button type="button" class="outcome-image" data-gallery="${reportIndex}" aria-label="Enlarge the example student report"><img src="${asset(after.reportImage)}" alt="Example Five Keys report showing role strengths, mission results and a BCA Academy study-pathways link." width="1600" height="900" loading="lazy"><span class="enlarge-label">VIEW EXAMPLE REPORT <span aria-hidden="true">↗</span></span></button><figcaption>${escape(after.reportCaption)}</figcaption></figure></div>
+      <p class="report-context">${escape(after.reportNote)}</p>
+      <div class="pathway-heading"><span class="eyebrow">FROM CURIOSITY TO YOUR NEXT STEP</span><h3 class="display">FIND A PATH TO EXPLORE.</h3><p>Choose a role that interests you. Explore the learning themes, then visit the official BCA Academy programme page.</p></div>
+      <div class="pathway-grid">${after.paths.map((path,i)=>`<article class="pathway-card reveal" style="--role-color:${path.color}"><span class="pathway-number">0${i+1} / ROLE TO EXPLORE</span><h4>${escape(path.role)}</h4><p>${escape(path.focus)}</p><div class="pathway-course"><span>STUDY OPTION</span><strong>${escape(path.course)}</strong><a href="${path.url}" target="_blank" rel="noopener noreferrer" aria-label="Explore ${escape(path.course)} for ${escape(path.role)} on BCA Academy">Explore this diploma <span aria-hidden="true">↗</span></a></div></article>`).join('')}</div>
+      <p class="pathway-note">${escape(after.pathwayNote)}</p>
+      <div class="badge-layout"><div class="badge-copy reveal"><span class="eyebrow">A KEEPSAKE FROM YOUR ADVENTURE</span><h3 class="display">${lines(after.badgeTitle)}</h3><p>${escape(after.badgeText)}</p><div class="badge-roles">${after.paths.map(path=>`<span style="--role-color:${path.color}">${escape(path.role)}</span>`).join('')}</div></div><figure class="badge-preview reveal"><button type="button" class="outcome-image" data-gallery="${badgeIndex}" aria-label="Enlarge the five role badge designs"><img src="${asset(after.badgeImage)}" alt="3D product render of the five circular Woh Hup role badges: BIM Coordinator, Site Engineer, Technical Engineer, Planning Engineer and QAQC Engineer." width="2000" height="1420" loading="lazy"><span class="enlarge-label">EXPLORE THE BADGE DESIGNS <span aria-hidden="true">↗</span></span></button><figcaption>${escape(after.badgeCaption)}</figcaption></figure></div>
+    </section>`;
+  }
+
   function renderEdition(id, updateURL = true) {
     if (!(id in editions)) return;
     current = id;
@@ -48,6 +65,7 @@
     const data = editions[id];
     if (dialog.open) dialog.close();
     document.body.dataset.edition = id;
+    document.querySelector('#outcomes-nav').hidden = !data.afterGame;
     document.title = `${data.name} — The Keys · Woh Hup`;
     document.querySelector('meta[name="description"]').content = `${data.headline} ${data.description} Explore missions, screenshots and gameplay from ${data.name}, the ${data.engine} adventure.`;
     editionTabs.forEach(tab=>{
@@ -63,11 +81,12 @@
         <div class="hero-content"><div class="eyebrow">WOH HUP · BCAA OPEN HOUSE 2027</div><h1 id="hero-title" aria-label="${data.name}"><span>THE</span><span class="title-middle">${data.word}</span><span>KEYS.</span></h1><p class="hero-tagline">${data.headline}</p><p class="hero-description">${data.description}</p><div class="hero-actions">${primary}<a class="button button-outline" href="#gameplay"><span class="play-triangle" aria-hidden="true"></span>Watch gameplay</a></div></div>
         <div class="image-credit">${id === 'five' ? 'Actual Godot gameplay' : 'Native Unreal development capture<br>Jewel environment · v023'}</div><div class="hero-bottom"><span class="hero-status"><span class="status-dot" aria-hidden="true"></span>${data.status}</span><a class="scroll-link" href="#story">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a></div>
       </section>
-      <section class="chapter intro" aria-labelledby="intro-title"><div class="chapter-number">01 / ${data.label}</div><div class="intro-layout reveal"><h2 class="display" id="intro-title">${lines(data.intro)}</h2><p class="intro-copy">${data.introText}</p></div><div class="facts">${data.facts.map(([value,label])=>`<div class="fact"><strong>${value}</strong><span>${label}</span></div>`).join('')}</div></section>
+      <section class="chapter intro" aria-labelledby="intro-title"><div class="chapter-number">01 / ${data.label}</div><div class="intro-layout reveal"><h2 class="display" id="intro-title">${lines(data.intro)}</h2><div><p class="intro-copy">${data.introText}</p>${data.afterGame ? '<a class="outcomes-teaser" href="#next-chapter">Your report card, learning path & role badge <span aria-hidden="true">↓</span></a>' : ''}</div></div><div class="facts">${data.facts.map(([value,label])=>`<div class="fact"><strong>${value}</strong><span>${label}</span></div>`).join('')}</div></section>
       <section class="chapter story" id="story" aria-labelledby="story-title"><div class="chapter-number">02 / THE STORY</div><div class="story-layout"><div class="reveal"><span class="eyebrow">${data.storyLabel}</span><h2 class="display" id="story-title">${lines(data.storyTitle)}</h2><p class="body-copy">${data.storyText}</p></div><figure class="story-image-wrap reveal"><img src="${asset(data.storyImage)}" alt="${data.storyAlt}" width="1600" height="900" loading="lazy"><figcaption class="small-caption">${id === 'five' ? 'Follow the portal road in the original Godot demo.' : 'Current Unreal environment. The story journey is in development.'}</figcaption></figure></div><div class="story-steps">${data.steps.map(([title,text],i)=>`<article class="story-step reveal"><span class="number">0${i+1}</span><h3>${title}</h3><p>${text}</p></article>`).join('')}</div></section>
       <section class="chapter missions" id="missions" aria-labelledby="missions-title"><div class="chapter-number">03 / ${data.missionLabel}</div><div class="section-head"><h2 id="missions-title" class="display">FIND YOUR ROLE.</h2><p>${data.missionIntro}</p></div><div class="mission-layout"><div class="mission-tabs" role="tablist" aria-label="${data.name} missions" aria-orientation="vertical">${data.missions.map((mission,i)=>`<button id="${missionID(id,i)}" type="button" class="mission-tab" role="tab" aria-controls="mission-panel" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}" data-mission="${i}"><span class="mission-index">0${i+1}</span><span>${mission.role}</span>${mission.isNew ? '<span class="new-tag">NEW</span>' : ''}<span class="mission-arrow" aria-hidden="true">↗</span></button>`).join('')}</div><div class="mission-panel" id="mission-panel" role="tabpanel" tabindex="0"></div></div></section>
       <section class="chapter gameplay" id="gameplay" aria-labelledby="gameplay-title"><div class="chapter-number">04 / ${id === 'five' ? 'PLAY THE ORIGINAL' : 'INSIDE DEVELOPMENT'}</div><div class="gameplay-layout"><div class="reveal"><h2 class="display" id="gameplay-title">${lines(data.gameplayTitle)}</h2><p class="body-copy">${data.gameplayText}</p>${id === 'five' ? playLink('Play in browser') : '<a class="button button-outline" href="#gallery">Explore the screenshots <span aria-hidden="true">↓</span></a>'}</div><div id="video-area">${videoCard()}</div></div><details class="controls-details"><summary>Know your controls <span class="muted">Keyboard + mouse / Xbox</span></summary><div class="controls-grid">${data.controls.map(([action,key,pad])=>`<div class="control"><span>${action}</span>${key}<br><em>Xbox: ${pad}</em></div>`).join('')}</div><p class="controls-note">${id === 'five' ? 'The crane uses a separate hoist control context. Follow the on-screen prompts. Desktop or laptop recommended.' : 'Prototype control mappings. Shrink before activating flight. Hold Space / A to rise; C / B to descend. Physical Xbox validation is pending.'}</p></details></section>
-      <section class="chapter gallery" id="gallery" aria-labelledby="gallery-title"><div class="chapter-number">05 / THROUGH THE LENS</div><div class="section-head"><h2 class="display" id="gallery-title">A WORLD TO DISCOVER.</h2><p>${id === 'five' ? 'Glimpses from the original adventure. Open a screenshot to take a closer look.' : 'Real development captures from Jewel, the role rooms and the latest jetpack prototype.'}</p></div><div class="gallery-grid">${data.gallery.map(([image,title,caption],i)=>`<button class="gallery-item reveal" type="button" data-gallery="${i}" aria-label="Enlarge screenshot: ${escape(title)}"><div class="gallery-photo"><img src="${asset(image)}" alt="${escape(caption)}" width="1600" height="900" loading="lazy"></div><h3>${title}</h3><p>${caption}</p></button>`).join('')}</div><p class="gallery-label">${id === 'five' ? 'Captured in Godot · Original five-mission demo' : 'Captured in Unreal · Development images, not completed mission scenes'}</p></section>
+      ${afterGameSection(data)}
+      <section class="chapter gallery" id="gallery" aria-labelledby="gallery-title"><div class="chapter-number">${data.afterGame ? '06' : '05'} / THROUGH THE LENS</div><div class="section-head"><h2 class="display" id="gallery-title">A WORLD TO DISCOVER.</h2><p>${id === 'five' ? 'Glimpses from the original adventure, an example report and our role badge designs. Open an image to take a closer look.' : 'Real development captures from Jewel, the role rooms and the latest jetpack prototype.'}</p></div><div class="gallery-grid">${data.gallery.map(([image,title,caption],i)=>`<button class="gallery-item reveal" type="button" data-gallery="${i}" aria-label="Enlarge image: ${escape(title)}"><div class="gallery-photo"><img src="${asset(image)}" alt="${escape(caption)}" width="1600" height="900" loading="lazy"></div><h3>${title}</h3><p>${caption}</p></button>`).join('')}</div><p class="gallery-label">${id === 'five' ? 'Godot gameplay captures · Example report · 3D badge design previews' : 'Captured in Unreal · Development images, not completed mission scenes'}</p></section>
       ${id === 'eight' ? `<section class="crew" aria-labelledby="crew-title"><span class="eyebrow">${data.endLabel}</span><h2 class="display" id="crew-title">${lines(data.endTitle)}</h2><p>${data.endText}</p><figure class="crew-art"><img src="${asset('crew-v7.webp')}" alt="The approved crew concept: Portal Hub, BIM Coordinator, Site Engineer, Technical Engineer, Planning Engineer, QAQC Engineer, Safety Engineer, Quantity Surveyor and Geotechnical Engineer." width="1920" height="707" loading="lazy"><figcaption>Crew v7 · Character concept artwork. On small screens, swipe to meet the full crew.</figcaption></figure></section>` : `<section class="end-cta" style="--end-image:url('assets/godot-waterfall.webp')" aria-labelledby="end-title"><span class="eyebrow">${data.endLabel}</span><h2 id="end-title" class="display">${lines(data.endTitle)}</h2><p>${data.endText}</p>${playLink('Play The Five Keys')}</section>`}
       <p class="content-note">${data.note}</p>`;
     renderMission(0);
@@ -76,6 +95,10 @@
     if (updateURL) {
       const url = new URL(location.href);
       url.searchParams.set('edition',id);
+      if (url.hash === '#next-chapter' && !data.afterGame) {
+        url.hash = '#overview';
+        document.querySelector('#overview').scrollIntoView();
+      }
       history.replaceState({edition:id},'',url);
       document.querySelector('#edition-announcement').textContent = `${data.name} selected. ${data.missions.length} ${id === 'eight' ? 'planned ' : ''}missions available to explore.`;
     }
@@ -127,8 +150,8 @@
 
   function showImage() {
     const data = editions[current];
-    const [image,title,caption] = data.gallery[galleryIndex];
-    mediaKind.textContent = `${data.engine} · SCREENSHOT`;
+    const [image,title,caption,kind] = data.gallery[galleryIndex];
+    mediaKind.textContent = kind || `${data.engine} · SCREENSHOT`;
     mediaTitle.textContent = title;
     mediaCaption.textContent = caption;
     imageNavigation.hidden = false;
