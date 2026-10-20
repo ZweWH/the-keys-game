@@ -10,6 +10,12 @@
   border-bottom: 1px solid #071b1850;
 }
 .outcomes-teaser:focus-visible { outline-color: var(--ink); }
+.mission-objective { border-left: 2px solid var(--gold); background: #071b1859; padding: 16px 19px; margin-top: 20px; }
+.mission-objective .eyebrow { font-size: 8px; letter-spacing: 1.8px; }
+.mission-objective > p { color: var(--cream); font-size: 13px; font-weight: 500; line-height: 1.8; margin: 7px 0 0; }
+.mission-success { margin: 0 0 19px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.mission-success > strong { color: var(--gold); font-size: 10px; font-weight: 500; }
+.mission-success > p { color: #c4d1c7; font-size: 11px; line-height: 1.8; margin: 6px 0 0; }
 .outcomes { background: #0c221e; }
 .outcomes-heading { max-width: 1000px; margin: 28px 0 50px; }
 .outcomes-heading .display { color: var(--gold); margin: 18px 0 25px; font-size: clamp(55px, 6.5vw, 94px); }

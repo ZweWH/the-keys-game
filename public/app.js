@@ -31,7 +31,9 @@
     });
     const target = document.querySelector('#mission-panel');
     target.setAttribute('aria-labelledby',missionID(current,index));
-    target.innerHTML = `<div class="mission-image"><img src="${asset(mission.image)}" alt="${escape(mission.alt)}" width="1600" height="900"><span class="image-tag">${escape(mission.caption || 'Actual Godot gameplay')}</span></div><div class="mission-copy"><div><span class="eyebrow">${escape(mission.tag)}</span><h3>${escape(mission.title)}</h3><p>${escape(mission.description)}</p></div><div class="mission-actions"><span class="eyebrow">${current === 'eight' ? 'THE PLANNED CHALLENGE' : 'YOUR CHALLENGE'}</span><ol>${mission.actions.map(action=>`<li>${escape(action)}</li>`).join('')}</ol><div class="learning"><strong>What you’ll explore</strong><br>${escape(mission.learning)}</div></div></div>`;
+    const objective = mission.objective ? `<div class="mission-objective"><span class="eyebrow">MISSION OBJECTIVE</span><p>${escape(mission.objective)}</p></div>` : '';
+    const success = mission.success ? `<div class="mission-success"><strong>Complete when</strong><p>${escape(mission.success)}</p></div>` : '';
+    target.innerHTML = `<div class="mission-image"><img src="${asset(mission.image)}" alt="${escape(mission.alt)}" width="1600" height="900"><span class="image-tag">${escape(mission.caption || 'Actual Godot gameplay')}</span></div>${objective}<div class="mission-copy"><div><span class="eyebrow">${escape(mission.tag)}</span><h3>${escape(mission.title)}</h3><p>${escape(mission.description)}</p></div><div class="mission-actions"><span class="eyebrow">${current === 'eight' ? 'THE PLANNED CHALLENGE' : 'YOUR CHALLENGE'}</span><ol>${mission.actions.map(action=>`<li>${escape(action)}</li>`).join('')}</ol>${success}<div class="learning"><strong>What you’ll explore</strong><br>${escape(mission.learning)}</div></div></div>`;
   }
 
   function videoCard() {
