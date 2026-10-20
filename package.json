@@ -1,0 +1,11 @@
+{
+  "name": "the-keys-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Two adventures, one showcase: The Five Keys and The Eight Keys.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check public/app.js && node --check public/content.js && node scripts/check.mjs"
+  }
+}

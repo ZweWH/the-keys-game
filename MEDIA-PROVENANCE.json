@@ -1,0 +1,500 @@
+{
+  "version": 1,
+  "prepared": "2026-10-20",
+  "notes": [
+    "Original game/source exports preserved; still images are optimized derivatives.",
+    "Godot video clips are historical scripted-input gameplay captures.",
+    "Unreal imagery shows development prototypes. Full missions, ordered keys, scoring and finale remain pending.",
+    "The Unreal courtyard movement clip is historical v015 footage, separate from the current Jewel map.",
+    "Encoding frame rates are not measured game performance. Full local source/receipt identities remain in ignored notes.",
+    "Supplied artwork and branding retain their existing project rights. Font licenses are bundled in public/assets/fonts."
+  ],
+  "assets": [
+    {
+      "file": "assets/godot-hub.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "ae2dc07f60b08f0a12f658c5426699d91eb18b72b6847afcd7012def645e4bd1",
+      "bytes": 307730,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-road.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "c9e087752a018aa3346405d7215878b567cb90430e2cb2b2e7bac7cb589606f6",
+      "bytes": 233840,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-bim.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "dd5adb5c9d808b7d0ae1f87db5474e76c185fbe04ed29de1f9b7599c63d7cadc",
+      "bytes": 66232,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-shrink.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "ceb07272d90a5ef64758cafe667ba133b32ed6e685335370ca85c499c9789e87",
+      "bytes": 56526,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-site.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "ef1bc35318274627d8861c0247a6cf4ede768a12385a720e3d804d6af4525744",
+      "bytes": 130784,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-technical.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "ab4e4c1c7218362a81ab030b49c6e75054cd67bbe041ffd92a86ca200815d0f3",
+      "bytes": 71560,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-planning.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "f4a64f04e45792ae4faad9ead3e63a30af75419fbfa7b33175c94eb79c47a6ca",
+      "bytes": 98042,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-qaqc.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "e6f7e483f031814f44f0edd3f57c528d007df037557198bf0bdb014bbc3f5999",
+      "bytes": 60892,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-gear-repair.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "7d393e4cd71f42fd1a796450884f5982524b489d5cabfc00316405cff0774d0f",
+      "bytes": 150602,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-team-report.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "5346376d21e586da0c8c93f3bdceb03fba24a0db7290e6f5dbf7842e8c022994",
+      "bytes": 104198,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-final-door.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "3d125e533ce6ffc5028656cbd9bb0f24974c8267533327900652e54002dafa13",
+      "bytes": 317986,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/godot-waterfall.webp",
+      "edition": "five-keys",
+      "kind": "native Godot capture",
+      "sha256": "454fa40186688b5c12c0c83288d9f08c9d885dd772bde7f9745aa573c3ae4ad5",
+      "bytes": 279022,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual gameplay capture from the original Godot demo.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/unreal-hero.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal development capture",
+      "sha256": "1f31dad6b6f43e080852170ed25d25122bf64912fb77d9bf5e8765d98c49d7b8",
+      "bytes": 253874,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "NY beside the Jewel waterfall in the Unreal development prototype.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/unreal-terraces.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal development capture",
+      "sha256": "8fdfda2dfb2efd825e876941a2dfa7ce9edf09ec29064087e4293e0dce6e327d",
+      "bytes": 178184,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "Jewel waterfall and planted terraces in the Unreal development prototype.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/unreal-flight.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal development capture",
+      "sha256": "a9746758c2fdb169de0bceb5534a4827069810ba3707072fdd1de7975f6d5e41",
+      "bytes": 156232,
+      "dimensions": [
+        1600,
+        1100
+      ],
+      "caption": "NY jetpack hover prototype with blue exhaust, v024.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/unreal-ascent.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal development capture",
+      "sha256": "33f76dc0df15c96f372d5e5cc17867ac11d4df6b72c2c622c1f1e951fd6b639a",
+      "bytes": 166058,
+      "dimensions": [
+        1600,
+        1100
+      ],
+      "caption": "NY jetpack ascent presentation in the Unreal prototype, v024.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/unreal-portals.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal development capture",
+      "sha256": "900b4118ad74adfa02afb9ae586606f1e114578bcb1be8eb08c1169806cd6f6d",
+      "bytes": 304706,
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "caption": "Eight portal routes in the Jewel hub prototype, v022.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/unreal-role-room.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal development capture",
+      "sha256": "a91bf3916f964273a35561cd46b8cda289d39cd0c499624b35e3f3e2e99eae1e",
+      "bytes": 60228,
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "caption": "BIM Coordinator in a temporary role room; mission puzzle implementation is pending.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/crew-v7.webp",
+      "edition": "eight-keys",
+      "kind": "approved generated concept artwork",
+      "sha256": "b6f63bfb6c52d2b67814a13cdfe9c97dac322db060cb160d8cdedeb889e5c99b",
+      "bytes": 156372,
+      "dimensions": [
+        1920,
+        707
+      ],
+      "caption": "Approved crew v7 appearance concept. Concept artwork; not an Unreal gameplay screenshot.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/unreal-movement-poster.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal historical courtyard movement study frame",
+      "sha256": "1e60fd6219f50f2bfe7efa8edcb183a6dec706c297d87e1e36b777e811f43eba",
+      "bytes": 10002,
+      "dimensions": [
+        640,
+        360
+      ],
+      "caption": "Historical NY courtyard movement study, October 2026. This is separate from the Jewel map.",
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/wohhup-logo.png",
+      "kind": "canonical supplied Woh Hup logo",
+      "sha256": "db5c20209a79221180b907ea14f2bab8c8f09cbc1c46aeda6a97eb82f518a5da",
+      "bytes": 34214,
+      "dimensions": [
+        834,
+        834
+      ],
+      "caption": "Exact supplied Woh Hup logo; copied unchanged.",
+      "transform": {
+        "operation": "byte-for-byte copy",
+        "alpha_preserved": true
+      }
+    },
+    {
+      "file": "assets/unreal-movement-study.mp4",
+      "edition": "eight-keys",
+      "kind": "native Unreal historical courtyard movement study",
+      "sha256": "05cda4698a30f89ca32c86ace377171a0b6dddf482dcb81efa5b7b8daefd7d79",
+      "bytes": 3329427,
+      "caption": "Historical NY courtyard movement study. Actual Unreal prototype capture; separate from Jewel and its missions.",
+      "transform": {
+        "operation": "byte-for-byte copy of existing H264 silent review encode"
+      }
+    },
+    {
+      "file": "assets/godot-crane.mp4",
+      "edition": "five-keys",
+      "kind": "native Godot gameplay demonstration video",
+      "sha256": "530fcb57ba774fea9582ac476a603ff0cb4ef14772db5d2ad668724b3fc1cf7d",
+      "bytes": 8614386,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual Godot demo capture: Site Engineer first PPVC crane lift.",
+      "transform": {
+        "operation": "byte-for-byte extraction of the named finished archived MP4; no re-encode"
+      }
+    },
+    {
+      "file": "assets/godot-technical.mp4",
+      "edition": "five-keys",
+      "kind": "native Godot gameplay demonstration video",
+      "sha256": "7fc8a3abbb2d50826611b3520a5009923f56dd6f2c38baa07379abc318739d40",
+      "bytes": 11046469,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual Godot demo capture: Technical Engineer Spec Detective.",
+      "transform": {
+        "operation": "byte-for-byte extraction of the named finished archived MP4; no re-encode"
+      }
+    },
+    {
+      "file": "assets/godot-planning.mp4",
+      "edition": "five-keys",
+      "kind": "native Godot gameplay demonstration video",
+      "sha256": "d05d8c6109a7de728038b803906c2bda88ac4b2a748aab10fb0493884c65152e",
+      "bytes": 6308491,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual Godot demo capture: Planning Engineer Plan the Build.",
+      "transform": {
+        "operation": "byte-for-byte extraction of the named finished archived MP4; no re-encode"
+      }
+    },
+    {
+      "file": "assets/godot-qaqc.mp4",
+      "edition": "five-keys",
+      "kind": "native Godot gameplay demonstration video",
+      "sha256": "d8921137b65051dd4a73a5a58ef654ee60af6c4f806c09e01013fd5bebccea8a",
+      "bytes": 11628779,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Actual Godot demo capture: QAQC Engineer Build and Check.",
+      "transform": {
+        "operation": "byte-for-byte extraction of the named finished archived MP4; no re-encode"
+      }
+    }
+  ]
+}
