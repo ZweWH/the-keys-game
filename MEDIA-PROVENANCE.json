@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "prepared": "2026-10-20",
+  "prepared": "2026-10-21",
   "notes": [
     "Original game/source exports preserved; still images are optimized derivatives.",
     "Godot video clips are historical scripted-input gameplay captures.",
@@ -8,7 +8,8 @@
     "The Unreal courtyard movement clip is historical v015 footage, separate from the current Jewel map.",
     "Encoding frame rates are not measured game performance. Full local source/receipt identities remain in ignored notes.",
     "Supplied artwork and branding retain their existing project rights. Font licenses are bundled in public/assets/fonts.",
-    "Five-role badge images are 3D renders of actual exported STL meshes. No physical sample print or photograph of a printed badge has been verified."
+    "Five-role badge images are 3D renders of actual exported STL meshes. No physical sample print or photograph of a printed badge has been verified.",
+    "v031 native stills come only from selected versioned evidence captures. Role-lab, saved-map NPC review-camera and controlled-role contexts are identified separately. They do not verify physical controls, complete animation cycles or packaged Windows gameplay."
   ],
   "assets": [
     {
@@ -535,6 +536,409 @@
         "quality": 88,
         "effort": 5,
         "preserved_composition": true
+      }
+    },
+    {
+      "file": "assets/v031-bim_coordinator.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "75d11e040b568270afe3bf54e055ea9447cb2c0db78b5321313e8b2f6a4f8afc",
+      "bytes": 89838,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 prototype role in its saved mission area; review-camera still.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/extra-runtime-0/01-bim_coordinator-front-idle.png",
+        "sha256": "eecaa5429477230145262bb9784c672a4057aea10c05c0097494d1d26718bc7d",
+        "bytes": 2777936,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-site_engineer.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "7b0ad1649b6a4f898c35b64926b22f9b7df99d4b3b057529f17bc1e6c452b376",
+      "bytes": 35738,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 prototype role in its saved mission area; review-camera still.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/extra-runtime-0/03-site_engineer-front-idle.png",
+        "sha256": "873eb5bc7d17a7547b3d1e39acf86bfd003bac2097717ce32c7e21bcf6fb3bc8",
+        "bytes": 1865391,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-technical_engineer.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "411cb54e6610b2b2a7418f5db439ee721f0a90d02a9f328770f07e8399086875",
+      "bytes": 39032,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 prototype role in its saved mission area; review-camera still.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/extra-runtime-0/05-technical_engineer-front-idle.png",
+        "sha256": "a6f8555a9f36161c2f8a8cddc2bc7145d6a25bb29d98ff20926de992b4ee9712",
+        "bytes": 1921828,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-planning_engineer.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "85c96f8dcc3f8b947b220b160d1d0bf6b7a6e7d6b42aedcde288e39b0f241e04",
+      "bytes": 37418,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 prototype role in its saved mission area; review-camera still.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/extra-runtime-0/07-planning_engineer-front-idle.png",
+        "sha256": "c6ce57de91a15298930e877c4bc8b2246767f469943a867dafd65c2c51cfbdd5",
+        "bytes": 2032888,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-qaqc_engineer.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "3802a41f5187100bfeded8fb25b6b6afd718d8af72373787d8de24e2654f7d50",
+      "bytes": 42288,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 prototype role in its saved mission area; review-camera still.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/extra-runtime-0/09-qaqc_engineer-front-idle.png",
+        "sha256": "e9802ff0f7e1302c27029ce5f30255a7c70a00b765e64f18094fe85142ca18ac",
+        "bytes": 1927902,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-safety_engineer.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "f6f47e92d870accc5bfdbc22c2aace9e0a25a97a20e151e744b678ba42abe61d",
+      "bytes": 35790,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 prototype role in its saved mission area; review-camera still.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/extra-runtime-0/11-safety_engineer-front-idle.png",
+        "sha256": "165875cede37fafebec8162d4bd63679108b9be2404cc1f115f4107be2dbda95",
+        "bytes": 1830666,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-quantity_surveyor.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "43c7acdb930f3412b7f4aa313bac10abe0269a06f8ef3687cad35dbadf897c4e",
+      "bytes": 35252,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 prototype role in its saved mission area; review-camera still.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/extra-runtime-0/13-quantity_surveyor-front-idle.png",
+        "sha256": "1e11508159da34497db670e781f4c5acc916ff552806eee8892580d7d5c33b42",
+        "bytes": 1873410,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-geotechnical_engineer.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "773731626413a626334a0afe8100449deeed1578931928004b98c031688b44d2",
+      "bytes": 38684,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 prototype role in its saved mission area; review-camera still.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/extra-runtime-0/15-geotechnical_engineer-front-idle.png",
+        "sha256": "23e0fe6f9759432d6023ab97e2a35f4d4c586fd85604b7548740c376656367d9",
+        "bytes": 1904518,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-bim-jetpack.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "6d1e38f589dc4f21ba0eb70b381e88ee612322be3db92c7af6cc804cdf134dd9",
+      "bytes": 120536,
+      "dimensions": [
+        1600,
+        1100
+      ],
+      "caption": "Native Unreal v031 BIM Coordinator jetpack hover in the isolated role lab.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/bim_coordinator/05-jetpack-side-hover.png",
+        "sha256": "3c3b640d2517c3ded00e7c111535583935f3e9222edd0ef081b4eb4077b18af2",
+        "bytes": 2507997,
+        "dimensions": [
+          1600,
+          1100
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-planning-crouch.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "fa0d5f1551afe412a1f81a3ff0762fe1361c863832bdc7a271621633667334b5",
+      "bytes": 134380,
+      "dimensions": [
+        1600,
+        1100
+      ],
+      "caption": "Native Unreal v031 Planning Engineer crouch sample in the isolated role lab; source frame clips the boots.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/planning_engineer/03-natural-crouch.png",
+        "sha256": "601b799df6bfb89aba23618c3318e587b78b18b7a4b0a450aaacf1b8bf378915",
+        "bytes": 2461558,
+        "dimensions": [
+          1600,
+          1100
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-bim-tiny.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "cc137cb3cdeab78508bd6c2a5d5472472ff2e72ff43f039d85e66ebd3c28841d",
+      "bytes": 119126,
+      "dimensions": [
+        1600,
+        1100
+      ],
+      "caption": "Native Unreal v031 BIM Coordinator quarter-size stance in the isolated role lab.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/bim_coordinator/04-tiny-ground.png",
+        "sha256": "11236e7ef14d30770d900ed3cebd3b1ef5a230ffc63842ec80e321098006cd23",
+        "bytes": 2365781,
+        "dimensions": [
+          1600,
+          1100
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-site-player.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "bb494a8a32f9567138eb08875b0ed2fde497089d4cafa9ffbdbb3b59af2bf20e",
+      "bytes": 48820,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 controlled Site Engineer inside the prototype PPVC mission area; puzzle pending.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/mission-complete/02-site_engineer-actual-mission-player.png",
+        "sha256": "4fbc6d941a4ab68209e0542f2abdd6495bb628e511b6f07f008cb2b529fa863d",
+        "bytes": 1935085,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v031-restart-menu.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v031 capture",
+      "sha256": "8fb8cb2cb2e248e961b1f7e6480287ea157ae4824960d71ef954c72d806485a8",
+      "bytes": 84238,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Native Unreal v031 Portal Hub input menu after the eight-role return and Restart callback route.",
+      "source": {
+        "file": "design/evidence/crew-upgrade-v031/captures/mission-complete/09-fresh-NY-menu-after-eight-role-Restart.png",
+        "sha256": "16595160791acccbbb885a1fdb573d10abc81f5d8d27a23bb7a42f0a484a3aba",
+        "bytes": 1961384,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
       }
     }
   ]

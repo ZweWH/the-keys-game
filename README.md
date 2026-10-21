@@ -47,10 +47,18 @@ Deep links: `?edition=five#missions` and `?edition=eight#gallery`. Arrow keys, H
 
 ## Content status
 
-The original Godot demo has five implemented mission mechanics. Four historical scripted-input gameplay recordings accompany the native screenshots. The Unreal showcase uses actual Jewel/flight/temporary-room screenshots and a clearly labelled earlier courtyard movement study. Eight full Unreal mission puzzles, ordered unique-key progression, scoring, final door and gear-repair finale remain in development. The three new mission concepts require specialist and educator review.
+The original Godot demo has five implemented mission mechanics. Four historical scripted-input gameplay recordings accompany the native screenshots. Its edition content and playable demo link are preserved.
+
+The Eight Keys showcase was updated on **21 October 2026** with **v031 native captures**: all eight role characters in their saved prototype mission areas, the fitted tiny jetpack with blue exhaust, crouch/quarter-size lab samples, a controlled Site Engineer view and the fresh Portal Hub menu after Restart. The new current-build section describes shared movement, role possession/return, normal/skipped opening and Restart. It distinguishes the editor-hosted candidate from the pending Windows exhibition build. Earlier v023 Jewel environment stills and the v015 courtyard film retain their version labels.
+
+Eight full Unreal mission puzzles, ordered unique-key awards, the eight-role report, final door and balcony gear-repair/waterfall finale remain in development. The three new mission concepts require specialist and educator review. The prototype mission images use the disclosed full-body review camera; the lab images are isolated development scenes.
+
+The Eight Keys story and mission tabs now present the **time-travel proposal for review** from `docs/proposals/EIGHT-KEYS-JEWEL-TIME-TRAVEL-v001.md` in the parent workspace. Students would revisit construction review moments, verify eight corrections and restore a fictional alternate Jewel timeline. Each proposed mission explains its place/stage, objective, completion check and future effect, including an imagined basement MEP room beneath Forest Valley. These proposed Jewel settings remain separate from the actual v031 first-version source-context scenes pictured. The proposal does not establish implemented gameplay or canonical engineering data. The user has approved use of the Jewel project geometry. Final mission layouts and specialist/educator review remain pending. Eight-role course guidance and the report/study-path QR also await review and approval.
+
+Thirteen v031 WebP derivatives total 861,140 bytes. They preserve source composition and colours, with no crop or AI image alteration. `MEDIA-PROVENANCE.json` records each derivative's exact source evidence path and SHA-256 alongside its output hash. `npm run check` validates the linked assets, all recorded media hashes and v031 source identities. Full local generation receipts remain in ignored `notes/`.
 
 Scenes, defects and numerical examples are fictional training cases. No game performance, physical controller coverage or packaged Windows acceptance is claimed by this website work.
 
 The cinematic scale, bold typography and image-led presentation take inspiration from the [GTA VI website](https://www.rockstargames.com/VI). The design uses this project's own media and supplied branding; no Rockstar artwork is included.
 
-Full local editorial notes, source receipts and website QA evidence remain in ignored `notes/`. Original project/source exports are preserved.
+Full local editorial notes, source receipts and website QA evidence remain in ignored `notes/`. Original project/source exports are preserved. The 21 October source update passed syntax, static content, provenance and local HTTP checks; browser/pixel review was unavailable in that session. The earlier QA notes describe checks on the previous deployed revision and do not certify the new layout.
