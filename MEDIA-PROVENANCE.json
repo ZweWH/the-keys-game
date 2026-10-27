@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "prepared": "2026-10-27",
+  "prepared": "2026-10-28",
   "notes": [
     "Original game/source exports preserved; still images are optimized derivatives.",
     "Godot video clips are historical scripted-input gameplay captures.",
     "Unreal imagery shows development prototypes. Full missions, ordered keys, scoring and finale remain pending.",
-    "The Unreal courtyard movement clip is historical v015 footage, separate from the current Jewel map.",
+    "The Eight Keys environment showcase uses current native v046 Jewel stills. The historical courtyard video and poster were removed from published assets on 28 October 2026; originals remain in project history.",
     "Encoding frame rates are not measured game performance. Full local source/receipt identities remain in ignored notes.",
     "Supplied artwork and branding retain their existing project rights. Font licenses are bundled in public/assets/fonts.",
     "Five-role badge images are 3D renders of actual exported STL meshes. No physical sample print or photograph of a printed badge has been verified.",
@@ -394,26 +394,6 @@
       }
     },
     {
-      "file": "assets/unreal-movement-poster.webp",
-      "edition": "eight-keys",
-      "kind": "native Unreal historical courtyard movement study frame",
-      "sha256": "1e60fd6219f50f2bfe7efa8edcb183a6dec706c297d87e1e36b777e811f43eba",
-      "bytes": 10002,
-      "dimensions": [
-        640,
-        360
-      ],
-      "caption": "Historical NY courtyard movement study, October 2026. This is separate from the Jewel map.",
-      "transform": {
-        "format": "webp",
-        "max_width": 1920,
-        "without_enlargement": true,
-        "quality": 88,
-        "effort": 5,
-        "preserved_composition": true
-      }
-    },
-    {
       "file": "assets/wohhup-logo.png",
       "kind": "canonical supplied Woh Hup logo",
       "sha256": "db5c20209a79221180b907ea14f2bab8c8f09cbc1c46aeda6a97eb82f518a5da",
@@ -426,17 +406,6 @@
       "transform": {
         "operation": "byte-for-byte copy",
         "alpha_preserved": true
-      }
-    },
-    {
-      "file": "assets/unreal-movement-study.mp4",
-      "edition": "eight-keys",
-      "kind": "native Unreal historical courtyard movement study",
-      "sha256": "05cda4698a30f89ca32c86ace377171a0b6dddf482dcb81efa5b7b8daefd7d79",
-      "bytes": 3329427,
-      "caption": "Historical NY courtyard movement study. Actual Unreal prototype capture; separate from Jewel and its missions.",
-      "transform": {
-        "operation": "byte-for-byte copy of existing H264 silent review encode"
       }
     },
     {

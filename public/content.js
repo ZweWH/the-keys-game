@@ -625,13 +625,15 @@ window.KEYS_CONTENT = {
       }
     ],
     "gameplayTitle": "EXPLORE TODAY.\nBUILD THE NEXT CHAPTER.",
-    "gameplayText": "The latest stills below show the current v046 environment and home menu. The film remains an earlier courtyard movement study, clearly labelled as historical. A current Jewel gameplay film will follow; this page does not launch or download the Unreal game.",
-    "video": {
-      "src": "unreal-movement-study.mp4",
-      "poster": "unreal-movement-poster.webp",
-      "title": "Portal Hub movement study",
-      "label": "HISTORICAL UNREAL PROTOTYPE",
-      "caption": "Recorded native Unreal courtyard locomotion and coat study (v015). This earlier silent clip demonstrates character movement; it does not show current Jewel gameplay or finished missions."
+    "gameplayText": "Step inside the current Jewel environment: follow the waterfall, look up to its roof inlet and discover the arrival route. Open these native Unreal captures for a closer look, then explore the gallery for the guide, menu and role studies.",
+    "showcase": {
+      "label": "Current Jewel environment views",
+      "views": [
+        "v046-jewel-waterfall.webp",
+        "v046-jewel-roof.webp",
+        "v046-jewel-arrival.webp"
+      ],
+      "caption": "Current Jewel exploration · Native Unreal v046 stills. Select a view to open the full image. Materials and planting remain in development; full mission puzzles are proposed."
     },
     "gallery": [
       [
@@ -733,7 +735,7 @@ window.KEYS_CONTENT = {
     "endLabel": "MEET THE PEOPLE BEHIND THE KEYS",
     "endTitle": "DIFFERENT ROLES.\nONE CREW.",
     "endText": "One hub guide meets eight role characters through the portals. The next chapter connects their different ways of thinking through one fictional construction timeline.",
-    "note": "Updated 27 October 2026. Current native v046 environment, hub character and UI are shown separately from earlier v031 role studies and the historical v015 film. The time-travel puzzles, ordered unique keys, final door, gear repair and eight-role report remain proposed or in development. No Unreal browser launch, portable download, finished mission gameplay or measured exhibition performance is claimed.",
+    "note": "Updated 28 October 2026. Current native v046 Jewel environment, hub character and UI are shown separately from earlier v031 role studies. The time-travel puzzles, ordered unique keys, final door, gear repair and eight-role report remain proposed or in development. No Unreal browser launch, portable download, finished mission gameplay or measured exhibition performance is claimed.",
     "heroCredit": "Native Unreal environment capture\nJewel prototype · v046",
     "storyCaption": "Native v046 environment capture. The flowing-water exploration is playable locally; the stopped-water time-travel story and finale are planned.",
     "controlsNote": "Default prototype bindings shown; Controls can remap action buttons. Keyboard/mouse and Xbox are detected automatically. Shrink before enabling the jetpack. Settings adjust movement and camera speeds; English is the current language. Xbox Y changes size and never restarts the journey.",

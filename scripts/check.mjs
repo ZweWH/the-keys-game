@@ -26,8 +26,9 @@ for(const mission of data.eight.missions){
 for(const [edition,d] of Object.entries(data)){
   const ids=d.missions.map(m=>m.id);
   assert(new Set(ids).size===ids.length,`${edition}: mission IDs must be unique.`);
-  const assets=[d.hero,d.storyImage,d.prototype?.image,...d.gallery.map(g=>g[0]),...d.missions.map(m=>m.image),...(d.videos||[d.video]).filter(Boolean).flatMap(v=>[v.src,v.poster])].filter(Boolean);
+  const assets=[d.hero,d.storyImage,d.prototype?.image,...(d.showcase?.views||[]),...d.gallery.map(g=>g[0]),...d.missions.map(m=>m.image),...(d.videos||[d.video]).filter(Boolean).flatMap(v=>[v.src,v.poster])].filter(Boolean);
   for(const name of assets)assert(existsSync(join(root,'assets',name)),`${edition}: missing asset ${name}`);
+  for(const name of d.showcase?.views||[])assert(d.gallery.some(item=>item[0]===name),`${edition}: showcase view must open an existing gallery image: ${name}`);
   if(d.prototype){
     assert(d.gallery.some(item=>item[0]===d.prototype.image),`${edition}: current-build image must open an existing gallery item.`);
     assert(/^\d{4}-\d{2}-\d{2}$/.test(d.prototype.date),`${edition}: current-build update needs an ISO date.`);

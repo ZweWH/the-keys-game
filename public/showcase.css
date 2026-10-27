@@ -1,0 +1,46 @@
+.jewel-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.jewel-view {
+  display: block;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  background: #0d2923;
+  border: 1px solid var(--line);
+}
+.jewel-view:first-child { grid-column: 1 / -1; }
+.jewel-view img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #04130f;
+}
+.jewel-view-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  transition: background .2s;
+}
+.jewel-view-title strong {
+  font-family: var(--display);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.jewel-view-title > span { color: var(--gold); }
+.jewel-view:first-child .jewel-view-title strong { font-size: 29px; }
+.jewel-view:hover .jewel-view-title,
+.jewel-view:focus-visible .jewel-view-title { background: #244438; }
+@media (max-width: 720px) {
+  .jewel-showcase { gap: 10px; }
+  .jewel-view-title { padding: 11px 10px; }
+  .jewel-view-title strong { font-size: 18px; }
+  .jewel-view:first-child .jewel-view-title strong { font-size: 26px; }
+}

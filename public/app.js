@@ -40,6 +40,13 @@
 
   function videoCard() {
     const data = editions[current];
+    if (data.showcase) {
+      return `<div class="jewel-showcase" aria-label="${escape(data.showcase.label)}">${data.showcase.views.map(name=>{
+        const index = data.gallery.findIndex(item=>item[0] === name);
+        const [image,title,caption] = data.gallery[index];
+        return `<button class="jewel-view" type="button" data-gallery="${index}" aria-label="View full image: ${escape(title)}"><img src="${asset(image)}" alt="${escape(caption)}" width="1600" height="900" loading="lazy"><span class="jewel-view-title"><strong>${escape(title)}</strong><span aria-hidden="true">↗</span></span></button>`;
+      }).join('')}</div><p class="video-note">${escape(data.showcase.caption)}</p>`;
+    }
     const video = data.videos?.[selectedVideo] || data.video;
     if (!video) return `<a class="video-card" href="${demoURL}" target="_blank" rel="noopener noreferrer"><img src="${asset('godot-hub.webp')}" alt="Launch The Five Keys browser game" width="1600" height="900" loading="lazy"><span class="video-play"><span class="play-triangle" aria-hidden="true"></span></span><span class="video-info"><span><span class="eyebrow">PLAY THE ORIGINAL</span><strong>Your adventure starts here</strong></span><span>OPEN BROWSER GAME ↗</span></span></a><p class="video-note">Opens the Godot game in a new tab. The first download is approximately 93 MB; allow the game to finish loading.</p>`;
     return `<button class="video-card" id="watch-video" type="button" aria-label="Watch ${escape(video.title)}"><img src="${asset(video.poster)}" alt="${escape(video.title)} video preview" width="1600" height="900" loading="lazy"><span class="video-play"><span class="play-triangle" aria-hidden="true"></span></span><span class="video-info"><span><span class="eyebrow">${escape(video.label)}</span><strong>${escape(video.title)}</strong></span><span>WATCH FILM ↗</span></span></button>${data.videos?.length > 1 ? `<div class="clip-list" aria-label="Gameplay clips">${data.videos.map((v,i)=>`<button type="button" class="clip-button" data-clip="${i}" aria-pressed="${i === selectedVideo}">${escape(v.title)}</button>`).join('')}</div>` : ''}<p class="video-note">${escape(video.caption)}</p>`;
