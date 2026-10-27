@@ -14,6 +14,11 @@ const data=context.window.KEYS_CONTENT;
 assert(data.five.missions.length===5,'Godot must explain five missions.');
 assert(data.eight.missions.length===8,'Unreal must explain eight missions.');
 assert(data.eight.missions[7].role==='Geotechnical Engineer','Eighth role must be Geotechnical Engineer.');
+assert(data.five.missions.map(m=>m.id).join(',')==='bim,site,technical,planning,qaqc','Preserve the five playable mission IDs and order.');
+assert(data.eight.missions.map(m=>m.id).join(',')==='bim,site,technical,planning,qaqc,safety,quantity,geotechnical','Preserve the eight website mission IDs and role order.');
+for(const mission of data.five.missions){
+  assert(mission.setting?.trim()&&mission.stage?.trim()&&mission.objective?.trim()&&mission.success?.trim(),`${mission.role}: playable mission brief needs its setting, objective and final check.`);
+}
 for(const mission of data.eight.missions){
   assert(mission.objective?.trim()&&mission.success?.trim(),`${mission.role}: proposed mission needs an objective and completion check.`);
   assert(mission.setting?.trim()&&mission.stage?.trim()&&mission.futureEffect?.trim(),`${mission.role}: proposed time-travel mission needs its place, review moment and future effect.`);
@@ -40,7 +45,17 @@ for(const entry of provenance.assets){
     assert(/^design\/evidence\/crew-upgrade-v031\/captures\/.+\.png$/.test(entry.source?.file||''),`v031 media requires a selected native evidence source: ${entry.file}`);
     assert(/^[a-f0-9]{64}$/.test(entry.source?.sha256||''),`v031 media requires its exact source SHA-256: ${entry.file}`);
   }
+  if(entry.kind==='native Unreal v046 capture'){
+    assert(/^design\/evidence\/jewel-water-v046\/images\/(review|bootreview)\/.+\.png$/.test(entry.source?.file||''),`Current media must come from selected native v046 evidence, not raw references: ${entry.file}`);
+    assert(/^[a-f0-9]{64}$/.test(entry.source?.sha256||''),`Current media needs its exact source SHA-256: ${entry.file}`);
+    assert(entry.transform?.crop===null&&entry.transform?.color_adjustments===false,`Current capture composition/colour must be preserved: ${entry.file}`);
+  }
 }
+const jetpack=data.eight.controls.find(row=>row[0]==='JETPACK / LAND');
+const dash=data.eight.controls.find(row=>row[0]==='AIR DASH');
+assert(jetpack?.[2]==='RB'&&dash?.[2]==='D-pad Up','Current default Xbox mappings must distinguish RB jetpack from D-pad Up air dash.');
+assert(data.eight.prototype.note.includes('not available here yet'),'Unreal browser play and portable download must remain clearly pending.');
+assert(data.eight.prototype.pending.includes('unique-key')&&data.eight.storyNote.includes('fictional'),'Planned unique keys and fictional story context must be explicit.');
 for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
   if(!/^(https?:|data:)/.test(match[1]))assert(existsSync(join(root,match[1])),`Missing HTML dependency ${match[1]}`);
 }
@@ -56,4 +71,4 @@ for(const name of readdirSync(join(root,'assets'))){
   if(name.endsWith('.mp4'))assert(readFileSync(path).subarray(4,8).toString()==='ftyp',`${name} is not an MP4 container.`);
 }
 assert(!/\b(?:[A-Z]:[\\/]|\.\.[\\/])/.test(source),'Public content must not expose absolute local paths.');
-if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else{console.log(`Static checks passed: 13 missions, eight proposed objectives/completion checks and time-travel settings, current-build gallery link, all linked assets, ${provenance.assets.length} media hashes, native source identities, MP4 containers, relative paths and media sizes.`);}
+if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else{console.log(`Static checks passed: 13 mission briefs, stable Five/Eight role IDs, proposed objectives and verification, current controls/release status, current-build gallery link, all linked assets, ${provenance.assets.length} media hashes, native source identities, MP4 containers, relative paths and media sizes.`);}

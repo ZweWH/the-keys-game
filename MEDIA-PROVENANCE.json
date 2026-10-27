@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "prepared": "2026-10-21",
+  "prepared": "2026-10-27",
   "notes": [
     "Original game/source exports preserved; still images are optimized derivatives.",
     "Godot video clips are historical scripted-input gameplay captures.",
@@ -9,7 +9,8 @@
     "Encoding frame rates are not measured game performance. Full local source/receipt identities remain in ignored notes.",
     "Supplied artwork and branding retain their existing project rights. Font licenses are bundled in public/assets/fonts.",
     "Five-role badge images are 3D renders of actual exported STL meshes. No physical sample print or photograph of a printed badge has been verified.",
-    "v031 native stills come only from selected versioned evidence captures. Role-lab, saved-map NPC review-camera and controlled-role contexts are identified separately. They do not verify physical controls, complete animation cycles or packaged Windows gameplay."
+    "v031 native stills come only from selected versioned evidence captures. Role-lab, saved-map NPC review-camera and controlled-role contexts are identified separately. They do not verify physical controls, complete animation cycles or packaged Windows gameplay.",
+    "Five v046 derivatives show the current native environment, unchanged Portal Hub character and actual menu. The menu backdrop is approved illustration shown inside native UI, not a gameplay render. No raw portrait, private new-head model, BIM source delivery or real-life visitor photograph is published."
   ],
   "assets": [
     {
@@ -939,6 +940,166 @@
         "preserved_composition": true,
         "crop": null,
         "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v046-jewel-arrival.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v046 capture",
+      "sha256": "f57c1701ba539aef3a429d9fcfd645d43e96dec9b4f31595d9a6789bae09538f",
+      "bytes": 173682,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "Native Unreal v046 environment capture: the lower arrival route, planted walls and waterfall.",
+      "source": {
+        "file": "design/evidence/jewel-water-v046/images/review/06-entrance-and-paving.png",
+        "sha256": "27ec198b439504159dd2a0975ee9f8ce41338325a53b40a4059c49f36df6a4cb",
+        "bytes": 3318833,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      }
+    },
+    {
+      "file": "assets/v046-jewel-waterfall.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v046 capture",
+      "sha256": "119959d07893aff8678cd48e8ee7fcbc5adfa0d3b5321f00dc4620940f64a294",
+      "bytes": 148200,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "Native Unreal v046 environment capture: the original flowing waterfall curtain and terraced setting.",
+      "source": {
+        "file": "design/evidence/jewel-water-v046/images/review/01-video-vortex-overview.png",
+        "sha256": "83c762911036a1165e34c1a145bece32dc4b02ca46f968c554d9e1779e7bda07",
+        "bytes": 3003973,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      }
+    },
+    {
+      "file": "assets/v046-jewel-roof.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v046 capture",
+      "sha256": "b7970eae6e5313de56326788427554c38d3814034425c1b493e58d39242cf9a0",
+      "bytes": 217860,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "Native Unreal v046 environment capture: the roof oculus and waterfall inlet.",
+      "source": {
+        "file": "design/evidence/jewel-water-v046/images/review/04-roof-inlet.png",
+        "sha256": "3e3f1c6a448ea2c5831a9c518aaf7f159e2e26abfb591384a4c55a98975483fd",
+        "bytes": 3274904,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      }
+    },
+    {
+      "file": "assets/v046-menu.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v046 capture",
+      "sha256": "0008cccce8838ba1df6f9b342417a7df1eafdaf8edf81144a20d342332c39292",
+      "bytes": 325040,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "Actual native v046 home menu with the approved illustrated Portal Hub and waterfall backdrop; not a 3D gameplay view.",
+      "source": {
+        "file": "design/evidence/jewel-water-v046/images/bootreview/01-boot-home.png",
+        "sha256": "55c3aad434dd49f779e201702e80e80689af481a5a768a513f3206d3c5ca6b3e",
+        "bytes": 3738321,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      }
+    },
+    {
+      "file": "assets/v046-ny-exploration.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v046 capture",
+      "sha256": "2029189c38f4a4b3af7e569b15bed5d1dc3d655f3c47c8ab25ad4f8b073cfd3d",
+      "bytes": 229832,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "Actual native v046 Portal Hub exploration after New Game and cinematic skip; the existing live character is unchanged.",
+      "source": {
+        "file": "design/evidence/jewel-water-v046/images/bootreview/02-game-after-newgame-skip.png",
+        "sha256": "9b24f10205d12a895c1700de4563812a811eba79dbb0388f6ce2c327aa77e846",
+        "bytes": 3255531,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1920,
+        "without_enlargement": true,
+        "quality": 86,
+        "method": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
       }
     }
   ]
