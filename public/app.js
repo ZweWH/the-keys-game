@@ -35,7 +35,18 @@
     const success = mission.success ? `<div class="mission-success"><strong>Complete when${current === 'eight' ? ' · planned' : ''}</strong><p>${escape(mission.success)}</p></div>` : '';
     const setting = mission.setting ? `<div class="mission-setting"><span class="eyebrow">${current === 'eight' ? 'PROPOSED PLACE & REVIEW MOMENT' : 'YOUR MISSION SETTING'}</span><p>${escape(mission.setting)}</p><span>${escape(mission.stage)}</span></div>` : '';
     const future = mission.futureEffect ? `<div class="mission-future"><strong>${current === 'eight' ? 'In the proposed future' : 'The teamwork lesson'}</strong><p>${escape(mission.futureEffect)}</p></div>` : '';
-    target.innerHTML = `<div class="mission-image"><img src="${asset(mission.image)}" alt="${escape(mission.alt)}" width="1600" height="900"><span class="image-tag">${escape(mission.caption || 'Actual Godot gameplay')}</span></div>${setting}${objective}<div class="mission-copy"><div><span class="eyebrow">${escape(mission.tag)}</span><h3>${escape(mission.title)}</h3><p>${escape(mission.description)}</p></div><div class="mission-actions"><span class="eyebrow">${current === 'eight' ? 'THE PROPOSED CHALLENGE' : 'YOUR CHALLENGE'}</span><ol>${mission.actions.map(action=>`<li>${escape(action)}</li>`).join('')}</ol>${success}<div class="learning"><strong>What you’ll explore</strong><br>${escape(mission.learning)}</div>${future}</div></div>`;
+    const picture = `<img src="${asset(mission.image)}" alt="${escape(mission.alt)}" width="1600" height="900"><span class="image-tag">${escape(mission.caption || 'Actual Godot gameplay')}</span>`;
+    const image = mission.conceptSketch ? `<button class="mission-image mission-sketch" type="button" data-mission-sketch aria-label="Enlarge concept sketch: ${escape(mission.title)}">${picture}</button>` : `<div class="mission-image">${picture}</div>`;
+    target.innerHTML = `${image}${setting}${objective}<div class="mission-copy"><div><span class="eyebrow">${escape(mission.tag)}</span><h3>${escape(mission.title)}</h3><p>${escape(mission.description)}</p></div><div class="mission-actions"><span class="eyebrow">${current === 'eight' ? 'THE PROPOSED CHALLENGE' : 'YOUR CHALLENGE'}</span><ol>${mission.actions.map(action=>`<li>${escape(action)}</li>`).join('')}</ol>${success}<div class="learning"><strong>What you’ll explore</strong><br>${escape(mission.learning)}</div>${future}</div></div>`;
+    target.querySelector('[data-mission-sketch]')?.addEventListener('click',event=>{
+      lastMediaTrigger = event.currentTarget;
+      mediaKind.textContent = 'AI CONCEPT SKETCH · PROPOSED MISSION';
+      mediaTitle.textContent = mission.title;
+      mediaCaption.textContent = `${mission.alt} This illustrates a proposed fictional puzzle, not completed gameplay.`;
+      imageNavigation.hidden = true;
+      mediaBody.innerHTML = `<img src="${asset(mission.image)}" alt="${escape(mission.alt)}">`;
+      dialog.showModal();
+    });
   }
 
   function videoCard() {

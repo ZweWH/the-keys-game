@@ -22,7 +22,10 @@ for(const mission of data.five.missions){
 for(const mission of data.eight.missions){
   assert(mission.objective?.trim()&&mission.success?.trim(),`${mission.role}: proposed mission needs an objective and completion check.`);
   assert(mission.setting?.trim()&&mission.stage?.trim()&&mission.futureEffect?.trim(),`${mission.role}: proposed time-travel mission needs its place, review moment and future effect.`);
+  assert(mission.conceptSketch===true&&new RegExp(`^mission-sketch-${mission.id}-v\\d{3}\\.webp$`).test(mission.image),`${mission.role}: show its versioned mission concept sketch first.`);
+  assert(/concept sketch/i.test(mission.alt)&&/CONCEPT SKETCH/.test(mission.caption)&&/PROPOSED MISSION/.test(mission.caption),`${mission.role}: concept artwork must be distinguished from gameplay.`);
 }
+assert(new Set(data.eight.missions.map(m=>m.image)).size===8,'Each Eight Keys mission needs its own sketch.');
 for(const [edition,d] of Object.entries(data)){
   const ids=d.missions.map(m=>m.id);
   assert(new Set(ids).size===ids.length,`${edition}: mission IDs must be unique.`);
@@ -35,6 +38,10 @@ for(const [edition,d] of Object.entries(data)){
   }
 }
 const provenance=JSON.parse(readFileSync(new URL('../MEDIA-PROVENANCE.json',import.meta.url),'utf8'));
+for(const mission of data.eight.missions){
+  const entry=provenance.assets.find(item=>item.file===`assets/${mission.image}`);
+  assert(entry?.edition==='eight-keys'&&/AI.generated.*concept sketch/i.test(entry.kind),`${mission.role}: mission artwork needs AI concept-sketch provenance.`);
+}
 for(const entry of provenance.assets){
   const path=join(root,entry.file);
   assert(existsSync(path),`Missing provenance asset ${entry.file}`);

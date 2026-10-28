@@ -1,4 +1,4 @@
-/* Two-edition editorial data. Original game projects are separate. Updated 27 October 2026. */
+/* Two-edition editorial data. Original game projects are separate. Updated 28 October 2026. */
 window.KEYS_CONTENT = {
   "five": {
     "name": "The Five Keys",
@@ -433,7 +433,7 @@ window.KEYS_CONTENT = {
         "After eight unique keys, open the final door and reach the balcony. Repair the fictional inlet gear, then watch the waterfall return from the guide’s view."
       ]
     ],
-    "missionIntro": "Eight proposed stories, built around bounded prototype areas. Each brief names the construction moment, the choices and the verification step. Role pictures are earlier v031 prototype captures, not images of finished time-travel missions.",
+    "missionIntro": "See each proposed mission in an AI-generated concept sketch. Choose a role to explore its setting, three decisions and final check. These sketches illustrate fictional puzzles; they are not gameplay screenshots.",
     "missionLabel": "EIGHT ROLES · PROPOSED TIME-TRAVEL MISSIONS",
     "missions": [
       {
@@ -453,11 +453,12 @@ window.KEYS_CONTENT = {
         "futureEffect": "The proposed timeline records a coordinated crossing with its marked inspection access preserved.",
         "learning": "Different trades share one space; resolving a clash requires checking the result, not simply moving one object.",
         "tag": "SHRINK INTO THE SERVICES AND FIND THE ROUTE EVERYONE MISSED.",
-        "image": "v031-bim_coordinator.webp",
-        "alt": "BIM Coordinator in the actual native v031 prototype mission area, shown by the full-body review camera.",
-        "caption": "Earlier native v031 role-area capture · New story and puzzle proposed",
+        "image": "mission-sketch-bim-v054.webp",
+        "alt": "AI-generated concept sketch for The Hidden Crossing: a BIM Coordinator examines a pipe–duct clash and alternative service routes in a basement training bay.",
+        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
         "characterID": "bim_coordinator",
-        "storyID": "bim_coordinator"
+        "storyID": "bim_coordinator",
+        "conceptSketch": true
       },
       {
         "id": "site",
@@ -476,11 +477,12 @@ window.KEYS_CONTENT = {
         "futureEffect": "The proposed timeline gains a verified installation and access route; the numbered pieces are generic training elements, not a claim about Jewel’s actual construction method.",
         "learning": "Drawings, component identity, safe sequencing and orientation must agree on site.",
         "tag": "READ THE DRAWING, CLEAR THE ZONE AND PLACE THE MISSING PIECES.",
-        "image": "v031-site_engineer.webp",
-        "alt": "Site Engineer in the actual native v031 prototype mission area, shown by the full-body review camera.",
-        "caption": "Earlier native v031 role-area capture · New story and puzzle proposed",
+        "image": "mission-sketch-site-v054.webp",
+        "alt": "AI-generated concept sketch for The Missing Piece: a Site Engineer checks drawings and installation pieces beside a controlled training work zone.",
+        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
         "characterID": "site_engineer",
-        "storyID": "site_engineer"
+        "storyID": "site_engineer",
+        "conceptSketch": true
       },
       {
         "id": "technical",
@@ -499,11 +501,12 @@ window.KEYS_CONTENT = {
         "futureEffect": "The proposed timeline carries one agreed set of technical information into the next review.",
         "learning": "Technical decisions use the correct drawing revision and evidence, rather than guesses or visual size alone.",
         "tag": "FIND THE WRONG REVISION BEFORE THE TEAM BUILDS FROM IT.",
-        "image": "v031-technical_engineer.webp",
-        "alt": "Technical Engineer in the actual native v031 prototype mission area, shown by the full-body review camera.",
-        "caption": "Earlier native v031 role-area capture · New story and puzzle proposed",
+        "image": "mission-sketch-technical-v054.webp",
+        "alt": "AI-generated concept sketch for The Wrong Revision: a Technical Engineer compares drawing information with equipment, service tags and a pump in a training control bay.",
+        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
         "characterID": "technical_engineer",
-        "storyID": "technical_engineer"
+        "storyID": "technical_engineer",
+        "conceptSketch": true
       },
       {
         "id": "planning",
@@ -522,11 +525,12 @@ window.KEYS_CONTENT = {
         "futureEffect": "The proposed timeline keeps services and inspection ahead of closure, with a practical response to the delay.",
         "learning": "A practical programme respects dependencies and can adapt without rushing unsafe or unready work.",
         "tag": "A LATE DELIVERY CHANGES THE PLAN. CAN YOU KEEP THE RIGHT WORK MOVING?",
-        "image": "v031-planning_engineer.webp",
-        "alt": "Planning Engineer in the actual native v031 prototype mission area, shown by the full-body review camera.",
-        "caption": "Earlier native v031 role-area capture · New story and puzzle proposed",
+        "image": "mission-sketch-planning-v054.webp",
+        "alt": "AI-generated concept sketch for The Lost Shift: a Planning Engineer arranges task-sequence cards beside an upper enclosure work area and a delayed delivery.",
+        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
         "characterID": "planning_engineer",
-        "storyID": "planning_engineer"
+        "storyID": "planning_engineer",
+        "conceptSketch": true
       },
       {
         "id": "qaqc",
@@ -545,11 +549,12 @@ window.KEYS_CONTENT = {
         "futureEffect": "The proposed timeline reaches handover with the three training fixtures corrected and reinspected.",
         "learning": "Quality work is recorded and verified; finding a defect and assuming it is fixed are different actions.",
         "tag": "LOOK CLOSELY, RECORD THE DEFECTS AND COME BACK TO VERIFY THE FIXES.",
-        "image": "v031-qaqc_engineer.webp",
-        "alt": "QAQC Engineer in the actual native v031 prototype mission area, shown by the full-body review camera.",
-        "caption": "Earlier native v031 role-area capture · New story and puzzle proposed",
+        "image": "mission-sketch-qaqc-v054.webp",
+        "alt": "AI-generated concept sketch for Check It Again: a QAQC Engineer inspects frame alignment, a service-opening seal and an identification tag against a checklist.",
+        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
         "characterID": "qaqc_engineer",
-        "storyID": "qaqc_engineer"
+        "storyID": "qaqc_engineer",
+        "conceptSketch": true
       },
       {
         "id": "safety",
@@ -568,12 +573,13 @@ window.KEYS_CONTENT = {
         "futureEffect": "The proposed timeline reopens the route only after its reviewed controls are verified.",
         "learning": "Recognise hazards, control access and verify prevention before allowing work to continue.",
         "tag": "PROTECT THE ROUTE BEFORE THE NEXT TEAM STEPS INTO IT.",
-        "image": "v031-safety_engineer.webp",
-        "alt": "Safety Engineer in the actual native v031 prototype mission area, shown by the full-body review camera.",
-        "caption": "Earlier native v031 role-area capture · New story and puzzle proposed",
+        "image": "mission-sketch-safety-v054.webp",
+        "alt": "AI-generated concept sketch for The Safe Way Through: a Safety Engineer reviews edge protection, a blocked route and a simulated lift zone.",
+        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
         "isNew": true,
         "characterID": "safety_engineer",
-        "storyID": "safety_engineer"
+        "storyID": "safety_engineer",
+        "conceptSketch": true
       },
       {
         "id": "quantity",
@@ -592,12 +598,13 @@ window.KEYS_CONTENT = {
         "futureEffect": "The proposed timeline releases a complete, checked procurement scope rather than the cheapest headline price.",
         "learning": "Compare quantities, units and complete scope before judging value; a low headline price may omit required work.",
         "tag": "FIND THE MISSING SCOPE HIDDEN BEHIND A TEMPTING PRICE.",
-        "image": "v031-quantity_surveyor.webp",
-        "alt": "Quantity Surveyor in the actual native v031 prototype mission area, shown by the full-body review camera.",
-        "caption": "Earlier native v031 role-area capture · New story and puzzle proposed",
+        "image": "mission-sketch-quantity-v054.webp",
+        "alt": "AI-generated concept sketch for Count What Counts: a Quantity Surveyor compares a material take-off and quotation sheets at an irrigation procurement bench.",
+        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
         "isNew": true,
         "characterID": "quantity_surveyor",
-        "storyID": "quantity_surveyor"
+        "storyID": "quantity_surveyor",
+        "conceptSketch": true
       },
       {
         "id": "geotechnical",
@@ -616,12 +623,13 @@ window.KEYS_CONTENT = {
         "futureEffect": "The proposed timeline resolves the ground-review hold through evidence and specialist review, completing the eight-role record.",
         "learning": "Foundation decisions depend on ground evidence, and unexpected conditions require specialist review.",
         "tag": "READ THE GROUND, QUESTION THE SURPRISE AND EARN THE FINAL KEY.",
-        "image": "v031-geotechnical_engineer.webp",
-        "alt": "Geotechnical Engineer in the actual native v031 prototype mission area, shown by the full-body review camera.",
-        "caption": "Earlier native v031 role-area capture · New story and puzzle proposed",
+        "image": "mission-sketch-geotechnical-v054.webp",
+        "alt": "AI-generated concept sketch for Below the Surface: a Geotechnical Engineer compares a guarded ground cutaway and fictional soil layers with a training borehole card.",
+        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
         "isNew": true,
         "characterID": "geotechnical_engineer",
-        "storyID": "geotechnical_engineer"
+        "storyID": "geotechnical_engineer",
+        "conceptSketch": true
       }
     ],
     "gameplayTitle": "EXPLORE TODAY.\nBUILD THE NEXT CHAPTER.",
@@ -735,7 +743,7 @@ window.KEYS_CONTENT = {
     "endLabel": "MEET THE PEOPLE BEHIND THE KEYS",
     "endTitle": "DIFFERENT ROLES.\nONE CREW.",
     "endText": "One hub guide meets eight role characters through the portals. The next chapter connects their different ways of thinking through one fictional construction timeline.",
-    "note": "Updated 28 October 2026. Current native v046 Jewel environment, hub character and UI are shown separately from earlier v031 role studies. The time-travel puzzles, ordered unique keys, final door, gear repair and eight-role report remain proposed or in development. No Unreal browser launch, portable download, finished mission gameplay or measured exhibition performance is claimed.",
+    "note": "Updated 28 October 2026. Current native v046 Jewel environment, hub character and UI are shown separately from AI-generated mission concept sketches and earlier v031 role studies. The time-travel puzzles, ordered unique keys, final door, gear repair and eight-role report remain proposed or in development. No Unreal browser launch, portable download, finished mission gameplay or measured exhibition performance is claimed.",
     "heroCredit": "Native Unreal environment capture\nJewel prototype · v046",
     "storyCaption": "Native v046 environment capture. The flowing-water exploration is playable locally; the stopped-water time-travel story and finale are planned.",
     "controlsNote": "Default prototype bindings shown; Controls can remap action buttons. Keyboard/mouse and Xbox are detected automatically. Shrink before enabling the jetpack. Settings adjust movement and camera speeds; English is the current language. Xbox Y changes size and never restarts the journey.",

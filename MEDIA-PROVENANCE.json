@@ -10,7 +10,8 @@
     "Supplied artwork and branding retain their existing project rights. Font licenses are bundled in public/assets/fonts.",
     "Five-role badge images are 3D renders of actual exported STL meshes. No physical sample print or photograph of a printed badge has been verified.",
     "v031 native stills come only from selected versioned evidence captures. Role-lab, saved-map NPC review-camera and controlled-role contexts are identified separately. They do not verify physical controls, complete animation cycles or packaged Windows gameplay.",
-    "Five v046 derivatives show the current native environment, unchanged Portal Hub character and actual menu. The menu backdrop is approved illustration shown inside native UI, not a gameplay render. No raw portrait, private new-head model, BIM source delivery or real-life visitor photograph is published."
+    "Five v046 derivatives show the current native environment, unchanged Portal Hub character and actual menu. The menu backdrop is approved illustration shown inside native UI, not a gameplay render. No raw portrait, private new-head model, BIM source delivery or real-life visitor photograph is published.",
+    "Eight v054 AI-generated mission concept sketches now lead the Eight Keys role tabs. They illustrate fictional proposed puzzles, not completed game scenes or verified construction details; native captures remain separately labelled in the gallery."
   ],
   "assets": [
     {
@@ -1069,6 +1070,294 @@
         "crop": null,
         "color_adjustments": false,
         "AI_image_alteration": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-bim-v054.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated mission concept sketch",
+      "mission_id": "bim",
+      "sha256": "5a3f5a530eb2c02a0c5adf9cdc7bf1fd06b64bbf2e5f45059423bd3e798aeef2",
+      "bytes": 468428,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "The Hidden Crossing: illustrative concept for a proposed fictional training mission, not a gameplay screenshot or verified construction drawing.",
+      "source": {
+        "file": "notes/mission-sketches-v054/originals/bim.png",
+        "sha256": "c538ca6183ac21cd5dfcd62c383c9204217cd29565a790a967c345979a78fdae",
+        "bytes": 3682946,
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "client_date": "2026-10-28",
+        "prompt_manifest": "notes/mission-sketches-v054/manifest.json"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-site-v054.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated mission concept sketch",
+      "mission_id": "site",
+      "sha256": "f12e41e413f401d9d5a838118467f639711832864db06273d0ebab7d7f268928",
+      "bytes": 490948,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "The Missing Piece: illustrative concept for a proposed fictional training mission, not a gameplay screenshot or verified construction drawing.",
+      "source": {
+        "file": "notes/mission-sketches-v054/originals/site.png",
+        "sha256": "6c2d5605cadaf398acf74fa2d1562f3f7b4c3e7ae464023de7361063480dce0b",
+        "bytes": 3662057,
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "client_date": "2026-10-28",
+        "prompt_manifest": "notes/mission-sketches-v054/manifest.json"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-technical-v054.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated mission concept sketch",
+      "mission_id": "technical",
+      "sha256": "9a2ea94ae34c0384603854311532e0fdd385930fcb38197077159fa019168a34",
+      "bytes": 501704,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "The Wrong Revision: illustrative concept for a proposed fictional training mission, not a gameplay screenshot or verified construction drawing.",
+      "source": {
+        "file": "notes/mission-sketches-v054/originals/technical.png",
+        "sha256": "8f5bef974766706334c38ec7abe7ed5d858823d6808afab581460bf54368853f",
+        "bytes": 3628255,
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "client_date": "2026-10-28",
+        "prompt_manifest": "notes/mission-sketches-v054/manifest.json"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-planning-v054.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated mission concept sketch",
+      "mission_id": "planning",
+      "sha256": "aa90da6b5960f7ec5eb8ca749b217ad904178294bb4c5b984e8695f1c99e0797",
+      "bytes": 377758,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "The Lost Shift: illustrative concept for a proposed fictional training mission, not a gameplay screenshot or verified construction drawing.",
+      "source": {
+        "file": "notes/mission-sketches-v054/originals/planning.png",
+        "sha256": "11520ca02f7bcc99e2a95053d72bf8dac98d645538fc99aa0da164658faa7cd0",
+        "bytes": 3049787,
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "client_date": "2026-10-28",
+        "prompt_manifest": "notes/mission-sketches-v054/manifest.json"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-qaqc-v054.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated mission concept sketch",
+      "mission_id": "qaqc",
+      "sha256": "d013e6f54ebaaa2efa7d267b9fb37c456530b6ef513778b5ea9b3b5740b957b1",
+      "bytes": 435798,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Check It Again: illustrative concept for a proposed fictional training mission, not a gameplay screenshot or verified construction drawing.",
+      "source": {
+        "file": "notes/mission-sketches-v054/originals/qaqc.png",
+        "sha256": "9fd313028219b2405e577a58e4aca0f3dae5ed0f4b7cc2fd24730b048b507f1f",
+        "bytes": 3430679,
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "client_date": "2026-10-28",
+        "prompt_manifest": "notes/mission-sketches-v054/manifest.json"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-safety-v054.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated mission concept sketch",
+      "mission_id": "safety",
+      "sha256": "cb565bfd60cb8e55bade997f08e41dd0712f0dd6330b460cb8c735183268eae7",
+      "bytes": 573762,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "The Safe Way Through: illustrative concept for a proposed fictional training mission, not a gameplay screenshot or verified construction drawing.",
+      "source": {
+        "file": "notes/mission-sketches-v054/originals/safety.png",
+        "sha256": "d607303ee040c0cd59726bff1ec709cd1a88552d4cbd2581f9a75fdefdc14d53",
+        "bytes": 4043290,
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "client_date": "2026-10-28",
+        "prompt_manifest": "notes/mission-sketches-v054/manifest.json"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-quantity-v054.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated mission concept sketch",
+      "mission_id": "quantity",
+      "sha256": "6850fd1fc364885c8db3db07444c632292403478d4f510defbcb7403e8605ff9",
+      "bytes": 474042,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Count What Counts: illustrative concept for a proposed fictional training mission, not a gameplay screenshot or verified construction drawing.",
+      "source": {
+        "file": "notes/mission-sketches-v054/originals/quantity.png",
+        "sha256": "3f459507aa22000b9ee07cce8f01dbbc0220373f0d9851c7a3a3138c4c010702",
+        "bytes": 3587823,
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "client_date": "2026-10-28",
+        "prompt_manifest": "notes/mission-sketches-v054/manifest.json"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-geotechnical-v054.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated mission concept sketch",
+      "mission_id": "geotechnical",
+      "sha256": "69f37d50ce13f1fdfbfcb30fc2ac322f9a0ec52f4a796769e9f7b9c6ea10488f",
+      "bytes": 532378,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Below the Surface: illustrative concept for a proposed fictional training mission, not a gameplay screenshot or verified construction drawing.",
+      "source": {
+        "file": "notes/mission-sketches-v054/originals/geotechnical.png",
+        "sha256": "4a9de0f2ff284a6812f84ba05c66741d3331f07305235e994ff62bbeec1f6279",
+        "bytes": 3850037,
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      "generation": {
+        "tool": "built-in image_gen",
+        "client_date": "2026-10-28",
+        "prompt_manifest": "notes/mission-sketches-v054/manifest.json"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 5,
+        "crop": null,
+        "color_adjustments": false
       }
     }
   ]

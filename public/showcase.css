@@ -44,3 +44,28 @@
   .jewel-view-title strong { font-size: 18px; }
   .jewel-view:first-child .jewel-view-title strong { font-size: 26px; }
 }
+
+.mission-sketch {
+  display: block;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  background: #f4efe2;
+  border: 1px solid var(--line);
+  cursor: zoom-in;
+}
+.mission-sketch > img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #f4efe2;
+}
+.mission-sketch .image-tag {
+  position: static;
+  display: block;
+  max-width: none;
+  padding: 10px 14px;
+  background: #17362c;
+  line-height: 1.5;
+}
+.mission-sketch:hover,
+.mission-sketch:focus-visible { border-color: var(--gold); }
