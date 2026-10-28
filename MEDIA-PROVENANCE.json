@@ -11,7 +11,8 @@
     "Five-role badge images are 3D renders of actual exported STL meshes. No physical sample print or photograph of a printed badge has been verified.",
     "v031 native stills come only from selected versioned evidence captures. Role-lab, saved-map NPC review-camera and controlled-role contexts are identified separately. They do not verify physical controls, complete animation cycles or packaged Windows gameplay.",
     "Five v046 derivatives show the current native environment, unchanged Portal Hub character and actual menu. The menu backdrop is approved illustration shown inside native UI, not a gameplay render. No raw portrait, private new-head model, BIM source delivery or real-life visitor photograph is published.",
-    "Eight v054 AI-generated mission concept sketches now lead the Eight Keys role tabs. They illustrate fictional proposed puzzles, not completed game scenes or verified construction details; native captures remain separately labelled in the gallery."
+    "Eight v054 AI-generated mission concept sketches now lead the Eight Keys role tabs. They illustrate fictional proposed puzzles, not completed game scenes or verified construction details; native captures remain separately labelled in the gallery.",
+    "28 October v055 adds the supplied upper-deck game screenshot and two clean native v046 upper-level views. These replace Eight Keys environment cover, story and gallery placements. Full frames and colours are preserved; no AI image alteration. The supplied screenshot retains its game HUD and has no independently verified scene version."
   ],
   "assets": [
     {
@@ -1358,6 +1359,128 @@
         "effort": 5,
         "crop": null,
         "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/v055-upper-deck-cover.webp",
+      "edition": "eight-keys",
+      "kind": "user-supplied native Unreal screenshot",
+      "sha256": "92e8b4b24c10268477b94ef244b7c0cc98f210075657720a388e34d19d3f2726",
+      "bytes": 218614,
+      "dimensions": [
+        1568,
+        882
+      ],
+      "caption": "User-supplied upper-deck game screenshot: NY, foreground planting and the Jewel waterfall.",
+      "source": {
+        "file": "notes/upper-deck-v055/originals/00-user-upper-deck-reference.png",
+        "sha256": "db0bae0ab1bf962c33c30f9044d9dc048b1769102cd955e61c1e11a71dfd0eb0",
+        "bytes": 2398315,
+        "dimensions": [
+          1568,
+          882
+        ],
+        "capture_date": "2026-10-28",
+        "scene_version": "not independently verified from supplied screenshot"
+      },
+      "transform": {
+        "format": "webp",
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      }
+    },
+    {
+      "file": "assets/v055-upper-deck-waterfall.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v046 upper-deck capture",
+      "sha256": "3e4470ec577bf58fa005d6a9445f3a8fc32a0c348d3c754ef9066783f842a660",
+      "bytes": 412670,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "Native v046 upper-level view across trees, planted terraces, the water curtain and basin.",
+      "source": {
+        "file": "notes/upper-deck-v055/originals/03-upper-deck-terraces.png",
+        "sha256": "538feab318102a7d78bdf230940d8786a61f86c2e093fb81c505a66eef969b6e",
+        "bytes": 4027067,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "capture_date": "2026-10-28",
+        "engine": "5.8.3",
+        "scene": "/Game/TheEightKeys/JewelWater_v046/Maps/L_JewelWater_v046",
+        "camera": {
+          "commanded_position_cm": [
+            1200,
+            4000,
+            100
+          ],
+          "commanded_rotation_degrees": [
+            -20,
+            240,
+            0
+          ]
+        }
+      },
+      "transform": {
+        "format": "webp",
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      }
+    },
+    {
+      "file": "assets/v055-upper-deck-garden.webp",
+      "edition": "eight-keys",
+      "kind": "native Unreal v046 upper-deck capture",
+      "sha256": "143942284956d04cf0223b57cba2142b37139629bf6107b8ffd9a46f4205a6ea",
+      "bytes": 366758,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "Native v046 upper-level panorama of planted terraces, the roof inlet and falling water.",
+      "source": {
+        "file": "notes/upper-deck-v055/originals/02-upper-deck-waterfall.png",
+        "sha256": "1d6099b29f9459745d63fbb9143d574397aab3cbde379fe4321d82d5d0821160",
+        "bytes": 3872272,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "capture_date": "2026-10-28",
+        "engine": "5.8.3",
+        "scene": "/Game/TheEightKeys/JewelWater_v046/Maps/L_JewelWater_v046",
+        "camera": {
+          "commanded_position_cm": [
+            2600,
+            3000,
+            100
+          ],
+          "commanded_rotation_degrees": [
+            -20,
+            230,
+            0
+          ]
+        }
+      },
+      "transform": {
+        "format": "webp",
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
       }
     }
   ]

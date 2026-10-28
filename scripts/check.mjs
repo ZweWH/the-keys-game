@@ -58,6 +58,11 @@ for(const entry of provenance.assets){
     assert(/^[a-f0-9]{64}$/.test(entry.source?.sha256||''),`Current media needs its exact source SHA-256: ${entry.file}`);
     assert(entry.transform?.crop===null&&entry.transform?.color_adjustments===false,`Current capture composition/colour must be preserved: ${entry.file}`);
   }
+  if(['native Unreal v046 upper-deck capture','user-supplied native Unreal screenshot'].includes(entry.kind)){
+    assert(/^notes\/upper-deck-v055\/originals\/.+\.png$/.test(entry.source?.file||''),`Upper-deck media requires its preserved source: ${entry.file}`);
+    assert(/^[a-f0-9]{64}$/.test(entry.source?.sha256||''),`Upper-deck media requires its exact source SHA-256: ${entry.file}`);
+    assert(entry.transform?.crop===null&&entry.transform?.color_adjustments===false&&entry.transform?.AI_image_alteration===false,`Upper-deck frames and colours must be preserved: ${entry.file}`);
+  }
 }
 const jetpack=data.eight.controls.find(row=>row[0]==='JETPACK / LAND');
 const dash=data.eight.controls.find(row=>row[0]==='AIR DASH');

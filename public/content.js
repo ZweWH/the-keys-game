@@ -353,8 +353,8 @@ window.KEYS_CONTENT = {
     "engine": "Unreal",
     "label": "THE NEXT CHAPTER",
     "status": "UNREAL DEVELOPMENT PROTOTYPE",
-    "hero": "v046-jewel-arrival.webp",
-    "heroAlt": "Actual Unreal v046 environment capture of the lower Jewel arrival route, planted walls, glass roof and flowing waterfall.",
+    "hero": "v055-upper-deck-cover.webp",
+    "heroAlt": "User-supplied Unreal game screenshot from Jewel’s upper deck, with NY, dense trees and the flowing waterfall beyond the walkway.",
     "headline": "One place. Eight ways to build its future.",
     "description": "Explore Jewel with the Portal Hub guide. Discover eight roles and the time-travel missions taking shape around them.",
     "primary": "Explore the missions",
@@ -417,8 +417,8 @@ window.KEYS_CONTENT = {
     "storyTitle": "TRAVEL BACK.\nBUILD A BETTER FUTURE.",
     "storyText": "A fictional time rift leaves Jewel’s waterfall silent. The clue is larger than one broken part: eight earlier reviews hold decisions that were never properly checked. Travel through the portals, meet each construction role and take control of that character. Resolve the training challenge, verify the result and bring its unique key back to the skybridge.",
     "storyNote": "An imagined construction adventure inspired by real project spaces. The time travel, defects, values, soil profiles, keys and repair mechanism are fictional training content, not records of actual Jewel faults or construction history. These stories and full puzzles are proposed, with specialist and educator review still required.",
-    "storyImage": "v046-jewel-waterfall.webp",
-    "storyAlt": "Actual native v046 Unreal development capture of the waterfall curtain and surrounding terraces.",
+    "storyImage": "v055-upper-deck-waterfall.webp",
+    "storyAlt": "Native Unreal v046 capture from the upper deck, looking past trees toward the waterfall, planted terraces and basin.",
     "steps": [
       [
         "Meet the role in the past",
@@ -633,22 +633,22 @@ window.KEYS_CONTENT = {
       }
     ],
     "gameplayTitle": "EXPLORE TODAY.\nBUILD THE NEXT CHAPTER.",
-    "gameplayText": "Step inside the current Jewel environment: follow the waterfall, look up to its roof inlet and discover the arrival route. Open these native Unreal captures for a closer look, then explore the gallery for the guide, menu and role studies.",
+    "gameplayText": "See Jewel from its upper decks: follow the waterfall through the trees and look across the planted terraces. Open these game captures for a closer look, then explore the gallery for the guide, menu and role studies.",
     "showcase": {
-      "label": "Current Jewel environment views",
+      "label": "Jewel upper-deck environment views",
       "views": [
-        "v046-jewel-waterfall.webp",
-        "v046-jewel-roof.webp",
-        "v046-jewel-arrival.webp"
+        "v055-upper-deck-cover.webp",
+        "v055-upper-deck-waterfall.webp",
+        "v055-upper-deck-garden.webp"
       ],
-      "caption": "Current Jewel exploration · Native Unreal v046 stills. Select a view to open the full image. Materials and planting remain in development; full mission puzzles are proposed."
+      "caption": "Jewel from the upper decks · Native game captures. Select a view to open the full image. Materials and planting remain in development; full mission puzzles are proposed."
     },
     "gallery": [
       [
-        "v046-jewel-arrival.webp",
-        "A new arrival",
-        "The lower Jewel route, planted walls and waterfall in the current saved environment. Materials and planting remain in development.",
-        "UNREAL v046 · NATIVE ENVIRONMENT"
+        "v055-upper-deck-cover.webp",
+        "Jewel from above",
+        "NY among the trees on the upper walkway, with the waterfall and planted terraces beyond.",
+        "UNREAL · NATIVE GAME CAPTURE"
       ],
       [
         "v046-menu.webp",
@@ -663,16 +663,16 @@ window.KEYS_CONTENT = {
         "UNREAL v046 · NATIVE EXPLORATION"
       ],
       [
-        "v046-jewel-waterfall.webp",
-        "Follow the falling water",
-        "The original water curtain retained in the current environment. Further all-view lighting, materials and performance work remains.",
-        "UNREAL v046 · NATIVE ENVIRONMENT"
+        "v055-upper-deck-waterfall.webp",
+        "Water through the gardens",
+        "A native v046 upper-deck view across the trees, waterfall and basin, captured on 28 October 2026. Materials and planting remain in development.",
+        "UNREAL v046 · NATIVE UPPER-DECK CAPTURE"
       ],
       [
-        "v046-jewel-roof.webp",
-        "Look up",
-        "The roof grid, oculus and waterfall inlet in the current native development scene.",
-        "UNREAL v046 · NATIVE ENVIRONMENT"
+        "v055-upper-deck-garden.webp",
+        "Among the treetops",
+        "Another native v046 upper-level viewpoint, with trees beside the waterfall and surrounding terraces, captured on 28 October 2026.",
+        "UNREAL v046 · NATIVE UPPER-DECK CAPTURE"
       ],
       [
         "v031-site-player.webp",
@@ -744,10 +744,10 @@ window.KEYS_CONTENT = {
     "endTitle": "DIFFERENT ROLES.\nONE CREW.",
     "endText": "One hub guide meets eight role characters through the portals. The next chapter connects their different ways of thinking through one fictional construction timeline.",
     "note": "Updated 28 October 2026. Current native v046 Jewel environment, hub character and UI are shown separately from AI-generated mission concept sketches and earlier v031 role studies. The time-travel puzzles, ordered unique keys, final door, gear repair and eight-role report remain proposed or in development. No Unreal browser launch, portable download, finished mission gameplay or measured exhibition performance is claimed.",
-    "heroCredit": "Native Unreal environment capture\nJewel prototype · v046",
-    "storyCaption": "Native v046 environment capture. The flowing-water exploration is playable locally; the stopped-water time-travel story and finale are planned.",
+    "heroCredit": "Native Unreal game capture\nJewel · Upper deck",
+    "storyCaption": "Native v046 upper-deck capture · 28 October 2026. The flowing-water exploration is playable locally; the stopped-water time-travel story and finale are planned.",
     "controlsNote": "Default prototype bindings shown; Controls can remap action buttons. Keyboard/mouse and Xbox are detected automatically. Shrink before enabling the jetpack. Settings adjust movement and camera speeds; English is the current language. Xbox Y changes size and never restarts the journey.",
-    "galleryIntro": "Current v046 environment, live hub guide and native menu captures, followed by clearly labelled earlier role studies. Open an image for its full capture context.",
-    "galleryLabel": "Current v046 Jewel + menu · Earlier v031 role prototypes · Full mission puzzles proposed"
+    "galleryIntro": "Explore the upper decks through trees, waterfall and planted terraces. Discover the hub guide, current menu and earlier role studies below. Open an image to see the full view.",
+    "galleryLabel": "Upper-deck game captures · Current v046 guide + menu · Earlier v031 roles · Full mission puzzles proposed"
   }
 };

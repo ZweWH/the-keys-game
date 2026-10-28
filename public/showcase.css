@@ -69,3 +69,9 @@
 }
 .mission-sketch:hover,
 .mission-sketch:focus-visible { border-color: var(--gold); }
+
+body[data-edition="eight"] .hero-image { object-position: 40% center; }
+body[data-edition="eight"] .story-image-wrap img { object-position: 63% center; }
+@media (max-width: 720px) {
+  body[data-edition="eight"] .hero-image { object-position: 38% center; }
+}
