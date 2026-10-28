@@ -3,6 +3,7 @@
   "prepared": "2026-10-28",
   "notes": [
     "Original game/source exports preserved; still images are optimized derivatives.",
+    "28 October website label update: the first crew member is displayed as Director. A responsive HTML label overlays only the former name in the preserved crew-v7 artwork. The original image bytes, approved character appearance and game asset IDs are unchanged.",
     "Godot video clips are historical scripted-input gameplay captures.",
     "Unreal imagery shows development prototypes. Full missions, ordered keys, scoring and finale remain pending.",
     "The Eight Keys environment showcase uses current native v046 Jewel stills. The historical courtyard video and poster were removed from published assets on 28 October 2026; originals remain in project history.",

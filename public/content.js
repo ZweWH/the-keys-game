@@ -354,9 +354,9 @@ window.KEYS_CONTENT = {
     "label": "THE NEXT CHAPTER",
     "status": "UNREAL DEVELOPMENT PROTOTYPE",
     "hero": "v055-upper-deck-cover.webp",
-    "heroAlt": "User-supplied Unreal game screenshot from Jewel’s upper deck, with NY, dense trees and the flowing waterfall beyond the walkway.",
+    "heroAlt": "User-supplied Unreal game screenshot from Jewel’s upper deck, with the Director, dense trees and the flowing waterfall beyond the walkway.",
     "headline": "One place. Eight ways to build its future.",
-    "description": "Explore Jewel with the Portal Hub guide. Discover eight roles and the time-travel missions taking shape around them.",
+    "description": "Explore Jewel with the Director. Discover eight roles and the time-travel missions taking shape around them.",
     "primary": "Explore the missions",
     "intro": "THE WORLD\nWE BUILD TOGETHER.",
     "introText": "The next adventure begins inside Jewel. One guide leads the present-day exploration; eight portals connect to prototype areas where you meet the crew and switch into each role. The larger story asks what changes when you return to an earlier decision and check it properly.",
@@ -371,7 +371,7 @@ window.KEYS_CONTENT = {
       ],
       [
         "01",
-        "PRESENT-DAY HUB GUIDE"
+        "PRESENT-DAY DIRECTOR"
       ]
     ],
     "prototype": {
@@ -380,7 +380,7 @@ window.KEYS_CONTENT = {
       "version": "v046",
       "eyebrow": "JEWEL EXPLORATION · THE CURRENT BUILD",
       "title": "A WORLD TO\nSTEP INTO.",
-      "intro": "The current editor-hosted prototype starts with the Portal Hub guide in Jewel. Explore the waterfall and planted terraces, reach the eight skybridge portals and meet each role inside its prototype area. The full time-travel puzzles are the next stage.",
+      "intro": "The current editor-hosted prototype starts with the Director in Jewel. Explore the waterfall and planted terraces, reach the eight skybridge portals and meet each role inside its prototype area. The full time-travel puzzles are the next stage.",
       "image": "v046-menu.webp",
       "alt": "Actual v046 home menu with New Game, Load Saved Game, Controls and Settings over the approved illustrated waterfall backdrop.",
       "caption": "Actual v046 home menu · Approved illustrated backdrop · Not a 3D gameplay view",
@@ -395,7 +395,7 @@ window.KEYS_CONTENT = {
         ],
         [
           "One guide. Eight perspectives.",
-          "Only the Portal Hub guide occupies present-day Jewel. Enter a portal, approach the waiting role character and interact to switch. The existing prototype return routes bring you back to the hub."
+          "Only the Director occupies present-day Jewel. Enter a portal, approach the waiting role character and interact to switch. The existing prototype return routes bring you back to the hub."
         ],
         [
           "Jewel, layer by layer",
@@ -647,7 +647,7 @@ window.KEYS_CONTENT = {
       [
         "v055-upper-deck-cover.webp",
         "Jewel from above",
-        "NY among the trees on the upper walkway, with the waterfall and planted terraces beyond.",
+        "The Director among the trees on the upper walkway, with the waterfall and planted terraces beyond.",
         "UNREAL · NATIVE GAME CAPTURE"
       ],
       [
@@ -658,8 +658,8 @@ window.KEYS_CONTENT = {
       ],
       [
         "v046-ny-exploration.webp",
-        "Meet the hub guide",
-        "The unchanged live Portal Hub character after New Game and cinematic skip. This is the current character in Jewel.",
+        "Meet the Director",
+        "The existing live Director character after New Game and cinematic skip. This is the current character in Jewel.",
         "UNREAL v046 · NATIVE EXPLORATION"
       ],
       [
@@ -742,12 +742,12 @@ window.KEYS_CONTENT = {
     ],
     "endLabel": "MEET THE PEOPLE BEHIND THE KEYS",
     "endTitle": "DIFFERENT ROLES.\nONE CREW.",
-    "endText": "One hub guide meets eight role characters through the portals. The next chapter connects their different ways of thinking through one fictional construction timeline.",
+    "endText": "The Director meets eight role characters through the portals. The next chapter connects their different ways of thinking through one fictional construction timeline.",
     "note": "Updated 28 October 2026. Current native v046 Jewel environment, hub character and UI are shown separately from AI-generated mission concept sketches and earlier v031 role studies. The time-travel puzzles, ordered unique keys, final door, gear repair and eight-role report remain proposed or in development. No Unreal browser launch, portable download, finished mission gameplay or measured exhibition performance is claimed.",
     "heroCredit": "Native Unreal game capture\nJewel · Upper deck",
     "storyCaption": "Native v046 upper-deck capture · 28 October 2026. The flowing-water exploration is playable locally; the stopped-water time-travel story and finale are planned.",
     "controlsNote": "Default prototype bindings shown; Controls can remap action buttons. Keyboard/mouse and Xbox are detected automatically. Shrink before enabling the jetpack. Settings adjust movement and camera speeds; English is the current language. Xbox Y changes size and never restarts the journey.",
-    "galleryIntro": "Explore the upper decks through trees, waterfall and planted terraces. Discover the hub guide, current menu and earlier role studies below. Open an image to see the full view.",
+    "galleryIntro": "Explore the upper decks through trees, waterfall and planted terraces. Discover the Director, current menu and earlier role studies below. Open an image to see the full view.",
     "galleryLabel": "Upper-deck game captures · Current v046 guide + menu · Earlier v031 roles · Full mission puzzles proposed"
   }
 };
