@@ -70,7 +70,7 @@ assert(jetpack?.[2]==='RB'&&dash?.[2]==='D-pad Up','Current default Xbox mapping
 assert(data.eight.prototype.note.includes('not available here yet'),'Unreal browser play and portable download must remain clearly pending.');
 assert(data.eight.prototype.pending.includes('unique-key')&&data.eight.storyNote.includes('fictional'),'Planned unique keys and fictional story context must be explicit.');
 for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
-  if(!/^(https?:|data:)/.test(match[1]))assert(existsSync(join(root,match[1])),`Missing HTML dependency ${match[1]}`);
+  if(!/^(https?:|data:)/.test(match[1]))assert(existsSync(join(root,match[1].split(/[?#]/,1)[0])),`Missing HTML dependency ${match[1]}`);
 }
 const fontCSS=readFileSync(join(root,'fonts.css'),'utf8');
 for(const match of fontCSS.matchAll(/url\('([^']+)'\)/g)){
