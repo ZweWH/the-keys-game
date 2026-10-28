@@ -13,19 +13,32 @@ const assert=(value,message)=>{if(!value)errors.push(message);};
 const data=context.window.KEYS_CONTENT;
 assert(data.five.missions.length===5,'Godot must explain five missions.');
 assert(data.eight.missions.length===8,'Unreal must explain eight missions.');
-assert(data.eight.missions[7].role==='Geotechnical Engineer','Eighth role must be Geotechnical Engineer.');
+assert(data.eight.missions[7].role==='Mechanical Engineer','The newest website brief uses Mechanical Engineer as role eight.');
 assert(data.five.missions.map(m=>m.id).join(',')==='bim,site,technical,planning,qaqc','Preserve the five playable mission IDs and order.');
-assert(data.eight.missions.map(m=>m.id).join(',')==='bim,site,technical,planning,qaqc,safety,quantity,geotechnical','Preserve the eight website mission IDs and role order.');
+assert(data.eight.missions.map(m=>m.id).join(',')==='bim,site,technical,planning,qaqc,safety,quantity,mechanical','Preserve the newest eight-role website order, including Mechanical Engineer.');
 for(const mission of data.five.missions){
   assert(mission.setting?.trim()&&mission.stage?.trim()&&mission.objective?.trim()&&mission.success?.trim(),`${mission.role}: playable mission brief needs its setting, objective and final check.`);
 }
 for(const mission of data.eight.missions){
   assert(mission.objective?.trim()&&mission.success?.trim(),`${mission.role}: proposed mission needs an objective and completion check.`);
   assert(mission.setting?.trim()&&mission.stage?.trim()&&mission.futureEffect?.trim(),`${mission.role}: proposed time-travel mission needs its place, review moment and future effect.`);
+  assert(/waterfall/i.test(mission.futureEffect||''),`${mission.role}: explain how the proposed correction helps restore the fictional waterfall.`);
   assert(mission.conceptSketch===true&&new RegExp(`^mission-sketch-${mission.id}-v\\d{3}\\.webp$`).test(mission.image),`${mission.role}: show its versioned mission concept sketch first.`);
   assert(/concept sketch/i.test(mission.alt)&&/CONCEPT SKETCH/.test(mission.caption)&&/PROPOSED MISSION/.test(mission.caption),`${mission.role}: concept artwork must be distinguished from gameplay.`);
 }
 assert(new Set(data.eight.missions.map(m=>m.image)).size===8,'Each Eight Keys mission needs its own sketch.');
+const missionText=id=>{
+  const mission=data.eight.missions.find(item=>item.id===id);
+  return [mission?.objective,mission?.description,...(mission?.actions||[]),mission?.success,mission?.futureEffect].filter(Boolean).join(' ');
+};
+const bimText=missionText('bim');
+assert([/shrink/i,/jetpack/i,/menu/i,/clash/i,/waterfall/i].every(pattern=>pattern.test(bimText)),'BIM must explain Shrink Jetpack inspection, clash identification, menu repair and its waterfall connection.');
+const siteText=missionText('site');
+assert([/timed|timer|time[- ]limit/i,/crane|lift/i,/equipment|component/i,/safe|safety|exclusion/i,/waterfall|water[- ]service/i].every(pattern=>pattern.test(siteText)),'Site must explain timed water-service equipment lifting with safety checks.');
+const planningText=missionText('planning');
+assert([/top[- ]down/i,/2\s*-?\s*d\b/i,/barrier/i,/arrow/i,/test|verif/i,/delivery|vehicle/i].every(pattern=>pattern.test(planningText)),'Planning must explain the top-down 2D diversion, barriers, arrows and delivery-route test.');
+const finaleText=[data.eight.storyText,...data.eight.steps.flat(),data.eight.prototype.pending].join(' ');
+assert([/eight unique keys/i,/balcony/i,/gear/i,/repair/i].every(pattern=>pattern.test(finaleText)),'The proposed finale still requires eight unique keys and the balcony gear repair.');
 for(const [edition,d] of Object.entries(data)){
   const ids=d.missions.map(m=>m.id);
   assert(new Set(ids).size===ids.length,`${edition}: mission IDs must be unique.`);

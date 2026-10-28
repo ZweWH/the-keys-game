@@ -1,0 +1,185 @@
+{
+  "version": "v056",
+  "date": "2026-10-28",
+  "status": "user_selected_website_design_not_unreal_implementation",
+  "scope": "Website mission descriptions and concept sketches; canonical game assets and earlier source records are not migrated by this publication.",
+  "decision": "User explicitly replaced Geotechnical Engineer with Mechanical Engineer as mission eight after the role-by-role interview.",
+  "sharedRequirements": [
+    "Each role has a proposed separate level; smooth loading is a target requiring implementation and measurement.",
+    "Every mission resolves a fictional waterfall cause or dependency.",
+    "Planning uses a top-down 2D phase map with placed barriers/arrows and a tested delivery vehicle.",
+    "Eight unique keys plus final balcony gear repair are required for restoration.",
+    "Keep group crew artwork; hide the three removed role prototype screenshot cards."
+  ],
+  "missionIDs": [
+    "bim",
+    "site",
+    "technical",
+    "planning",
+    "qaqc",
+    "safety",
+    "quantity",
+    "mechanical"
+  ],
+  "missions": [
+    {
+      "id": "bim",
+      "role": "BIM Coordinator",
+      "title": "Above the Water Route",
+      "setting": "A Jewel-inspired basement floor, beneath overhead M&E services — proposed separate level.",
+      "stage": "A fictional services-coordination review before installation is closed in.",
+      "objective": "Find and clear a clash between the fictional waterfall circulation pipe and an overhead duct using Shrink Jetpack mode.",
+      "description": "The waterfall needs a continuous, coordinated water-service route. Shrink, launch the jetpack and inspect the overhead services. Find where the circulation pipe crosses the duct, open its interaction menu and select a supplied repair. Inspect the revised crossing before confirming it.",
+      "actions": [
+        "Follow the highlighted waterfall circulation pipe through the basement services.",
+        "Use Shrink Jetpack mode to locate the pipe–duct clash and open its interaction menu.",
+        "Select the supplied repair that clears the crossing and preserves marked inspection access."
+      ],
+      "success": "The fictional waterfall-service route clears the duct and marked access zone; the player inspects the repaired crossing and verifies it.",
+      "futureEffect": "The waterfall circulation route is coordinated before installation, removing a fictional clash that would leave the water-service system incomplete.",
+      "learning": "BIM coordination connects spatial information with the service a building needs; a selected repair still needs verification.",
+      "tag": "SHRINK. FLY. FIND THE WATER-SERVICE CLASH.",
+      "alt": "AI-generated concept sketch: a tiny BIM Coordinator uses Shrink Jetpack mode to find a fictional waterfall circulation pipe–duct clash and select a repair from an interaction menu."
+    },
+    {
+      "id": "site",
+      "role": "Site Engineer",
+      "title": "Lift the Waterfall System",
+      "setting": "A fictional M&E delivery and lifting area serving Jewel’s waterfall plant — proposed separate level.",
+      "stage": "A construction installation phase before the waterfall-service package is commissioned.",
+      "objective": "Complete several timed crane lifts of the waterfall pump unit and service-pipe assemblies into their marked installation positions, with safety required for every lift.",
+      "description": "The water-service equipment has arrived, but it still needs to reach its installation positions. Read the supplied lift brief, check the marked work zone, then move each M&E load to its matching destination. A time limit adds pressure; an unsafe lift cannot count as success. The final lift count and time limit need playtesting.",
+      "actions": [
+        "Match the waterfall pump unit and service components to the supplied installation brief.",
+        "Check the marked exclusion zone, load path and safe access before enabling each lift.",
+        "Control the crane to position the loads within the training time limit; stop and recheck when a hazard appears."
+      ],
+      "success": "All required waterfall-service loads reach their correct marked positions with the supplied safety checks passed; the player verifies the completed placements. Unsafe lifts earn no completion or speed advantage.",
+      "futureEffect": "The waterfall pump unit and service-pipe assemblies reach their intended installation positions safely, resolving a fictional equipment-installation blocker.",
+      "learning": "Site delivery combines placement, coordination and safe decisions; beating a timer never replaces the required checks.",
+      "tag": "LIFT THE EQUIPMENT THE WATERFALL NEEDS.",
+      "alt": "AI-generated concept sketch: the Site Engineer manages timed crane lifts of a fictional waterfall pump unit and service-pipe assemblies into marked positions beside a protected work zone. Illustrated counts are provisional."
+    },
+    {
+      "id": "technical",
+      "role": "Technical Engineer",
+      "title": "Check the Right Information",
+      "setting": "A fictional waterfall-services model and drawing review station — proposed separate level.",
+      "stage": "An information review before equipment and service connections are released for installation.",
+      "objective": "Compare waterfall-equipment specifications and model information with the supplied training drawing, then correct the mismatches.",
+      "description": "The model and drawing do not agree on the water-service package. Compare the equipment identity, supplied specification and service-connection information. Use the current training drawing as evidence, select the corrections and recheck the set. This role checks information; the Mechanical Engineer later tests system behaviour.",
+      "actions": [
+        "Read the supplied training drawing and identify its current revision.",
+        "Compare the highlighted equipment specifications, model identifiers and connection information.",
+        "Correct the authored mismatches using the supplied evidence."
+      ],
+      "success": "The three authored information checks agree with the training drawing; the player rechecks and confirms the corrected information set.",
+      "futureEffect": "The waterfall-service package proceeds with consistent equipment and connection information, removing a fictional data mismatch that would obstruct correct commissioning.",
+      "learning": "Technical decisions need traceable evidence and the right revision, rather than assumptions based on a model’s appearance.",
+      "tag": "MAKE THE DRAWING AND MODEL AGREE.",
+      "alt": "AI-generated concept sketch: a Technical Engineer compares a fictional waterfall-service pump and connection identifiers with side-by-side training drawing and model data, correcting a highlighted mismatch."
+    },
+    {
+      "id": "planning",
+      "role": "Planning Engineer",
+      "title": "Keep the Delivery Moving",
+      "setting": "A top-down 2D map of a fictional Jewel construction access area — proposed separate level.",
+      "stage": "Changing construction phases close different work zones before waterfall-equipment delivery and commissioning.",
+      "objective": "Place barriers and route arrows to create a valid road diversion for each construction phase, then test a waterfall-equipment delivery vehicle.",
+      "description": "In this top-down 2D mission, a diversion has cut off the plant-access destination. On the 2D map, review the current construction phase and its closed work areas. Place barriers and route arrows to guide the delivery around them while retaining the supplied pedestrian and emergency routes. Run the test vehicle, inspect its journey and adjust the next phase’s plan.",
+      "actions": [
+        "Read the phase map, closed work zones and required access routes.",
+        "Place barriers and route arrows to connect the delivery entry with the waterfall plant-access destination.",
+        "Send the waterfall-equipment test vehicle through the diversion and revise any blocked or conflicting section."
+      ],
+      "success": "The test delivery reaches its marked destination in every supplied phase, without entering closed work areas or blocking the required pedestrian and emergency routes; the player verifies the plan.",
+      "futureEffect": "The waterfall-equipment delivery reaches the plant area before commissioning. Correct diversions resolve a fictional phase-planning dependency that left the water system unfinished.",
+      "learning": "A workable plan changes with construction phases and must be tested against access and delivery dependencies.",
+      "tag": "PLAN THE DETOUR. TEST THE DELIVERY.",
+      "alt": "AI-generated concept sketch of a top-down 2D Planning Engineer game: phase-specific work zones, placed barriers and route arrows guide a waterfall-equipment delivery truck to water services while preserving pedestrian and emergency routes."
+    },
+    {
+      "id": "qaqc",
+      "role": "QAQC Engineer",
+      "title": "Fix. Reinspect. Release.",
+      "setting": "A fictional waterfall-services installation inspection area — proposed separate level.",
+      "stage": "A quality review before the installation is released for its commissioning test.",
+      "objective": "Find the leaking connection, incomplete seal and incorrect equipment tag, choose the supplied fixes and reinspect before release.",
+      "description": "The installation looks nearly ready, but its authored training defects remain unresolved. Inspect the connection, seal and tag, record what is wrong and choose the supplied correction for each. A repair selection alone is not completion: return to each point and reinspect it.",
+      "actions": [
+        "Inspect the marked waterfall-service connection, seal and equipment tag.",
+        "Record the three fictional defects and choose the supplied corrections.",
+        "Reinspect each corrected point before requesting release."
+      ],
+      "success": "All three authored defects are corrected and the player completes the required reinspection before release.",
+      "futureEffect": "The waterfall-service installation passes its fictional quality reinspection, resolving connection, sealing and identification faults before commissioning.",
+      "learning": "Quality control closes the loop through recorded evidence and reinspection, rather than assuming a selected fix worked.",
+      "tag": "THE FIX IS ONLY HALF THE CHECK.",
+      "alt": "AI-generated concept sketch: a QAQC Engineer inspects a fictional waterfall-service installation with leaking-connection, incomplete-seal and incorrect-tag callouts, followed by fix and reinspection checks."
+    },
+    {
+      "id": "safety",
+      "role": "Safety Engineer",
+      "title": "Open a Safe Route",
+      "setting": "A fictional access route to the waterfall plant area — proposed separate level.",
+      "stage": "A site-access review before the equipment team is allowed through.",
+      "objective": "Identify missing edge protection, a blocked exit and lifting-zone intrusion; choose supplied controls and recheck access.",
+      "description": "The water-service team cannot proceed through an unsafe route. Inspect the marked access area, identify the authored hazards and select the supplied controls. Keep the route closed until the protected path and work-zone boundaries pass the training checks, then verify access for the team.",
+      "actions": [
+        "Find the unprotected edge, blocked exit and lifting-zone intrusion.",
+        "Choose the supplied controls and mark the protected access route.",
+        "Recheck the route and work-zone boundaries before reopening access."
+      ],
+      "success": "The authored hazards are controlled and the required protected access checks pass; the player verifies the route before reopening it.",
+      "futureEffect": "The team can safely reach the waterfall plant equipment through the reviewed training route, resolving a fictional access blocker that prevented the required work.",
+      "learning": "Safe access is a condition for work to proceed, not an optional shortcut when a task is urgent.",
+      "tag": "MAKE THE ROUTE READY FOR THE TEAM.",
+      "alt": "AI-generated concept sketch: a Safety Engineer checks a fictional waterfall plant-access route with missing edge protection, a blocked exit and lifting-zone intrusion, then selects controls and rechecks protected access."
+    },
+    {
+      "id": "quantity",
+      "role": "Quantity Surveyor",
+      "title": "Every Part Counts",
+      "setting": "A fictional waterfall-service quantity and procurement desk — proposed separate level.",
+      "stage": "A package review before the required pipes, fittings and equipment are ordered.",
+      "objective": "Measure the supplied waterfall-service package, calculate cost using provided rates and select a complete quotation within the training budget.",
+      "description": "A low total can hide a missing part. Take off the marked quantities from the drawing, check the units and calculate costs using the supplied fictional rates. Compare quotations on the same scope so the water-service package includes every required component and meets the training brief.",
+      "actions": [
+        "Measure the marked waterfall-service pipes, fittings and equipment from the supplied drawing.",
+        "Calculate the package cost using the provided units and fictional rates.",
+        "Compare like-for-like quotations for complete scope and the supplied training budget."
+      ],
+      "success": "The quantities, units, required components and training-budget checks all pass; the player verifies the complete selected package.",
+      "futureEffect": "The waterfall-service procurement package includes its required pipes, fittings and equipment, resolving a fictional missing-parts shortfall before installation.",
+      "learning": "Value depends on complete scope and the required specification, rather than choosing the lowest number alone.",
+      "tag": "COUNT THE PARTS. CHECK THE WHOLE PACKAGE.",
+      "alt": "AI-generated concept sketch: a Quantity Surveyor measures a fictional waterfall-service drawing, applies supplied rates and compares pipe, fitting and pump-package quotation sheets for missing components."
+    },
+    {
+      "id": "mechanical",
+      "role": "Mechanical Engineer",
+      "title": "Prove the Water Circuit",
+      "setting": "A fictional waterfall-service commissioning area with a contained test loop — proposed separate level.",
+      "stage": "A past functional test after the installation and information checks are complete.",
+      "objective": "Trace the simplified water circuit, diagnose a supplied pump or valve mismatch, select a correction and verify the contained test response.",
+      "description": "The package is installed, but the fictional circuit is not yet ready. Read the supplied status indicators and expected response, trace the pump, valve and control connections, then choose the reviewed correction. Run a contained loop test and compare the result. This proves past-system readiness; the present-day waterfall still waits for all eight keys and the balcony repair.",
+      "actions": [
+        "Trace the simplified fictional circuit and read the supplied expected test indicators.",
+        "Identify the authored pump, valve or control mismatch and choose the supplied correction.",
+        "Run the contained water-loop test and compare the observed indicators with the expected result."
+      ],
+      "success": "The contained test loop matches the supplied expected response and the player verifies readiness. This mission does not restore the main waterfall or replace the final balcony gear repair.",
+      "futureEffect": "The waterfall-service circuit is ready for its fictional commissioning handoff, resolving the final functional blocker in the past while preserving the present-day repair finale.",
+      "learning": "Commissioning verifies how a system responds, building on the team’s coordinated drawings, installation, access, quality and procurement work.",
+      "tag": "TRACE. CORRECT. TEST. VERIFY.",
+      "alt": "AI-generated concept sketch: a Mechanical Engineer diagnoses a fictional waterfall-service pump and valve circuit using supplied status indicators, selects a correction and verifies a contained loop test."
+    }
+  ],
+  "reviewGates": [
+    "Specialist and educator review of invented engineering/safety content and answer sets",
+    "Comparable scoring and timer/accessibility pilot",
+    "Separate level loading implementation and measurement",
+    "Editor and packaged Windows gameplay, physical-input and target-PC acceptance"
+  ],
+  "originalGameSourcesPreserved": true
+}

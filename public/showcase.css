@@ -99,3 +99,20 @@ body[data-edition="eight"] .story-image-wrap img { object-position: 63% center; 
 @media (max-width: 720px) {
   .crew-poster { width: 900px; }
 }
+
+.crew-mechanical-label {
+  position: absolute;
+  right: 1.8%;
+  top: 88%;
+  width: 9%;
+  height: 9%;
+  display: block;
+  padding-top: .5cqw;
+  background: #dcd8c7;
+  color: #064651;
+  font-family: var(--display);
+  font-size: 1.45cqw;
+  font-weight: 700;
+  line-height: 1.08;
+  text-align: center;
+}

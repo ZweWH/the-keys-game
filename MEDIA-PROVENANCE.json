@@ -13,7 +13,8 @@
     "v031 native stills come only from selected versioned evidence captures. Role-lab, saved-map NPC review-camera and controlled-role contexts are identified separately. They do not verify physical controls, complete animation cycles or packaged Windows gameplay.",
     "Five v046 derivatives show the current native environment, unchanged Portal Hub character and actual menu. The menu backdrop is approved illustration shown inside native UI, not a gameplay render. No raw portrait, private new-head model, BIM source delivery or real-life visitor photograph is published.",
     "Eight v054 AI-generated mission concept sketches now lead the Eight Keys role tabs. They illustrate fictional proposed puzzles, not completed game scenes or verified construction details; native captures remain separately labelled in the gallery.",
-    "28 October v055 adds the supplied upper-deck game screenshot and two clean native v046 upper-level views. These replace Eight Keys environment cover, story and gallery placements. Full frames and colours are preserved; no AI image alteration. The supplied screenshot retains its game HUD and has no independently verified scene version."
+    "28 October v055 adds the supplied upper-deck game screenshot and two clean native v046 upper-level views. These replace Eight Keys environment cover, story and gallery placements. Full frames and colours are preserved; no AI image alteration. The supplied screenshot retains its game HUD and has no independently verified scene version.",
+    "28 October v056 reflects the user’s completed role interview: eight waterfall-linked mission concepts, top-down 2D road diversions for Planning and Mechanical Engineer replacing Geotechnical in the proposed website roster. All eight new sketches are AI concept illustrations; exact layouts, values, reviewed answers, level loading and gameplay remain pending. Earlier v054 sources and game records are preserved. Crew v7 bytes are unchanged; Director and Mechanical Engineer are website HTML labels."
   ],
   "assets": [
     {
@@ -1482,6 +1483,262 @@
         "crop": null,
         "color_adjustments": false,
         "AI_image_alteration": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-bim-v056.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated waterfall mission concept sketch v056",
+      "sha256": "dda23b331c5251a697e9207f7e2ddfc667cd40a3b4530174abd075df549ac94d",
+      "bytes": 459034,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "bim: user-selected fictional waterfall mission concept, not implemented gameplay or a verified engineering/traffic plan.",
+      "source": {
+        "file": "notes/mission-sketches-v056/originals/bim-v056-original.png",
+        "sha256": "804a09fb1859e4a9095293672e379a336009300ada3c39ecaa01d06695494cc9",
+        "bytes": 3594881,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation and edit prompts retained in ignored notes"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-site-v056.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated waterfall mission concept sketch v056",
+      "sha256": "052f1b081fe85ff686055da77904d961795d53178604c3024f22bd7fb33a8df4",
+      "bytes": 449120,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "site: user-selected fictional waterfall mission concept, not implemented gameplay or a verified engineering/traffic plan.",
+      "source": {
+        "file": "notes/mission-sketches-v056/originals/site-v056-original.png",
+        "sha256": "8faa9fc1dc0e1bf0c8be6eb181e66c21665250cab1739b01b317738a2f89641f",
+        "bytes": 3417609,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation and edit prompts retained in ignored notes"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-technical-v056.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated waterfall mission concept sketch v056",
+      "sha256": "2f7748e5a6cebbc3c820a4adc1292da2f90433a84da1de3162cd27d86dff84d9",
+      "bytes": 406504,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "technical: user-selected fictional waterfall mission concept, not implemented gameplay or a verified engineering/traffic plan.",
+      "source": {
+        "file": "notes/mission-sketches-v056/originals/technical-final-v056.png",
+        "sha256": "a80f108dba3810920b5159e1fa57fef9b9fd52e0a4dd83a2d31599d9f380815b",
+        "bytes": 3062338,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation and edit prompts retained in ignored notes"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-planning-v056.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated waterfall mission concept sketch v056",
+      "sha256": "e3e8c5a9ad9d3b3c97e5a1a44bc47ccbc3bcdaec333bce257444b53894eecda0",
+      "bytes": 469778,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "planning: user-selected fictional waterfall mission concept, not implemented gameplay or a verified engineering/traffic plan.",
+      "source": {
+        "file": "notes/mission-sketches-v056/originals/planning-v056.png",
+        "sha256": "0ba98816c1ad20e9ad906bcca26b3a36cc0afecce55a3f7e86292a3af357e4c9",
+        "bytes": 3364243,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation and edit prompts retained in ignored notes"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-qaqc-v056.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated waterfall mission concept sketch v056",
+      "sha256": "e86afba5150e898f8b9ddc70ba9be2d04f429e9c80845ca54d2d8cc395ab5442",
+      "bytes": 452954,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "qaqc: user-selected fictional waterfall mission concept, not implemented gameplay or a verified engineering/traffic plan.",
+      "source": {
+        "file": "notes/mission-sketches-v056/originals/qaqc-v056.png",
+        "sha256": "59ad07ae9884e0879f6817c1abac215e4610d4c5c45dfa7c1eb3491954734034",
+        "bytes": 3369806,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation and edit prompts retained in ignored notes"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-safety-v056.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated waterfall mission concept sketch v056",
+      "sha256": "d35f4a372971680ddaa92888e672c65f3e00518c829cd10db5d590d901fa38b1",
+      "bytes": 451698,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "safety: user-selected fictional waterfall mission concept, not implemented gameplay or a verified engineering/traffic plan.",
+      "source": {
+        "file": "notes/mission-sketches-v056/originals/safety-v056.png",
+        "sha256": "1799634431f439980bb975d8910ef1210c3ddfa6ce3e652ec37d7ce5791ca35c",
+        "bytes": 3356552,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation and edit prompts retained in ignored notes"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-quantity-v056.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated waterfall mission concept sketch v056",
+      "sha256": "8dcff730942e42a808228789ebbeef9b582d4b9429c19a2845a273bb0d8a97c1",
+      "bytes": 469414,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "quantity: user-selected fictional waterfall mission concept, not implemented gameplay or a verified engineering/traffic plan.",
+      "source": {
+        "file": "notes/mission-sketches-v056/originals/quantity-v056.png",
+        "sha256": "b013ee81dec00f29ceef0d6728975412e0cf421c3ccf3147a2931ce63ab5f679",
+        "bytes": 3557070,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation and edit prompts retained in ignored notes"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/mission-sketch-mechanical-v056.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated waterfall mission concept sketch v056",
+      "sha256": "9e36bf62ac26ee6e7e1c0332dc52cc1e02ba75f78340383eb14a2ac437916d14",
+      "bytes": 436622,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "mechanical: user-selected fictional waterfall mission concept, not implemented gameplay or a verified engineering/traffic plan.",
+      "source": {
+        "file": "notes/mission-sketches-v056/originals/mechanical-v056.png",
+        "sha256": "7f4100926939ac6c3359aa1ba59f61faa7799c779fddd0736a229f9b12ed91af",
+        "bytes": 3393387,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation and edit prompts retained in ignored notes"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
       }
     }
   ]
