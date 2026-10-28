@@ -1,4 +1,3 @@
-/* Two-edition editorial data. Original game projects are separate. Updated 28 October 2026. */
 window.KEYS_CONTENT = {
   "five": {
     "name": "The Five Keys",
@@ -633,7 +632,7 @@ window.KEYS_CONTENT = {
       }
     ],
     "gameplayTitle": "EXPLORE TODAY.\nBUILD THE NEXT CHAPTER.",
-    "gameplayText": "See Jewel from its upper decks: follow the waterfall through the trees and look across the planted terraces. Open these game captures for a closer look, then explore the gallery for the guide, menu and role studies.",
+    "gameplayText": "See Jewel from its upper decks: follow the waterfall through the trees and look across the planted terraces. Open these game captures for a closer look, then explore the gallery for the Director, menu and environment views.",
     "showcase": {
       "label": "Jewel upper-deck environment views",
       "views": [
@@ -673,24 +672,6 @@ window.KEYS_CONTENT = {
         "Among the treetops",
         "Another native v046 upper-level viewpoint, with trees beside the waterfall and surrounding terraces, captured on 28 October 2026.",
         "UNREAL v046 · NATIVE UPPER-DECK CAPTURE"
-      ],
-      [
-        "v031-site-player.webp",
-        "A role to step into",
-        "Earlier controlled Site Engineer capture in the v031 PPVC prototype area. The new story uses generic training pieces; the full lifting puzzle is proposed.",
-        "EARLIER UNREAL v031 · ROLE PROTOTYPE"
-      ],
-      [
-        "v031-bim-jetpack.webp",
-        "Inspect from another angle",
-        "Earlier BIM Coordinator tiny-jetpack capture in an isolated v031 lab. It illustrates the movement study, not a finished mission.",
-        "EARLIER UNREAL v031 · ROLE LAB"
-      ],
-      [
-        "v031-geotechnical_engineer.webp",
-        "The final perspective",
-        "Earlier Geotechnical Engineer review-camera still. The ground-evidence puzzle remains proposed.",
-        "EARLIER UNREAL v031 · ROLE PROTOTYPE"
       ]
     ],
     "controls": [
@@ -743,11 +724,11 @@ window.KEYS_CONTENT = {
     "endLabel": "MEET THE PEOPLE BEHIND THE KEYS",
     "endTitle": "DIFFERENT ROLES.\nONE CREW.",
     "endText": "The Director meets eight role characters through the portals. The next chapter connects their different ways of thinking through one fictional construction timeline.",
-    "note": "Updated 28 October 2026. Current native v046 Jewel environment, hub character and UI are shown separately from AI-generated mission concept sketches and earlier v031 role studies. The time-travel puzzles, ordered unique keys, final door, gear repair and eight-role report remain proposed or in development. No Unreal browser launch, portable download, finished mission gameplay or measured exhibition performance is claimed.",
+    "note": "Updated 28 October 2026. Current native v046 Jewel environment, hub character and UI are shown separately from AI-generated mission concept sketches. The time-travel puzzles, ordered unique keys, final door, gear repair and eight-role report remain proposed or in development. No Unreal browser launch, portable download, finished mission gameplay or measured exhibition performance is claimed.",
     "heroCredit": "Native Unreal game capture\nJewel · Upper deck",
     "storyCaption": "Native v046 upper-deck capture · 28 October 2026. The flowing-water exploration is playable locally; the stopped-water time-travel story and finale are planned.",
     "controlsNote": "Default prototype bindings shown; Controls can remap action buttons. Keyboard/mouse and Xbox are detected automatically. Shrink before enabling the jetpack. Settings adjust movement and camera speeds; English is the current language. Xbox Y changes size and never restarts the journey.",
-    "galleryIntro": "Explore the upper decks through trees, waterfall and planted terraces. Discover the Director, current menu and earlier role studies below. Open an image to see the full view.",
-    "galleryLabel": "Upper-deck game captures · Current v046 guide + menu · Earlier v031 roles · Full mission puzzles proposed"
+    "galleryIntro": "Explore the upper decks through trees, waterfall and planted terraces. Discover the Director and current menu below. Open an image to see the full view.",
+    "galleryLabel": "Upper-deck game captures · Current v046 Director + menu · Full mission puzzles proposed"
   }
 };
