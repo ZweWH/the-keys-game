@@ -355,22 +355,22 @@ window.KEYS_CONTENT = {
     "hero": "v055-upper-deck-cover.webp",
     "heroAlt": "User-supplied Unreal game screenshot from Jewel’s upper deck, with the Director, dense trees and the flowing waterfall beyond the walkway.",
     "headline": "Change the past. Restore the flow.",
-    "description": "Travel into Jewel’s past. Solve eight role missions to bring the waterfall back.",
+    "description": "Planned for eight students on eight PCs. Take one role each and work together to restore the waterfall.",
     "primary": "See the missions",
-    "intro": "EIGHT ROLES.\nONE WATERFALL.",
-    "introText": "Explore Jewel with the Director. Eight planned role levels tell one story: fix the past to restore the waterfall. Separate levels and smooth loading still need work and testing.",
+    "intro": "EIGHT STUDENTS.\nONE TEAM.",
+    "introText": "One student. One PC. One role. Start together in different moments of Jewel’s past. Each mission earns one team key. Eight-player play and smooth loading are planned and still need testing.",
     "facts": [
       [
         "08",
-        "EXISTING PORTALS"
+        "STUDENTS"
       ],
       [
         "08",
-        "PLANNED MISSIONS"
+        "PCs"
       ],
       [
         "01",
-        "DIRECTOR"
+        "ROLE EACH"
       ]
     ],
     "prototype": {
@@ -379,7 +379,7 @@ window.KEYS_CONTENT = {
       "version": "v046",
       "eyebrow": "EXPLORATION BUILD SHOWN BELOW",
       "title": "EXPLORE\nJEWEL.",
-      "intro": "The v046 build shown here supports Jewel exploration, eight early role areas and return paths. The new mission designs below are separate from those early areas.",
+      "intro": "The v046 build shown here supports Jewel exploration, eight early role areas and return paths. These images do not show eight-player play. Team mode is planned.",
       "image": "v046-menu.webp",
       "alt": "Actual v046 home menu with New Game, Load Saved Game, Controls and Settings over the approved illustrated waterfall backdrop.",
       "caption": "v046 menu · Illustrated background, not a 3D game view",
@@ -409,30 +409,30 @@ window.KEYS_CONTENT = {
           "These images come from the saved Unreal exploration build. New missions are being built around the role ideas below."
         ]
       ],
-      "pending": "The full eight-mission game still needs work: separate levels, the 2D Planning game, scoring, unique-key awards and reports. Smooth loading is a goal, not a measured result. Eight unique keys open the final door; the balcony gear repair restores the waterfall. Mission answers and study guidance need review.",
+      "pending": "Eight-player joining, one role per student, shared progress and unique-key awards still need work and testing. The full missions, separate role levels, 2D Planning game and reports are in development. Smooth loading is a goal, not a measured result. Eight unique keys open the final door; the balcony gear repair restores the waterfall. Mission answers and study guidance need review.",
       "note": "Unreal browser play and a Windows download are not available here yet. The game runs in Unreal Editor. Windows build, keyboard/controller and target-PC performance tests are pending."
     },
     "storyLabel": "PLANNED STORY",
     "storyTitle": "GO BACK.\nFIX THE PAST.",
-    "storyText": "Jewel’s waterfall has stopped. A time rift leads to unfinished work in the past: a pipe clash, missing equipment and other problems. Enter eight portals, solve each role’s task and check your work to earn its key.",
+    "storyText": "Jewel’s waterfall has stopped. A time rift takes the team to different moments in the past. All eight students work at once: clear a pipe clash, move equipment and solve the other role tasks. Check each result to earn that role’s key for the team.",
     "storyNote": "This is a fictional story inspired by Jewel. Its faults, road plans, numbers and repairs are made for the game. Layouts and answers still need expert review. Each mission helps, but only the final balcony repair restores the waterfall.",
     "storyImage": "v055-upper-deck-waterfall.webp",
     "storyAlt": "Native Unreal v046 capture from the upper deck, looking past trees toward the waterfall, planted terraces and basin.",
     "steps": [
       [
-        "Enter a role level",
-        "Eight separate levels are planned. Smooth loading still needs testing."
+        "Choose one role each",
+        "Eight students take eight different roles. Everyone joins the same team and starts when all are ready."
       ],
       [
-        "Fix it and check it",
-        "Solve each waterfall task, check the result and earn its key once. Return to the Director before moving on."
+        "Work at the same time",
+        "Each student solves a task in a different moment of the past. Check the work and add one unique key to the team. Finish early? Share clues with a teammate."
       ],
       [
-        "Restore the waterfall",
-        "Collect eight unique keys, open the final door and reach the balcony. Repair the gear to restore the waterfall. Mechanical’s test alone does not restore it."
+        "Finish as one team",
+        "Eight unique keys open the final door. Complete the balcony gear repair to restore the waterfall. Mechanical’s small test alone does not restore it."
       ]
     ],
-    "missionIntro": "Choose a role to see its planned mission. These AI concept sketches show ideas, not gameplay. Planning uses a top-down 2D map.",
+    "missionIntro": "One student takes each role. All eight missions are planned to run at the same time. Choose a role to see its task. These AI sketches show ideas, not gameplay. Planning uses a top-down 2D map.",
     "missionLabel": "EIGHT PLANNED MISSIONS",
     "missions": [
       {
@@ -715,13 +715,74 @@ window.KEYS_CONTENT = {
     ],
     "endLabel": "MEET THE CREW",
     "endTitle": "EIGHT ROLES.\nONE TEAM.",
-    "endText": "Join the Director and eight role characters. Each planned mission helps solve the waterfall story.",
-    "note": "Game views show the v046 exploration build. AI sketches show planned missions. The full eight-mission game, keys, report and final repair are still in development. Loading speed and Windows release tests are pending.",
+    "endText": "Eight students take eight roles, guided by the Director. Each planned task adds to the same team’s progress.",
+    "note": "Game views show the v046 exploration build. AI sketches show mission ideas. Eight-player play, shared keys, reconnecting and event-PC performance are planned and untested. The full game, report, final repair and Windows release still need work and testing.",
     "heroCredit": "Unreal game view\nJewel · Upper deck",
     "storyCaption": "v046 game view · 28 October 2026. Exploration has flowing water; the stopped-water story and final repair are planned.",
     "controlsNote": "Default controls shown; action buttons can be changed in Controls. Keyboard/mouse and Xbox switch automatically. Shrink before using the jetpack. Settings change movement and camera speeds. English only for now. Xbox Y changes size; it never restarts the game.",
     "galleryIntro": "Explore the upper decks through trees, waterfall and planted terraces. Discover the Director and current menu below. Open an image to see the full view.",
     "galleryLabel": "Upper-deck game captures · Current v046 Director + menu · Full mission puzzles proposed",
-    "subtitle": "Echoes of Jewel"
+    "subtitle": "Echoes of Jewel",
+    "teamPlay": {
+      "label": "PLANNED TEAM MODE",
+      "title": "8 STUDENTS. 8 PCs.\nONE TEAM.",
+      "intro": "One student takes each role. Everyone starts together in a different moment of Jewel’s past. Check your work to add your role’s key to the team. Finish early? Help a teammate with clues.",
+      "networkTitle": "ONE LOCAL NETWORK",
+      "networkText": "Connect all eight PCs with network cables and a switch. One of the eight PCs hosts the game and plays a role. The other seven join it.",
+      "networkNote": "Example role layout. PC 1 hosts and plays. Allow switch ports for all eight PCs and any network uplink.",
+      "teamSteps": [
+        [
+          "Choose a role",
+          "One student per role. Staff check that all eight students are connected and ready."
+        ],
+        [
+          "Play together",
+          "Start all eight tasks together. Each screen is planned to show team progress and the shared key count."
+        ],
+        [
+          "Earn eight keys",
+          "Finish your task and check the result. Each role adds its key once. Share clues if a teammate needs help."
+        ],
+        [
+          "Restore the flow",
+          "Eight different keys open the final door. The team completes the balcony gear repair. Mechanical’s test does not replace it."
+        ]
+      ],
+      "eventTitle": "EVENT-DAY SETUP · PLANNED",
+      "eventSteps": [
+        [
+          "Prepare eight stations",
+          "Label each PC with its role. Give every student a screen, keyboard and mouse. Install the same tested Windows game version on all eight PCs before the event."
+        ],
+        [
+          "Connect the PCs",
+          "Use a venue-approved wired local network. Connect each PC to a network switch. Provide enough ports for eight PCs and any uplink."
+        ],
+        [
+          "Open one team game",
+          "Start the host on PC 1. Keep it running. Join the other seven PCs to that game. The host PC is also a student station."
+        ],
+        [
+          "Check and start",
+          "Staff check eight connections, eight different roles and working controls. Start when everyone is ready. Mission timers begin after students have control."
+        ],
+        [
+          "Help and finish",
+          "Staff watch team progress and help with questions or a lost connection. The team earns eight unique keys, opens the door and completes the balcony gear repair."
+        ],
+        [
+          "Reset for the next group",
+          "Staff end the round, clear that team’s roles, keys and results, then check all eight stations before the next start."
+        ]
+      ],
+      "testTitle": "TEST BEFORE THE EVENT",
+      "tests": [
+        "Run a full rehearsal on the eight event PCs. Check joining, controls, loading, frame rate and the team finish.",
+        "Test a joining PC losing its connection. Keeping its role and progress when it rejoins is a target still to build and test.",
+        "Test the host stopping. Staff need a recovery or clean-restart plan; automatic host recovery is not promised.",
+        "Test reset between groups. Set the round length after playtesting, with time for staff help and reset."
+      ],
+      "status": "Plan only. Eight-player joining, role selection, shared keys, reconnecting, staff reset and event-PC performance have not been verified. A Windows release is still pending."
+    }
   }
 };

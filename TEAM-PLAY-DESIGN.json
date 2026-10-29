@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-29",
+  "scope": "Eight Keys website plan; no game implementation is established by this file",
+  "title": "The Eight Keys: Echoes of Jewel",
+  "status": "planned; eight-PC play has not been verified",
+  "user_decisions": {
+    "students": 8,
+    "player_pcs": 8,
+    "students_per_role": 1,
+    "start": "All eight roles play at the same time",
+    "five_keys": "Keep unchanged"
+  },
+  "proposed_setup": {
+    "network": "Venue-approved wired local network with enough switch ports for eight PCs and any uplink",
+    "host": "One of the eight player PCs hosts and also plays; the other seven join",
+    "game_build": "Same tested Windows game version on all eight PCs; release testing is pending",
+    "staff": "Check stations and roles, start when all are ready, assist with recovery and reset between groups",
+    "shared_display": "Optional; not needed for the proposed eight-PC setup"
+  },
+  "role_ids": [
+    "bim_coordinator",
+    "site_engineer",
+    "technical_engineer",
+    "planning_engineer",
+    "qaqc_engineer",
+    "safety_engineer",
+    "quantity_surveyor",
+    "mechanical_engineer"
+  ],
+  "cooperative_rules": [
+    "One student owns each role slot; no duplicate roles",
+    "Players enter different moments of Jewel's past and can start their tasks together",
+    "Keep the ordered checks inside each mission; co-op replaces the cross-role serial unlock rule",
+    "Keep existing single-player progression separate and intact",
+    "Timers start only after the player has control; unsafe actions earn no speed advantage",
+    "Verified completion adds that role's unique key once to shared team progress",
+    "Finished players can share clues; balance tasks to reduce idle time",
+    "All eight unique keys open the final door; the balcony gear repair restores the waterfall",
+    "Mechanical tests a contained loop and cannot restore the main waterfall by itself"
+  ],
+  "review_and_test_targets": [
+    "Choose a multiplayer world and level-loading design; separate role views do not establish independently working network maps",
+    "Two-player proof before eight-PC trial; preserve existing BIM slice and existing game review gates",
+    "Join, role selection, shared key awards and late join",
+    "Duplicate completion cannot add a second key",
+    "Joining-PC disconnect and role/progress recovery",
+    "Host loss: explicit staff recovery or clean restart; no automatic host migration promise",
+    "Staff reset cannot carry one group's progress into the next",
+    "Inputs, loading and frame time on the actual event PCs with eight students",
+    "Round length and task balance set through playtests",
+    "Packaged acceptance remains pending; existing installer/toolchain/packaging hold is not lifted by this website request"
+  ]
+}
