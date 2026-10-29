@@ -624,7 +624,7 @@ window.KEYS_CONTENT = {
       }
     ],
     "gameplayTitle": "EXPLORE TODAY.\nBUILD THE NEXT CHAPTER.",
-    "gameplayText": "See Jewel from its upper decks: follow the waterfall through the trees and look across the planted terraces. Open these game captures for a closer look, then explore the gallery for the Director, menu and environment views.",
+    "gameplayText": "See Jewel from its upper decks: follow the waterfall through the trees and look across the planted terraces. Open these game captures for a closer look.",
     "showcase": {
       "label": "Jewel upper-deck environment views",
       "views": [

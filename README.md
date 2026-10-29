@@ -4,7 +4,7 @@
 
 A standalone static website for The Five Keys (Godot) and The Eight Keys (Unreal), prepared for a separate GitHub Pages repository.
 
-The two switchable editions contain their own story, all mission descriptions, controls and screenshot gallery. Five Keys also has gameplay videos; Eight Keys features a current Jewel environment showcase. Option 1 links to the existing [playable Godot browser demo](https://the-five-keys-demo.decent-bat-2665.chatgpt.site/). Option 2 clearly distinguishes the playable Unreal exploration prototype from its planned mission challenges.
+The two switchable editions contain their own story, all mission descriptions and controls. Five Keys also has a screenshot gallery and gameplay videos; Eight Keys features a current Jewel environment showcase. Option 1 links to the existing [playable Godot browser demo](https://the-five-keys-demo.decent-bat-2665.chatgpt.site/). Option 2 clearly distinguishes the playable Unreal exploration prototype from its planned mission challenges.
 
 The Five Keys **Your next step** section explains the planned student report-card handout, career exploration, suggested BCA Academy study options and role badge keepsakes. It includes the actual demonstration report interface and 3D previews of the five badge designs. Game strengths provide a starting point for exploration; the report is not a career aptitude assessment. The website's course suggestions are separate from the Godot game's existing generic course link.
 
@@ -43,9 +43,11 @@ All asset paths are relative. A repository project URL such as `https://OWNER.gi
 - `public/fonts.css` and `public/assets/fonts/`: self-hosted fonts and their SIL OFL licenses.
 - `MEDIA-PROVENANCE.json`: selected asset hashes, categories and limitations.
 
-Deep links: `?edition=five#missions` and `?edition=eight#gallery`. Arrow keys, Home and End switch edition/mission tabs; Escape closes media; Left/Right navigate gallery images.
+Deep links: `?edition=five#missions` and `?edition=eight#crew-title`. Arrow keys, Home and End switch edition/mission tabs; Escape closes media; Left/Right navigate gallery images.
 
 ## Content status
+
+On **29 October 2026**, the Eight Keys **05 / Through the Lens** section and its navigation link were hidden at the user's request. Its images and media data remain preserved for the current-prototype and environment-showcase viewers. Existing Eight Keys `#gallery` links return to the overview; Five Keys retains its gallery.
 
 The original Godot demo has five implemented mission mechanics. Four historical scripted-input gameplay recordings accompany the native screenshots. Its playable link, objectives, completion checks, action lists, controls, report and study-path suggestions are preserved. The 27 October website refresh adds each mission's setting, review stage and teamwork context; it does not modify the separate Godot game.
 
