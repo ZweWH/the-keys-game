@@ -116,3 +116,27 @@ body[data-edition="eight"] .story-image-wrap img { object-position: 63% center; 
   line-height: 1.08;
   text-align: center;
 }
+
+body[data-edition="eight"] .hero { min-height: 670px; }
+.hero h1 .hero-subtitle {
+  margin-top: 18px;
+  font-size: clamp(28px, 3.5vw, 46px);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: .02em;
+  text-transform: none;
+  color: var(--gold);
+}
+.edition-subtitle {
+  display: block;
+  margin-top: 5px;
+  font: 500 10px/1.2 var(--body);
+  letter-spacing: .3px;
+  color: var(--muted);
+}
+@media (max-width: 720px) {
+  body[data-edition="eight"] .hero { min-height: 700px; }
+  body[data-edition="eight"] .hero h1 { font-size: clamp(88px, 21vw, 120px); }
+  .hero h1 .hero-subtitle { margin-top: 14px; font-size: 30px; }
+  .edition-subtitle { margin-top: 4px; font-size: 9px; }
+}

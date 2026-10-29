@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#071b18">
-  <meta name="description" content="One world. Two adventures. Explore The Five Keys Godot demo and The Eight Keys Unreal development project: construction missions, gameplay and the crew behind the keys.">
-  <meta property="og:title" content="The Keys — A Woh Hup construction adventure">
-  <meta property="og:description" content="Discover the roles. Follow the portals. Bring the waterfall back to life.">
+  <meta name="description" content="Play The Five Keys demo or discover The Eight Keys: Echoes of Jewel, a game in development.">
+  <meta property="og:title" content="The Keys — Two adventures">
+  <meta property="og:description" content="Play The Five Keys demo or discover The Eight Keys: Echoes of Jewel, a game in development.">
   <meta property="og:type" content="website">
   <title>The Keys — Five Keys & Eight Keys</title>
   <link rel="icon" href="assets/key.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="outcomes.css">
-  <link rel="stylesheet" href="showcase.css?v=20261028-missions-v056">
+  <link rel="stylesheet" href="showcase.css?v=20261029-echoes">
   <link rel="preload" href="assets/v055-upper-deck-cover.webp" as="image">
-  <script src="content.js?v=20261029-hide-eight-gallery" defer></script>
-  <script src="app.js?v=20261029-hide-eight-gallery" defer></script>
+  <script src="content.js?v=20261029-echoes" defer></script>
+  <script src="app.js?v=20261029-echoes" defer></script>
 </head>
 <body data-edition="eight">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -28,16 +28,16 @@
     <span class="edition-label">CHOOSE YOUR ADVENTURE</span>
     <div class="edition-tabs" role="tablist" aria-label="Game version">
       <button id="tab-five" class="edition-tab" type="button" role="tab" aria-selected="false" aria-controls="edition-panel" tabindex="-1" data-edition="five"><span class="option-label">OPTION 01</span><span>The Five Keys <small>GODOT</small></span></button>
-      <button id="tab-eight" class="edition-tab" type="button" role="tab" aria-selected="true" aria-controls="edition-panel" tabindex="0" data-edition="eight"><span class="option-label">OPTION 02</span><span>The Eight Keys <small>UNREAL</small></span></button>
+      <button id="tab-eight" class="edition-tab" type="button" role="tab" aria-selected="true" aria-controls="edition-panel" tabindex="0" data-edition="eight" aria-label="OPTION 02 The Eight Keys: Echoes of Jewel UNREAL"><span class="option-label">OPTION 02 · UNREAL</span><span>The Eight Keys<span class="edition-subtitle">Echoes of Jewel</span></span></button>
     </div>
   </div>
   <main id="main">
     <div id="edition-panel" role="tabpanel" aria-labelledby="tab-eight" tabindex="0"></div>
-    <noscript><div class="noscript"><h1>The Five Keys & The Eight Keys</h1><p>Enable JavaScript to switch adventures and explore the missions.</p><a href="https://the-five-keys-demo.decent-bat-2665.chatgpt.site/">Play The Five Keys browser demo</a></div></noscript>
+    <noscript><div class="noscript"><h1>The Five Keys & The Eight Keys: Echoes of Jewel</h1><p>Enable JavaScript to switch adventures and explore the missions.</p><a href="https://the-five-keys-demo.decent-bat-2665.chatgpt.site/">Play The Five Keys browser demo</a></div></noscript>
   </main>
   <footer class="site-footer">
     <div class="footer-top"><a class="footer-wordmark" href="#overview">ONE TEAM.<br><span>EVERY KEY.</span></a><div><p>A digital construction adventure<br>for BCAA Open House 2027.</p><p class="muted">Explore the people who build our world.</p></div><a class="back-top" href="#overview" aria-label="Back to top">↑</a></div>
-    <div class="footer-bottom"><span>WOH HUP · THE KEYS PROJECT</span><div><button type="button" data-switch="five">Option 01 / Godot</button><button type="button" data-switch="eight">Option 02 / Unreal</button></div><span>Fictional training scenarios.</span></div>
+    <div class="footer-bottom"><span>WOH HUP · THE KEYS PROJECT</span><div><button type="button" data-switch="five">Option 01 / Godot</button><button type="button" data-switch="eight">Option 02 / Unreal</button></div><span>Fictional game challenges.</span></div>
   </footer>
   <dialog id="media-dialog" aria-labelledby="media-title"><div class="dialog-head"><div><span id="media-kind" class="eyebrow"></span><h2 id="media-title"></h2></div><button id="close-dialog" class="icon-button" type="button" aria-label="Close media">✕</button></div><div id="media-body"></div><div class="dialog-foot"><p id="media-caption" aria-live="polite"></p><div id="image-navigation"><button id="previous-image" class="icon-button" type="button" aria-label="Previous screenshot">←</button><span id="image-count"></span><button id="next-image" class="icon-button" type="button" aria-label="Next screenshot">→</button></div></div></dialog>
   <div class="sr-only" id="edition-announcement" role="status" aria-live="polite"></div>

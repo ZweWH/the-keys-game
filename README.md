@@ -4,6 +4,8 @@
 
 A standalone static website for The Five Keys (Godot) and The Eight Keys (Unreal), prepared for a separate GitHub Pages repository.
 
+The Eight Keys website title is **The Eight Keys: Echoes of Jewel**, with the tagline **Change the past. Restore the flow.** This name is used in its hero, edition selector, page title and metadata. It is a website change; game project names and source assets are unchanged. The Five Keys keeps its name and game rules. Both editions use shorter, simpler website copy from the 29 October 2026 wording pass; mission IDs, media, controls, play links, Five Keys objectives/completion checks and course links are preserved.
+
 The two switchable editions contain their own story, all mission descriptions and controls. Five Keys also has a screenshot gallery and gameplay videos; Eight Keys features a current Jewel environment showcase. Option 1 links to the existing [playable Godot browser demo](https://the-five-keys-demo.decent-bat-2665.chatgpt.site/). Option 2 clearly distinguishes the playable Unreal exploration prototype from its planned mission challenges.
 
 The Five Keys **Your next step** section explains the planned student report-card handout, career exploration, suggested BCA Academy study options and role badge keepsakes. It includes the actual demonstration report interface and 3D previews of the five badge designs. Game strengths provide a starting point for exploration; the report is not a career aptitude assessment. The website's course suggestions are separate from the Godot game's existing generic course link.
