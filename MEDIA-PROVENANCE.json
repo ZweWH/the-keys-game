@@ -14,7 +14,8 @@
     "Five v046 derivatives show the current native environment, unchanged Portal Hub character and actual menu. The menu backdrop is approved illustration shown inside native UI, not a gameplay render. No raw portrait, private new-head model, BIM source delivery or real-life visitor photograph is published.",
     "Eight v054 AI-generated mission concept sketches now lead the Eight Keys role tabs. They illustrate fictional proposed puzzles, not completed game scenes or verified construction details; native captures remain separately labelled in the gallery.",
     "28 October v055 adds the supplied upper-deck game screenshot and two clean native v046 upper-level views. These replace Eight Keys environment cover, story and gallery placements. Full frames and colours are preserved; no AI image alteration. The supplied screenshot retains its game HUD and has no independently verified scene version.",
-    "28 October v056 reflects the user’s completed role interview: eight waterfall-linked mission concepts, top-down 2D road diversions for Planning and Mechanical Engineer replacing Geotechnical in the proposed website roster. All eight new sketches are AI concept illustrations; exact layouts, values, reviewed answers, level loading and gameplay remain pending. Earlier v054 sources and game records are preserved. Crew v7 bytes are unchanged; Director and Mechanical Engineer are website HTML labels."
+    "28 October v056 reflects the user’s completed role interview: eight waterfall-linked mission concepts, top-down 2D road diversions for Planning and Mechanical Engineer replacing Geotechnical in the proposed website roster. All eight new sketches are AI concept illustrations; exact layouts, values, reviewed answers, level loading and gameplay remain pending. Earlier v054 sources and game records are preserved. Crew v7 bytes are unchanged; Director and Mechanical Engineer are website HTML labels.",
+    "29 October v062 website concept artwork supports the revised user plan: one Director host plus eight student PCs, a shared time machine, return watches, eight returned role keys and the Director secret-door hidden button. The lower arrival-terrace placement and event room are proposals, not measured game/venue layouts. AI concepts are separate from native game captures; original media and game assets are preserved."
   ],
   "assets": [
     {
@@ -1729,6 +1730,102 @@
           941
         ],
         "method": "built-in image_gen; exact generation and edit prompts retained in ignored notes"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/time-machine-location-v062.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated time-machine story and event concept sketch v062",
+      "sha256": "9f2af59a0c934f2018a7bd41af924575434ff01b24efc4f0915ad2289a6b284a",
+      "bytes": 535186,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Time-machine location proposal beside the lower Jewel arrival terrace; eight launch pads and the Director console.",
+      "source": {
+        "file": "notes/time-machine-20261029/originals/location-original.png",
+        "sha256": "a880e1a4481980dfba7a3bbd25240bd77aaf59a7e7b2dcf4b9889fc6812d8b89",
+        "bytes": 3782970,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation/edit prompts retained in notes/time-machine-20261029"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/time-watch-story-v062.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated time-machine story and event concept sketch v062",
+      "sha256": "a6ecc4753efcab79dd9874d312b2e094d891a416d9ef4372c6f7f1e67edca4be",
+      "bytes": 318186,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Four-panel game story idea: checked mission, return watch, key handover and Director hidden-button finale.",
+      "source": {
+        "file": "notes/time-machine-20261029/originals/story-original.png",
+        "sha256": "15416590fabe93137463464f21ed3be565b8ea8251aadb7689ac93c5953968fa",
+        "bytes": 2705473,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation/edit prompts retained in notes/time-machine-20261029"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/nine-pc-event-v062.webp",
+      "edition": "eight-keys",
+      "kind": "AI-generated time-machine story and event concept sketch v062",
+      "sha256": "98c758f57ee07f2e7fbcb4afdfaae29dd44497a7ef7bcfdc07242e2a7f2fdfa9",
+      "bytes": 410696,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Imagined nine-PC event layout: Director host plus eight student stations; not a verified venue.",
+      "source": {
+        "file": "notes/time-machine-20261029/originals/event-nine-pc-original.png",
+        "sha256": "60216721a6b1e732fbbeb26a99a89c999af5cb301005a47436c9a41057047574",
+        "bytes": 3183321,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "method": "built-in image_gen; exact generation/edit prompts retained in notes/time-machine-20261029"
       },
       "transform": {
         "format": "webp",

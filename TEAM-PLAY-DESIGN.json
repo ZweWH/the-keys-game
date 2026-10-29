@@ -1,53 +1,133 @@
 {
   "date": "2026-10-29",
-  "scope": "Eight Keys website plan; no game implementation is established by this file",
+  "revision": "time-machine-nine-pc",
   "title": "The Eight Keys: Echoes of Jewel",
-  "status": "planned; eight-PC play has not been verified",
+  "scope": "Newest user-selected website story and multiplayer design reference; no gameplay is implemented by this document",
+  "status": "planned; nine-PC play and travel are unverified",
+  "supersedes": [
+    "Earlier one-of-eight-student-PCs host setup",
+    "Role portals as the planned travel method",
+    "Mandatory balcony gear repair as the revised team finale"
+  ],
   "user_decisions": {
+    "leader": 1,
+    "director_hosts": true,
+    "director_player_pcs": 1,
     "students": 8,
-    "player_pcs": 8,
+    "student_pcs": 8,
+    "total_player_pcs": 9,
     "students_per_role": 1,
-    "start": "All eight roles play at the same time",
-    "five_keys": "Keep unchanged"
+    "explore_present_first": true,
+    "travel": "One shared time machine activated by the Director",
+    "return": "A watch after each verified mission awards its unique key",
+    "finale": "Director receives eight different returned keys, opens the secret door and presses a hidden button to restore the waterfall",
+    "five_keys": "Unchanged"
+  },
+  "proposed_location": {
+    "name": "Off the main lower arrival terrace near the Rain Vortex basin",
+    "basis": "Existing native v046-jewel-arrival.webp broad paved approach",
+    "source_capture": "assets/v046-jewel-arrival.webp",
+    "machine": "Game-authored open deck with eight marked launch pads and a separate Director console",
+    "review": "Exact footprint, support, nine-character space, collision and clear access need in-game review; no actual installed machine or measured fit is claimed"
   },
   "proposed_setup": {
-    "network": "Venue-approved wired local network with enough switch ports for eight PCs and any uplink",
-    "host": "One of the eight player PCs hosts and also plays; the other seven join",
-    "game_build": "Same tested Windows game version on all eight PCs; release testing is pending",
-    "staff": "Check stations and roles, start when all are ready, assist with recovery and reset between groups",
-    "shared_display": "Optional; not needed for the proposed eight-PC setup"
+    "network": "Venue-approved wired LAN, nine PC connections plus any uplink",
+    "host": "Director PC hosts and renders the Director player; eight student PCs join",
+    "game_build": "Same tested Windows game version on all nine stations; release testing remains pending",
+    "staff": "Check roles and controls, oversee free exploration and launch, assist with recovery and reset between groups"
   },
-  "role_ids": [
-    "bim_coordinator",
-    "site_engineer",
-    "technical_engineer",
-    "planning_engineer",
-    "qaqc_engineer",
-    "safety_engineer",
-    "quantity_surveyor",
-    "mechanical_engineer"
+  "stations": [
+    {
+      "pc": 1,
+      "role": "Director",
+      "roleID": "portal_hub",
+      "host": true,
+      "player": "Leader"
+    },
+    {
+      "pc": 2,
+      "role": "BIM Coordinator",
+      "roleID": "bim_coordinator",
+      "host": false,
+      "player": "One student"
+    },
+    {
+      "pc": 3,
+      "role": "Site Engineer",
+      "roleID": "site_engineer",
+      "host": false,
+      "player": "One student"
+    },
+    {
+      "pc": 4,
+      "role": "Technical Engineer",
+      "roleID": "technical_engineer",
+      "host": false,
+      "player": "One student"
+    },
+    {
+      "pc": 5,
+      "role": "Planning Engineer",
+      "roleID": "planning_engineer",
+      "host": false,
+      "player": "One student"
+    },
+    {
+      "pc": 6,
+      "role": "QAQC Engineer",
+      "roleID": "qaqc_engineer",
+      "host": false,
+      "player": "One student"
+    },
+    {
+      "pc": 7,
+      "role": "Safety Engineer",
+      "roleID": "safety_engineer",
+      "host": false,
+      "player": "One student"
+    },
+    {
+      "pc": 8,
+      "role": "Quantity Surveyor",
+      "roleID": "quantity_surveyor",
+      "host": false,
+      "player": "One student"
+    },
+    {
+      "pc": 9,
+      "role": "Mechanical Engineer",
+      "roleID": "mechanical_engineer",
+      "host": false,
+      "player": "One student"
+    }
   ],
   "cooperative_rules": [
-    "One student owns each role slot; no duplicate roles",
-    "Players enter different moments of Jewel's past and can start their tasks together",
-    "Keep the ordered checks inside each mission; co-op replaces the cross-role serial unlock rule",
-    "Keep existing single-player progression separate and intact",
-    "Timers start only after the player has control; unsafe actions earn no speed advantage",
-    "Verified completion adds that role's unique key once to shared team progress",
-    "Finished players can share clues; balance tasks to reduce idle time",
-    "All eight unique keys open the final door; the balcony gear repair restores the waterfall",
-    "Mechanical tests a contained loop and cannot restore the main waterfall by itself"
+    "All nine players can explore present-day Jewel before the Director gathers the team",
+    "Director remains present while eight students travel to different construction moments",
+    "Director must see all eight role slots ready and launch students from eight pads",
+    "Keep each mission’s ordered checks, movement boundaries and safety gates; preserve existing single-player progression separately",
+    "Mission timers start after control returns in the past; normal and skipped scenes settle to the same state",
+    "Verified completion awards one role key and unlocks its watch return",
+    "The host validates key award, watch travel and returned-key handover; no duplicate awards from replays, reconnects or repeated handover",
+    "Track earned keys separately from the eight unique keys actually returned to the Director",
+    "A rescue or early return never grants a key or completion",
+    "Director tracks role states, offers clues, accepts returned keys and leads the final action",
+    "Early finishers can explore present-day Jewel and share clues",
+    "Only Director can launch, open the final door with eight returned role keys and press the hidden button",
+    "Mechanical tests a contained loop and cannot restore the main waterfall",
+    "Director retains stable ID portal_hub; Mechanical is mechanical_engineer; geotechnical_engineer remains legacy only"
   ],
   "review_and_test_targets": [
-    "Choose a multiplayer world and level-loading design; separate role views do not establish independently working network maps",
-    "Two-player proof before eight-PC trial; preserve existing BIM slice and existing game review gates",
-    "Join, role selection, shared key awards and late join",
-    "Duplicate completion cannot add a second key",
-    "Joining-PC disconnect and role/progress recovery",
-    "Host loss: explicit staff recovery or clean restart; no automatic host migration promise",
-    "Staff reset cannot carry one group's progress into the next",
-    "Inputs, loading and frame time on the actual event PCs with eight students",
-    "Round length and task balance set through playtests",
-    "Packaged acceptance remains pending; existing installer/toolchain/packaging hold is not lifted by this website request"
-  ]
+    "Choose a practical multiplayer world/level-loading design; separate past missions are not automatically independent network maps",
+    "Preserve current BIM slice and review gates; architecture and small two-player proof before nine-PC trial",
+    "Join, role locks, shared exploration, ready check and Director-only launch",
+    "Travel scene normal/skip parity, watch input, safe return spawn and input handoff",
+    "Unique key awards, key handover, repeated return, late join and student reconnect",
+    "Director host loss: staff recovery or clean restart; no automatic host migration promise",
+    "Staff reset clears the previous group’s roles, watches, earned/returned keys, finale and results",
+    "Actual nine-PC frame time/loading, role balance and round length",
+    "Packaging prerequisites and packaged tests remain on hold; this website request does not resume toolchain work"
+  ],
+  "preserved": "Historical portal/gear assets, existing game evidence, raw model sources and the separate Godot project remain untouched",
+  "artwork": "Three built-in image_gen concepts v062; source prompts and originals under ignored notes/time-machine-20261029; assets are not gameplay or measured venue/engineering plans"
 }

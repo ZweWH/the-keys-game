@@ -38,11 +38,17 @@ assert([/timed|timer|time[- ]limit/i,/crane|lift/i,/equipment|component/i,/safe|
 const planningText=missionText('planning');
 assert([/top[- ]down/i,/2\s*-?\s*d\b/i,/barrier/i,/arrow/i,/test|verif/i,/delivery|vehicle/i].every(pattern=>pattern.test(planningText)),'Planning must explain the top-down 2D diversion, barriers, arrows and delivery-route test.');
 const finaleText=[data.eight.storyText,...data.eight.steps.flat(),data.eight.prototype.pending].join(' ');
-assert([/eight unique keys/i,/balcony/i,/gear/i,/repair/i].every(pattern=>pattern.test(finaleText)),'The proposed finale still requires eight unique keys and the balcony gear repair.');
+assert([/eight unique keys/i,/returned/i,/director/i,/secret door/i,/hidden button/i].every(pattern=>pattern.test(finaleText)),'The revised finale needs eight unique returned keys, the Director, secret door and hidden button.');
+assert(!/\bportal\b|balcony gear/i.test(finaleText),'The revised Eight Keys journey uses the time machine and hidden button.');
+const stations=data.eight.teamPlay?.stations||[];
+assert(stations.length===9&&stations.filter(s=>s.host).length===1,'Planned setup needs nine PCs with exactly one host.');
+assert(stations.find(s=>s.host)?.role==='Director'&&stations.filter(s=>!s.host).length===8,'The Director hosts and eight student roles join.');
+assert(stations.filter(s=>!s.host).map(s=>s.role).join(',')===data.eight.missions.map(m=>m.role).join(','),'Student PC roles must match the eight missions.');
+assert(/time machine/i.test(finaleText)&&/watch/i.test(finaleText),'The revised story needs time-machine travel and watch returns.');
 for(const [edition,d] of Object.entries(data)){
   const ids=d.missions.map(m=>m.id);
   assert(new Set(ids).size===ids.length,`${edition}: mission IDs must be unique.`);
-  const assets=[d.hero,d.storyImage,d.prototype?.image,...(d.showcase?.views||[]),...d.gallery.map(g=>g[0]),...d.missions.map(m=>m.image),...(d.videos||[d.video]).filter(Boolean).flatMap(v=>[v.src,v.poster])].filter(Boolean);
+  const assets=[d.hero,d.storyImage,d.prototype?.image,...(d.showcase?.views||[]),...d.gallery.map(g=>g[0]),...d.missions.map(m=>m.image),...(d.storyConcepts||[]).map(c=>c.image),d.teamPlay?.eventConcept?.image,...(d.videos||[d.video]).filter(Boolean).flatMap(v=>[v.src,v.poster])].filter(Boolean);
   for(const name of assets)assert(existsSync(join(root,'assets',name)),`${edition}: missing asset ${name}`);
   for(const name of d.showcase?.views||[])assert(d.gallery.some(item=>item[0]===name),`${edition}: showcase view must open an existing gallery image: ${name}`);
   if(d.prototype){

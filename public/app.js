@@ -80,17 +80,27 @@
     </section>`;
   }
 
+  function conceptCard(concept) {
+    return `<figure class="plan-concept"><button type="button" class="plan-concept-image" data-concept="${escape(concept.id)}" aria-label="Enlarge plan sketch: ${escape(concept.title)}"><img src="${asset(concept.image)}" alt="${escape(concept.alt)}" width="1600" height="900" loading="lazy"><span>${escape(concept.caption)} · ENLARGE ↗</span></button><figcaption><h3>${escape(concept.title)}</h3><p>${escape(concept.text)}</p></figcaption></figure>`;
+  }
+
+  function storyConcepts(data) {
+    if (!data.storyConcepts) return '';
+    return `<div class="story-concepts" aria-label="Planned story concept sketches">${data.storyConcepts.map(conceptCard).join('')}</div>`;
+  }
+
   function teamPlaySection(data) {
     const team = data.teamPlay;
     if (!team) return '';
     return `<section class="chapter team-play" id="team-play" aria-labelledby="team-play-title">
       <div class="chapter-number">TEAM PLAY / PLANNED</div>
       <div class="team-heading"><div><span class="eyebrow">${escape(team.label)}</span><h2 class="display" id="team-play-title">${lines(team.title)}</h2></div><div><p class="body-copy">${escape(team.intro)}</p><a class="text-link" href="#event-setup">See the event setup <span aria-hidden="true">↓</span></a></div></div>
-      <figure class="team-network" aria-labelledby="team-network-title"><div class="team-network-core"><span class="eyebrow">PLANNED WIRED SETUP</span><h3 id="team-network-title">${escape(team.networkTitle)}</h3><p>${escape(team.networkText)}</p></div><ol class="team-stations">${data.missions.map((mission,i)=>`<li class="team-station${i === 0 ? ' team-host' : ''}"><span class="eyebrow">PC ${i+1}${i === 0 ? ' · HOST + PLAYER' : ' · PLAYER'}</span><strong>${escape(mission.role)}</strong><span>One student</span></li>`).join('')}</ol><figcaption>${escape(team.networkNote)}</figcaption></figure>
+      <figure class="team-network" aria-labelledby="team-network-title"><div class="team-network-core"><span class="eyebrow">PLANNED WIRED SETUP</span><h3 id="team-network-title">${escape(team.networkTitle)}</h3><p>${escape(team.networkText)}</p></div><ol class="team-stations">${team.stations.map(station=>`<li class="team-station${station.host ? ' team-host' : ''}"><span class="eyebrow">PC ${station.pc}${station.host ? ' · HOST + DIRECTOR' : ' · STUDENT'}</span><strong>${escape(station.role)}</strong><span>${escape(station.player)}</span></li>`).join('')}</ol><figcaption>${escape(team.networkNote)}</figcaption></figure>
+      <div class="team-director"><h3>${escape(team.directorTitle)}</h3><p>${escape(team.directorText)}</p></div>
       <ol class="team-round">${team.teamSteps.map(([title,text],i)=>`<li><span class="number">0${i+1}</span><h3>${escape(title)}</h3><p>${escape(text)}</p></li>`).join('')}</ol>
-      <div class="team-event" id="event-setup"><h3>${escape(team.eventTitle)}</h3><ol class="team-event-steps">${team.eventSteps.map(([title,text],i)=>`<li><span class="number">0${i+1}</span><div><h4>${escape(title)}</h4><p>${escape(text)}</p></div></li>`).join('')}</ol></div>
+      <div class="team-event" id="event-setup"><h3>${escape(team.eventTitle)}</h3>${conceptCard(team.eventConcept)}<ol class="team-event-steps">${team.eventSteps.map(([title,text],i)=>`<li><span class="number">0${i+1}</span><div><h4>${escape(title)}</h4><p>${escape(text)}</p></div></li>`).join('')}</ol></div>
       <div class="team-tests"><h3>${escape(team.testTitle)}</h3><ul>${team.tests.map(text=>`<li>${escape(text)}</li>`).join('')}</ul></div>
-      <p class="team-status"><strong>PLANNED · EIGHT-PC TEST PENDING</strong>${escape(team.status)}</p>
+      <p class="team-status"><strong>PLANNED · NINE-PC TEST PENDING</strong>${escape(team.status)}</p>
     </section>`;
   }
 
@@ -136,7 +146,7 @@
       <section class="chapter intro" aria-labelledby="intro-title"><div class="chapter-number">01 / ${data.label}</div><div class="intro-layout reveal"><h2 class="display" id="intro-title">${lines(data.intro)}</h2><div><p class="intro-copy">${data.introText}</p>${data.afterGame ? '<a class="outcomes-teaser" href="#next-chapter">Your report, study options & badge <span aria-hidden="true">↓</span></a>' : ''}</div></div><div class="facts">${data.facts.map(([value,label])=>`<div class="fact"><strong>${value}</strong><span>${label}</span></div>`).join('')}</div></section>
       ${teamPlaySection(data)}
       ${prototypeSection(data)}
-      <section class="chapter story" id="story" aria-labelledby="story-title"><div class="chapter-number">02 / THE STORY</div><div class="story-layout"><div class="reveal"><span class="eyebrow">${data.storyLabel}</span><h2 class="display" id="story-title">${lines(data.storyTitle)}</h2><p class="body-copy">${data.storyText}</p>${data.storyNote ? `<p class="story-note">${escape(data.storyNote)}</p>` : ''}</div><figure class="story-image-wrap reveal"><img src="${asset(data.storyImage)}" alt="${data.storyAlt}" width="1600" height="900" loading="lazy"><figcaption class="small-caption">${escape(data.storyCaption || '')}</figcaption></figure></div><div class="story-steps">${data.steps.map(([title,text],i)=>`<article class="story-step reveal"><span class="number">0${i+1}</span><h3>${title}</h3><p>${text}</p></article>`).join('')}</div></section>
+      <section class="chapter story" id="story" aria-labelledby="story-title"><div class="chapter-number">02 / THE STORY</div><div class="story-layout"><div class="reveal"><span class="eyebrow">${data.storyLabel}</span><h2 class="display" id="story-title">${lines(data.storyTitle)}</h2><p class="body-copy">${data.storyText}</p>${data.storyNote ? `<p class="story-note">${escape(data.storyNote)}</p>` : ''}</div><figure class="story-image-wrap reveal"><img src="${asset(data.storyImage)}" alt="${data.storyAlt}" width="1600" height="900" loading="lazy"><figcaption class="small-caption">${escape(data.storyCaption || '')}</figcaption></figure></div><div class="story-steps">${data.steps.map(([title,text],i)=>`<article class="story-step reveal"><span class="number">0${i+1}</span><h3>${title}</h3><p>${text}</p></article>`).join('')}</div>${storyConcepts(data)}</section>
       <section class="chapter missions" id="missions" aria-labelledby="missions-title"><div class="chapter-number">03 / ${data.missionLabel}</div><div class="section-head"><h2 id="missions-title" class="display">FIND YOUR ROLE.</h2><p>${data.missionIntro}</p></div><div class="mission-layout"><div class="mission-tabs" role="tablist" aria-label="${data.name} missions" aria-orientation="vertical">${data.missions.map((mission,i)=>`<button id="${missionID(id,i)}" type="button" class="mission-tab" role="tab" aria-controls="mission-panel" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}" data-mission="${i}"><span class="mission-index">0${i+1}</span><span>${mission.role}</span>${mission.isNew ? '<span class="new-tag">NEW</span>' : ''}<span class="mission-arrow" aria-hidden="true">↗</span></button>`).join('')}</div><div class="mission-panel" id="mission-panel" role="tabpanel" tabindex="0"></div></div></section>
       <section class="chapter gameplay" id="gameplay" aria-labelledby="gameplay-title"><div class="chapter-number">04 / ${id === 'five' ? 'PLAY THE ORIGINAL' : 'INSIDE DEVELOPMENT'}</div><div class="gameplay-layout"><div class="reveal"><h2 class="display" id="gameplay-title">${lines(data.gameplayTitle)}</h2><p class="body-copy">${data.gameplayText}</p>${id === 'five' ? playLink('Play in browser') : '<a class="button button-outline" href="#crew-title">Meet the crew <span aria-hidden="true">↓</span></a>'}</div><div id="video-area">${videoCard()}</div></div><details class="controls-details"><summary>Controls <span class="muted">Keyboard + mouse / Xbox</span></summary><div class="controls-grid">${data.controls.map(([action,key,pad])=>`<div class="control"><span>${action}</span>${key}<br><em>Xbox: ${pad}</em></div>`).join('')}</div><p class="controls-note">${escape(data.controlsNote || '')}</p></details></section>
       ${afterGameSection(data)}
@@ -159,6 +169,19 @@
   }
 
   function bindPanel() {
+    document.querySelectorAll('[data-concept]').forEach(button=>button.addEventListener('click',()=>{
+      const data = editions[current];
+      const concepts = [...(data.storyConcepts || []),data.teamPlay?.eventConcept].filter(Boolean);
+      const concept = concepts.find(item=>item.id === button.dataset.concept);
+      if (!concept) return;
+      lastMediaTrigger = button;
+      mediaKind.textContent = concept.caption;
+      mediaTitle.textContent = concept.title;
+      mediaCaption.textContent = `${concept.text} AI concept art, not gameplay or a verified venue plan.`;
+      imageNavigation.hidden = true;
+      mediaBody.innerHTML = `<img src="${asset(concept.image)}" alt="${escape(concept.alt)}">`;
+      dialog.showModal();
+    }));
     document.querySelectorAll('[data-mission]').forEach(tab=>{
       tab.addEventListener('click',()=>renderMission(Number(tab.dataset.mission)));
       tab.addEventListener('keydown',event=>{
