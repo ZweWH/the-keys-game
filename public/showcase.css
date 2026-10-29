@@ -156,12 +156,15 @@ body[data-edition="eight"] .hero { min-height: 670px; }
   letter-spacing: .3px;
   color: var(--muted);
 }
+.edition-tabs .edition-tab { padding-top: 10px; padding-bottom: 10px; }
+.edition-tab > .edition-tab-title { display: block; min-height: 42px; }
 @media (max-width: 720px) {
   body[data-edition="eight"] .hero { min-height: 700px; }
   body[data-edition="eight"] .hero h1 { font-size: clamp(88px, 21vw, 120px); }
   .hero h1 .hero-subtitle { margin-top: 14px; font-size: 30px; }
   .hero h1.jewel-game-title .hero-subtitle { margin-top: 14px; font-size: 52px; }
   .edition-subtitle { margin-top: 4px; font-size: 9px; }
+  .edition-tab > .edition-tab-title { min-height: 38px; }
 }
 
 .team-play { background: #102824; }
