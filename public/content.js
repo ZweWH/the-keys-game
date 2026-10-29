@@ -347,13 +347,13 @@ window.KEYS_CONTENT = {
     "galleryLabel": "Godot gameplay captures · Example report · 3D badge design previews"
   },
   "eight": {
-    "name": "The Eight Keys: Echoes of Jewel",
-    "word": "EIGHT",
+    "name": "JEWEL: THE LAST TIMELINE",
+    "word": "JEWEL",
     "engine": "Unreal",
     "label": "THE NEW ADVENTURE",
     "status": "UNREAL GAME · IN DEVELOPMENT",
-    "hero": "v055-upper-deck-cover.webp",
-    "heroAlt": "User-supplied Unreal game screenshot from Jewel’s upper deck, with the Director, dense trees and the flowing waterfall beyond the walkway.",
+    "hero": "jewel-home-menu-cover-v065.webp",
+    "heroAlt": "Approved Unreal home-menu illustration: the Director looks towards Jewel’s Rain Vortex from a planted terrace.",
     "headline": "Change the past. Restore the flow.",
     "description": "Planned for one Director and eight students on nine PCs. Travel back, bring home eight keys and restore the waterfall.",
     "primary": "See the missions",
@@ -380,9 +380,9 @@ window.KEYS_CONTENT = {
       "eyebrow": "EXPLORATION BUILD SHOWN BELOW",
       "title": "EXPLORE\nJEWEL.",
       "intro": "The v046 views show earlier Jewel exploration and role areas. The Director host, time machine, return watches and hidden-button ending below are planned; these captures do not show them working.",
-      "image": "v046-menu.webp",
-      "alt": "Actual v046 home menu with New Game, Load Saved Game, Controls and Settings over the approved illustrated waterfall backdrop.",
-      "caption": "v046 menu · Illustrated background, not a 3D game view",
+      "image": "v046-jewel-arrival.webp",
+      "alt": "Native v046 arrival view showing Jewel’s broad paved approach, trees and Rain Vortex basin.",
+      "caption": "Native v046 Jewel arrival view · Earlier exploration build",
       "features": [
         [
           "Menus and controls",
@@ -642,12 +642,6 @@ window.KEYS_CONTENT = {
         "UNREAL · NATIVE GAME CAPTURE"
       ],
       [
-        "v046-menu.webp",
-        "Begin your journey",
-        "The actual New Game, Load Saved Game, Controls and Settings menu. Its waterfall backdrop is approved illustration, not a 3D gameplay capture.",
-        "UNREAL v046 · ACTUAL MENU / ILLUSTRATED BACKDROP"
-      ],
-      [
         "v046-ny-exploration.webp",
         "Meet the Director",
         "The existing live Director character after New Game and cinematic skip. This is the current character in Jewel.",
@@ -664,6 +658,12 @@ window.KEYS_CONTENT = {
         "Among the treetops",
         "Another native v046 upper-level viewpoint, with trees beside the waterfall and surrounding terraces, captured on 28 October 2026.",
         "UNREAL v046 · NATIVE UPPER-DECK CAPTURE"
+      ],
+      [
+        "v046-jewel-arrival.webp",
+        "Arriving at Jewel",
+        "Native v046 arrival view. The broad paved approach faces the Rain Vortex basin.",
+        "UNREAL V046 · GAME VIEW"
       ]
     ],
     "controls": [
@@ -717,12 +717,12 @@ window.KEYS_CONTENT = {
     "endTitle": "ONE DIRECTOR.\nEIGHT ROLES.",
     "endText": "The leader plays the Director. Eight students play the role characters. One time machine sends them back; eight return watches bring the keys home.",
     "note": "Planned story and nine-PC setup. Native game views show earlier exploration; AI sketches show ideas. The time machine, Director launch, watch returns, key handover, secret door and hidden-button ending are not verified multiplayer features. Loading, reconnects, event-PC performance and Windows release tests are pending.",
-    "heroCredit": "Unreal game view\nJewel · Upper deck",
+    "heroCredit": "Unreal home-menu artwork\nIllustration · not gameplay",
     "storyCaption": "Existing v046 arrival view. Proposed machine site: beside this lower terrace, off the main path. No time machine is installed in this capture.",
     "controlsNote": "Default controls shown; action buttons can be changed in Controls. Keyboard/mouse and Xbox switch automatically. Shrink before using the jetpack. Settings change movement and camera speeds. English only for now. Xbox Y changes size; it never restarts the game.",
     "galleryIntro": "Explore the upper decks through trees, waterfall and planted terraces. Discover the Director and current menu below. Open an image to see the full view.",
     "galleryLabel": "Upper-deck game captures · Current v046 Director + menu · Full mission puzzles proposed",
-    "subtitle": "Echoes of Jewel",
+    "subtitle": "THE LAST\nTIMELINE",
     "teamPlay": {
       "label": "PLANNED · NINE-PLAYER TEAM MODE",
       "title": "ONE DIRECTOR.\nEIGHT STUDENTS.",

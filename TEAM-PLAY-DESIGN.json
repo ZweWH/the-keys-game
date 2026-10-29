@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
   "revision": "time-machine-nine-pc",
-  "title": "The Eight Keys: Echoes of Jewel",
+  "title": "JEWEL: THE LAST TIMELINE",
   "scope": "Newest user-selected website story and multiplayer design reference; no gameplay is implemented by this document",
   "status": "planned; nine-PC play and travel are unverified",
   "supersedes": [
@@ -129,5 +129,6 @@
     "Packaging prerequisites and packaged tests remain on hold; this website request does not resume toolchain work"
   ],
   "preserved": "Historical portal/gear assets, existing game evidence, raw model sources and the separate Godot project remain untouched",
-  "artwork": "Three built-in image_gen concepts v062; source prompts and originals under ignored notes/time-machine-20261029; assets are not gameplay or measured venue/engineering plans"
+  "artwork": "Three built-in image_gen concepts v062; source prompts and originals under ignored notes/time-machine-20261029; assets are not gameplay or measured venue/engineering plans",
+  "tagline": "Change the past. Restore the flow."
 }

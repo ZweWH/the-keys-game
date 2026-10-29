@@ -2,7 +2,7 @@
   "name": "the-keys-game",
   "version": "1.0.0",
   "private": true,
-  "description": "Two adventures, one showcase: The Five Keys and The Eight Keys.",
+  "description": "Two adventures, one showcase: The Five Keys and JEWEL: THE LAST TIMELINE.",
   "type": "module",
   "scripts": {
     "dev": "node scripts/serve.mjs",

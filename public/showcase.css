@@ -81,6 +81,20 @@ body[data-edition="eight"] .story-image-wrap img { object-position: 63% center; 
   position: relative;
   container-type: inline-size;
 }
+.crew-game-title {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .45cqw;
+  background: #dcd8c7;
+  color: #064651;
+}
+.crew-game-title strong { font: 800 2.55cqw/1.1 var(--display); }
+.crew-game-title > span { font: 600 1.15cqw/1.2 var(--body); }
 .crew-director-label {
   position: absolute;
   left: 2%;
@@ -127,6 +141,14 @@ body[data-edition="eight"] .hero { min-height: 670px; }
   text-transform: none;
   color: var(--gold);
 }
+.hero h1.jewel-game-title .hero-subtitle {
+  margin-top: 16px;
+  font-size: clamp(52px, 5.8vw, 82px);
+  font-weight: 800;
+  line-height: .96;
+  letter-spacing: -.01em;
+  color: var(--cream);
+}
 .edition-subtitle {
   display: block;
   margin-top: 5px;
@@ -138,6 +160,7 @@ body[data-edition="eight"] .hero { min-height: 670px; }
   body[data-edition="eight"] .hero { min-height: 700px; }
   body[data-edition="eight"] .hero h1 { font-size: clamp(88px, 21vw, 120px); }
   .hero h1 .hero-subtitle { margin-top: 14px; font-size: 30px; }
+  .hero h1.jewel-game-title .hero-subtitle { margin-top: 14px; font-size: 52px; }
   .edition-subtitle { margin-top: 4px; font-size: 9px; }
 }
 

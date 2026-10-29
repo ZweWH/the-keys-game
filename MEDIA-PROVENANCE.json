@@ -15,7 +15,8 @@
     "Eight v054 AI-generated mission concept sketches now lead the Eight Keys role tabs. They illustrate fictional proposed puzzles, not completed game scenes or verified construction details; native captures remain separately labelled in the gallery.",
     "28 October v055 adds the supplied upper-deck game screenshot and two clean native v046 upper-level views. These replace Eight Keys environment cover, story and gallery placements. Full frames and colours are preserved; no AI image alteration. The supplied screenshot retains its game HUD and has no independently verified scene version.",
     "28 October v056 reflects the user’s completed role interview: eight waterfall-linked mission concepts, top-down 2D road diversions for Planning and Mechanical Engineer replacing Geotechnical in the proposed website roster. All eight new sketches are AI concept illustrations; exact layouts, values, reviewed answers, level loading and gameplay remain pending. Earlier v054 sources and game records are preserved. Crew v7 bytes are unchanged; Director and Mechanical Engineer are website HTML labels.",
-    "29 October v062 website concept artwork supports the revised user plan: one Director host plus eight student PCs, a shared time machine, return watches, eight returned role keys and the Director secret-door hidden button. The lower arrival-terrace placement and event room are proposals, not measured game/venue layouts. AI concepts are separate from native game captures; original media and game assets are preserved."
+    "29 October v062 website concept artwork supports the revised user plan: one Director host plus eight student PCs, a shared time machine, return watches, eight returned role keys and the Director secret-door hidden button. The lower arrival-terrace placement and event room are proposals, not measured game/venue layouts. AI concepts are separate from native game captures; original media and game assets are preserved.",
+    "29 October title update: JEWEL: THE LAST TIMELINE keeps the tagline Change the past. Restore the flow. Its website cover uses the exact approved Unreal home-menu illustration, converted to WebP without repainting or colour edits. Earlier screenshots and media identities remain preserved; old menu-title captures are no longer linked from the current page. Five Keys is unchanged."
   ],
   "assets": [
     {
@@ -1836,6 +1837,41 @@
         "preserved_composition": true,
         "crop": null,
         "color_adjustments": false
+      }
+    },
+    {
+      "file": "assets/jewel-home-menu-cover-v065.webp",
+      "edition": "eight-keys",
+      "kind": "approved Unreal home-menu illustration derivative",
+      "sha256": "d0cd5cf9cd33e633e8ca09af88263ae2f2e3189aa7301607c79d6817c0920201",
+      "bytes": 406960,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Approved illustrated background used in the Unreal home menu. Website cover for JEWEL: THE LAST TIMELINE; not gameplay photography.",
+      "source": {
+        "file": "source-art/ui/menu-art-v039/NY_Back_Waterfall_Illustration_v039.png",
+        "sha256": "e257856352f9feefe0aaa651562a4c0d7a0bcf521540d85c92f7c75ab42f7ed7",
+        "bytes": 3054611,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "approval_receipt": "local-reference/menu-art-v039/selection.json",
+        "native_texture": "/Game/TheEightKeys/MenuBack_v037/UI/T_NY_Back_Waterfall_v037",
+        "local_copy": "notes/jewel-rebrand-20261029/originals/approved-game-menu-art.png"
+      },
+      "transform": {
+        "format": "webp",
+        "max_width": 1600,
+        "without_enlargement": true,
+        "quality": 88,
+        "effort": 6,
+        "preserved_composition": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
       }
     }
   ]
