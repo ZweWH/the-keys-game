@@ -132,6 +132,15 @@ body[data-edition="eight"] .story-image-wrap img { object-position: 63% center; 
 }
 
 body[data-edition="eight"] .hero { min-height: 670px; }
+body[data-edition="five"] .hero { min-height: 640px; }
+.hero h1 .five-game-subtitle {
+  margin-top: 20px;
+  font-size: clamp(24px, 2.5vw, 36px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: .04em;
+  color: var(--gold);
+}
 .hero h1 .hero-subtitle {
   margin-top: 18px;
   font-size: clamp(28px, 3.5vw, 46px);
@@ -160,6 +169,7 @@ body[data-edition="eight"] .hero { min-height: 670px; }
 .edition-tab > .edition-tab-title { display: block; min-height: 42px; }
 @media (max-width: 720px) {
   body[data-edition="eight"] .hero { min-height: 700px; }
+  body[data-edition="five"] .hero { min-height: 700px; }
   body[data-edition="eight"] .hero h1 { font-size: clamp(88px, 21vw, 120px); }
   .hero h1 .hero-subtitle { margin-top: 14px; font-size: 30px; }
   .hero h1.jewel-game-title .hero-subtitle { margin-top: 14px; font-size: 52px; }

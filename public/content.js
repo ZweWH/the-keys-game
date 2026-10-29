@@ -1,7 +1,8 @@
 window.KEYS_CONTENT = {
   "five": {
-    "name": "The Five Keys",
+    "name": "THE FIVE KEYS: BEYOND THE LOCK",
     "word": "FIVE",
+    "subtitle": "BEYOND THE LOCK",
     "engine": "Godot",
     "label": "THE ORIGINAL ADVENTURE",
     "status": "PLAYABLE BROWSER DEMO",
@@ -26,7 +27,7 @@ window.KEYS_CONTENT = {
         "WATERFALL TO RESTORE"
       ]
     ],
-    "storyLabel": "THE FIVE KEYS STORY",
+    "storyLabel": "BEYOND THE LOCK",
     "storyTitle": "BRING THE\nWATER BACK.",
     "storyText": "The waterfall has stopped. Follow five portals and solve each construction challenge to earn a key. Open the final door and bring the water back.",
     "storyImage": "godot-road.webp",
@@ -339,7 +340,7 @@ window.KEYS_CONTENT = {
     "endLabel": "YOUR FIRST KEY IS WAITING",
     "endTitle": "READY TO\nFIND YOUR ROLE?",
     "endText": "Five roles. Five keys. One shared adventure.",
-    "note": "The Five Keys is the original playable Godot demo. This website update does not change the game. Its defects and example numbers are fictional. Report handouts, study guidance and role badges are planned for the open house.",
+    "note": "THE FIVE KEYS: BEYOND THE LOCK is the website title for the original playable demo. The browser game and its captures keep their earlier title. Its defects and example numbers are fictional. Report handouts, study guidance and role badges are planned for the open house.",
     "heroCredit": "Actual Godot gameplay",
     "storyCaption": "Follow the portal road in the original Godot demo.",
     "controlsNote": "The crane uses a separate hoist control context. Follow the on-screen prompts. Desktop or laptop recommended.",

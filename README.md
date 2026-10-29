@@ -2,7 +2,9 @@
 
 [Live website](https://zwewh.github.io/the-keys-game/) · [Five Keys student outcomes](https://zwewh.github.io/the-keys-game/?edition=five#next-chapter)
 
-A standalone static website for The Five Keys (Godot) and JEWEL: THE LAST TIMELINE (Unreal), prepared for a separate GitHub Pages repository.
+A standalone static website for THE FIVE KEYS: BEYOND THE LOCK and JEWEL: THE LAST TIMELINE, prepared for a separate GitHub Pages repository.
+
+On **29 October 2026**, the user selected **THE FIVE KEYS: BEYOND THE LOCK** for the original demo’s website title, keeping The Five Keys as the main name. Its edition tab, hero subtitle, browser title, metadata and footer now use that name. The separate browser game, demo URL, missions, controls and media are unchanged; historical captures keep their earlier labels. Native game and workspace renames remain on hold. Earlier dated notes below describe previous website revisions.
 
 JEWEL: THE LAST TIMELINE website title is **JEWEL: THE LAST TIMELINE**, with the tagline **Change the past. Restore the flow.** This name is used in its hero, edition selector, page title and metadata. The title was selected on 29 October 2026. The latest rename request also covers the Unreal project; internal asset/save IDs remain compatibility identifiers. The Five Keys keeps its name and game rules. Both editions use shorter, simpler website copy from the 29 October 2026 wording pass; mission IDs, media, controls, play links, Five Keys objectives/completion checks and course links are preserved.
 
