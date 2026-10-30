@@ -356,18 +356,18 @@ window.KEYS_CONTENT = {
     "hero": "jewel-home-menu-cover-v065.webp",
     "heroAlt": "Approved Unreal home-menu illustration: the Director looks towards Jewel’s Rain Vortex from a planted terrace.",
     "headline": "Change the past. Restore the flow.",
-    "description": "Planned for one Director and eight students on nine PCs. Travel back, bring home eight keys and restore the waterfall.",
+    "description": "Planned for nine students on nine PCs. Travel back, bring home eight keys and restore the waterfall.",
     "primary": "See the missions",
-    "intro": "ONE DIRECTOR.\nEIGHT STUDENTS.",
-    "introText": "The leader hosts and plays the Director. Eight students join on eight other PCs. Explore Jewel together, then gather at one time machine. The Director sends the eight roles into the past.",
+    "intro": "NINE STUDENTS.\nONE TEAM.",
+    "introText": "A student team leader hosts and plays the Director. Eight other students join on their own PCs, one role each. Explore Jewel together, then travel back to help restore the waterfall.",
     "facts": [
       [
         "01",
-        "DIRECTOR / HOST"
+        "STUDENT DIRECTOR / HOST"
       ],
       [
         "08",
-        "STUDENTS"
+        "STUDENT ROLE PLAYERS"
       ],
       [
         "09",
@@ -407,22 +407,22 @@ window.KEYS_CONTENT = {
         ],
         [
           "Game views",
-          "These images come from the saved Unreal exploration build. New missions are being built around the role ideas below."
+          "These images come from the saved Unreal exploration build. The team missions below are planned."
         ]
       ],
       "pending": "The nine-PC team mode, Director launch controls, time machine, return watches, full missions, unique-key handover and final hidden button need work and testing. Eight unique keys returned to the Director open the secret door. The Director then presses the hidden button to restore the waterfall. Smooth loading, reports and mission answers still need testing or review.",
-      "note": "Unreal browser play and a Windows download are not available here yet. The game runs in Unreal Editor. Windows build, keyboard/controller and target-PC performance tests are pending."
+      "note": "Unreal browser play and a Windows download are not available here yet. A separate BIM mission slice passed editor tests using software inputs. Physical controls, nine-PC play and a Windows build still need testing."
     },
     "storyLabel": "PLANNED TIME-TRAVEL STORY",
     "storyTitle": "GO BACK.\nBRING THE KEYS HOME.",
-    "storyText": "Jewel’s waterfall has stopped. Explore with the Director, then step onto the time machine. The Director launches eight students into different moments of the past. Finish your role’s task, earn its key and press your watch to return. Bring all eight keys to the Director, who opens the secret door and presses the hidden button to restore the flow.",
+    "storyText": "Explore Jewel together while the waterfall flows. Then it stops. The Director launches eight students into different moments of the past. Finish and check your role’s task, earn its key and press your watch to return. Bring all eight keys to the Director, who opens the secret door and presses the hidden button to restore the flow.",
     "storyNote": "A fictional game story inspired by Jewel. The time machine, watches, faults, secret door and hidden control are game ideas. The machine location and nine-character space still need an in-game check. Mission answers and safe access need review.",
     "storyImage": "v046-jewel-arrival.webp",
     "storyAlt": "Native v046 Jewel arrival view: a broad paved approach facing the Rain Vortex basin, used to propose a time-machine location.",
     "steps": [
       [
         "Explore Jewel together",
-        "The Director and eight students begin in the present. Walk around, learn the controls and gather at the time machine."
+        "Nine students begin in the present. Walk around and learn the controls. Then the waterfall stops and the team gathers at the time machine."
       ],
       [
         "Go back. Earn a key. Return.",
@@ -433,7 +433,7 @@ window.KEYS_CONTENT = {
         "Eight unique keys returned to the Director unlock the secret door. On the Director’s PC, the leader enters and presses the hidden button. Everyone sees the waterfall return."
       ]
     ],
-    "missionIntro": "Eight students take eight roles and work in the past at the same time. Each checked mission earns one key and unlocks its watch return. These AI sketches show ideas, not gameplay. Planning uses a top-down 2D map.",
+    "missionIntro": "Eight students work on different missions at the same time. Share clues and help without waiting for another role to finish. Each checked mission earns one key and unlocks its watch return. These AI sketches show planned ideas; a separate BIM slice has passed editor tests.",
     "missionLabel": "EIGHT PLANNED MISSIONS",
     "missions": [
       {
@@ -716,7 +716,7 @@ window.KEYS_CONTENT = {
     ],
     "endLabel": "MEET THE CREW",
     "endTitle": "ONE DIRECTOR.\nEIGHT ROLES.",
-    "endText": "The leader plays the Director. Eight students play the role characters. One time machine sends them back; eight return watches bring the keys home.",
+    "endText": "A student leader plays the Director. Eight other students play the roles. One time machine sends them back; eight return watches bring the keys home.",
     "note": "Planned story and nine-PC setup. Native game views show earlier exploration; AI sketches show ideas. The time machine, Director launch, watch returns, key handover, secret door and hidden-button ending are not verified multiplayer features. Loading, reconnects, event-PC performance and Windows release tests are pending.",
     "heroCredit": "Unreal home-menu artwork\nIllustration · not gameplay",
     "storyCaption": "Existing v046 arrival view. Proposed machine site: beside this lower terrace, off the main path. No time machine is installed in this capture.",
@@ -726,8 +726,8 @@ window.KEYS_CONTENT = {
     "subtitle": "THE LAST\nTIMELINE",
     "teamPlay": {
       "label": "PLANNED · NINE-PLAYER TEAM MODE",
-      "title": "ONE DIRECTOR.\nEIGHT STUDENTS.",
-      "intro": "The leader plays the Director on the host PC. Eight students join on eight other PCs. Everyone can explore Jewel first. The Director stays in the present and runs the time machine while the students complete their missions.",
+      "title": "NINE STUDENTS.\nONE TEAM.",
+      "intro": "A student leader plays the Director on the host PC. Eight other students join on eight other PCs. Everyone explores Jewel first. The Director stays in the present while the others work on their missions. The target is 15–20 minutes for the round, including exploration and the ending; timing needs playtesting.",
       "networkTitle": "9 PCs. ONE LOCAL NETWORK.",
       "networkText": "Connect all nine PCs by network cable to a switch. PC 1 hosts and plays the Director. The eight student PCs join that same game.",
       "networkNote": "Example station plan: one Director host and eight student PCs. Allow nine PC connections plus any network uplink.",
@@ -737,7 +737,7 @@ window.KEYS_CONTENT = {
           "role": "Director",
           "roleID": "portal_hub",
           "host": true,
-          "player": "Leader"
+          "player": "Student leader"
         },
         {
           "pc": 2,
@@ -805,11 +805,11 @@ window.KEYS_CONTENT = {
         "text": "One Director host plus eight student PCs. This illustrated room is a setup idea, not the confirmed venue. Use the same tested build and a venue-approved wired network."
       },
       "directorTitle": "THE DIRECTOR’S JOB",
-      "directorText": "Guide the team, check all eight students are ready and start the time machine. Watch mission progress, send clues and receive returned keys. Early finishers can explore the present and help with clues. The Director opens the final door only after all eight different keys are back.",
+      "directorText": "The student leader guides the team, checks readiness and starts the time machine. Watch progress, share clues and receive the keys. Open the final door only after all eight different keys are back.",
       "teamSteps": [
         [
           "Explore the present",
-          "All nine players move around Jewel. The Director brings the eight students to the time machine."
+          "All nine students explore Jewel. The waterfall stops, and the Director brings the team to the time machine."
         ],
         [
           "Launch together",
@@ -817,7 +817,7 @@ window.KEYS_CONTENT = {
         ],
         [
           "Finish your mission",
-          "The eight roles reach different moments of the past and work at the same time. Complete the task and check the result to earn its unique key."
+          "The eight roles work at the same time. Share clues, ask for hints and retry without waiting for another mission. Complete and check your task to earn its unique key."
         ],
         [
           "Press the return watch",
@@ -825,18 +825,22 @@ window.KEYS_CONTENT = {
         ],
         [
           "Bring all eight keys home",
-          "Give each key to the Director. The team board tracks eight different returned keys. Returning twice cannot add another key."
+          "Give each key to the Director. A machine light and team board show each contribution. Early finishers can explore and share clues. Returning twice cannot add another key."
         ],
         [
           "Open the secret door",
-          "The Director takes the eight keys to the door and opens it. The leader presses the hidden button inside; every player sees the waterfall start again."
+          "The Director opens the door and presses the hidden button. Every player sees the waterfall return."
+        ],
+        [
+          "See what your team achieved",
+          "See the team’s eight contributions. Each role player sees their own result, not a ranking across roles they did not play. The 15–20 minute target needs testing."
         ]
       ],
       "eventTitle": "EVENT-DAY SETUP · PLANNED",
       "eventSteps": [
         [
           "Prepare nine stations",
-          "Set one leader PC as the Director host, plus eight student PCs. Give each station a screen, keyboard and mouse. Install the same tested Windows game version on all nine PCs."
+          "Set one student leader’s PC as the Director host, plus eight other student PCs. Give each station a screen, keyboard and mouse. Install the same tested Windows game version on all nine PCs."
         ],
         [
           "Connect the local network",

@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-29",
-  "revision": "time-machine-nine-pc",
+  "date": "2026-10-30",
+  "revision": "version-one-student-team",
   "title": "JEWEL: THE LAST TIMELINE",
   "scope": "Newest user-selected website story and multiplayer design reference; no gameplay is implemented by this document",
   "status": "planned; nine-PC play and travel are unverified",
@@ -11,13 +11,20 @@
   ],
   "user_decisions": {
     "leader": 1,
+    "leader_is_student": true,
     "director_hosts": true,
     "director_player_pcs": 1,
-    "students": 8,
+    "students": 9,
+    "student_role_players": 8,
     "student_pcs": 8,
     "total_player_pcs": 9,
     "students_per_role": 1,
     "explore_present_first": true,
+    "round_target_minutes": [15, 20],
+    "round_target_status": "Target only; measure by playtesting, including exploration and ending.",
+    "mission_dependency": "Work separately at the same time, sharing clues and optional help without waiting for another role.",
+    "proposed_opening": "Explore while the waterfall flows, then it stops in the fictional story.",
+    "extra_director_tasks": "Deferred until the core team round works reliably.",
     "travel": "One shared time machine activated by the Director",
     "return": "A watch after each verified mission awards its unique key",
     "finale": "Director receives eight different returned keys, opens the secret door and presses a hidden button to restore the waterfall",
@@ -32,7 +39,7 @@
   },
   "proposed_setup": {
     "network": "Venue-approved wired LAN, nine PC connections plus any uplink",
-    "host": "Director PC hosts and renders the Director player; eight student PCs join",
+    "host": "A student Director hosts on PC 1; eight other students join on their PCs",
     "game_build": "Same tested Windows game version on all nine stations; release testing remains pending",
     "staff": "Check roles and controls, oversee free exploration and launch, assist with recovery and reset between groups"
   },
@@ -42,7 +49,7 @@
       "role": "Director",
       "roleID": "portal_hub",
       "host": true,
-      "player": "Leader"
+      "player": "Student leader"
     },
     {
       "pc": 2,
@@ -102,8 +109,9 @@
     }
   ],
   "cooperative_rules": [
-    "All nine players can explore present-day Jewel before the Director gathers the team",
-    "Director remains present while eight students travel to different construction moments",
+    "All nine students can explore present-day Jewel before the Director gathers the team; the proposed opening shows the waterfall stop after exploration",
+    "The student Director remains present while eight other students travel to different construction moments and work concurrently",
+    "Missions work separately; share clues or optional help without waiting for another role to finish",
     "Director must see all eight role slots ready and launch students from eight pads",
     "Keep each mission’s ordered checks, movement boundaries and safety gates; preserve existing single-player progression separately",
     "Mission timers start after control returns in the past; normal and skipped scenes settle to the same state",
@@ -112,7 +120,8 @@
     "Track earned keys separately from the eight unique keys actually returned to the Director",
     "A rescue or early return never grants a key or completion",
     "Director tracks role states, offers clues, accepts returned keys and leads the final action",
-    "Early finishers can explore present-day Jewel and share clues",
+    "Early finishers can explore present-day Jewel and share clues; extra Director tasks are deferred",
+    "The planned results show team contributions and each role player's own result, not a ranking across unplayed roles",
     "Only Director can launch, open the final door with eight returned role keys and press the hidden button",
     "Mechanical tests a contained loop and cannot restore the main waterfall",
     "Director retains stable ID portal_hub; Mechanical is mechanical_engineer; geotechnical_engineer remains legacy only"
