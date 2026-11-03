@@ -352,280 +352,288 @@ window.KEYS_CONTENT = {
     "word": "JEWEL",
     "engine": "Unreal",
     "label": "THE NEW ADVENTURE",
-    "status": "UNREAL GAME · IN DEVELOPMENT",
+    "status": "UNREAL PROTOTYPE · LOCAL DEMONSTRATION",
     "hero": "jewel-home-menu-cover-v065.webp",
     "heroAlt": "Approved Unreal home-menu illustration: the Director looks towards Jewel’s Rain Vortex from a planted terrace.",
     "headline": "Change the past. Restore the flow.",
-    "description": "Planned for nine students on nine PCs. Travel back, bring home eight keys and restore the waterfall.",
+    "description": "Explore Jewel. Step into eight engineering roles. Check your work, bring the keys home and restore the flow.",
     "primary": "See the missions",
-    "intro": "NINE STUDENTS.\nONE TEAM.",
-    "introText": "A student team leader hosts and plays the Director. Eight other students join on their own PCs, one role each. Explore Jewel together, then travel back to help restore the waterfall.",
+    "intro": "EIGHT PERSPECTIVES.\nONE EXTRAORDINARY PLACE.",
+    "introText": "Meet the people behind a building. Investigate a hidden clash, guide a careful lift, test a water circuit and discover why every decision needs a final check.",
     "facts": [
       [
-        "01",
-        "STUDENT DIRECTOR / HOST"
+        "08",
+        "ENGINEERING ROLES"
       ],
       [
         "08",
-        "STUDENT ROLE PLAYERS"
+        "UNIQUE KEYS"
       ],
       [
-        "09",
-        "PCs IN TOTAL"
+        "01",
+        "SHARED FINALE"
       ]
     ],
     "prototype": {
-      "date": "2026-10-27",
-      "dateLabel": "27 OCTOBER 2026",
-      "version": "v046",
-      "eyebrow": "EXPLORATION BUILD SHOWN BELOW",
-      "title": "EXPLORE\nJEWEL.",
-      "intro": "The v046 views show earlier Jewel exploration and role areas. The Director host, time machine, return watches and hidden-button ending below are planned; these captures do not show them working.",
-      "image": "v046-jewel-arrival.webp",
-      "alt": "Native v046 arrival view showing Jewel’s broad paved approach, trees and Rain Vortex basin.",
-      "caption": "Native v046 Jewel arrival view · Earlier exploration build",
+      "date": "2026-11-04",
+      "dateLabel": "LOCAL PRESENTATION",
+      "version": "LOCAL DEMO",
+      "eyebrow": "TRY THE EXPERIENCE WITH A PRESENTER",
+      "title": "MEET A ROLE.\nTRY ITS MISSION.",
+      "intro": "The one-PC Presentation Demo begins with a cinematic view of Jewel and puts you in control of NY. Walk up to a role character and interact to enter its mission. Location and year titles introduce each destination before control returns.",
+      "image": "jewel-mission-bim.png",
+      "alt": "Actual BIM Coordination Lab mission introduction with location and year.",
+      "caption": "Actual mission introduction · The screenshots show the prototype bays, not final exhibition art.",
       "features": [
         [
-          "Menus and controls",
-          "New Game, Load Saved Game and ground-level exploration saves are available. Keyboard/mouse and Xbox switch automatically. Controls lets you change buttons; Settings adjusts movement and camera speeds. English only for now."
+          "Choose your next role",
+          "As NY, approach an available role character and press E or Xbox X. The mission uses its own normal tasks and completion checks."
         ],
         [
-          "Walk, shrink and fly",
-          "Hold Shift or LB to run. Double jump, crouch, shrink and zoom. In tiny mode, J or RB toggles the jetpack. F or D-pad Up gives an air dash."
+          "Keep the demonstration moving",
+          "Home offers Return to Director and Restart Current Mission. Restart Presentation asks for confirmation, then replays the opening and starts a fresh session."
         ],
         [
-          "Meet the Director",
-          "The Director guides present-day Jewel. Early role areas have character switches and return paths. These captures do not show the new mission puzzles or Mechanical role."
-        ],
-        [
-          "Jewel takes shape",
-          "Trees, terraces and service areas surround the flowing waterfall. Materials, planting and lighting are still being improved."
-        ],
-        [
-          "Sound and opening scene",
-          "The jetpack has its own sounds. The company song plays only in the menu. Finish or skip the opening camera scene to take control."
-        ],
-        [
-          "Game views",
-          "These images come from the saved Unreal exploration build. The team missions below are planned."
+          "Set the scene",
+          "The presentation begins with flowing water. Start or Stop Waterfall from Home → Presentation Controls; help and status stay in the menu."
         ]
       ],
-      "pending": "The nine-PC team mode, Director launch controls, time machine, return watches, full missions, unique-key handover and final hidden button need work and testing. Eight unique keys returned to the Director open the secret door. The Director then presses the hidden button to restore the waterfall. Smooth loading, reports and mission answers still need testing or review.",
-      "note": "Unreal browser play and a Windows download are not available here yet. A separate BIM mission slice passed editor tests using software inputs. Physical controls, nine-PC play and a Windows build still need testing."
+      "pending": "Team play is a separate round: eight earned keys must be watch-returned and handed over. Returning or restarting a role in the independent Presentation Demo does not collect team keys.",
+      "note": "The current Jewel demonstration runs locally with the presenter. An earlier public Windows preview is available, but it does not contain all features shown here. Jewel does not run in a browser.",
+      "availabilityUrl": "https://github.com/ZweWH/jewel-the-last-timeline-downloads/releases/tag/v089-windows-preview"
     },
-    "storyLabel": "PLANNED TIME-TRAVEL STORY",
-    "storyTitle": "GO BACK.\nBRING THE KEYS HOME.",
-    "storyText": "Explore Jewel together while the waterfall flows. Then it stops. The Director launches eight students into different moments of the past. Finish and check your role’s task, earn its key and press your watch to return. Bring all eight keys to the Director, who opens the secret door and presses the hidden button to restore the flow.",
-    "storyNote": "A fictional game story inspired by Jewel. The time machine, watches, faults, secret door and hidden control are game ideas. The machine location and nine-character space still need an in-game check. Mission answers and safe access need review.",
-    "storyImage": "v046-jewel-arrival.webp",
-    "storyAlt": "Native v046 Jewel arrival view: a broad paved approach facing the Rain Vortex basin, used to propose a time-machine location.",
+    "storyLabel": "A FICTIONAL ENGINEERING ADVENTURE",
+    "storyTitle": "CHANGE THE PAST.\nRESTORE THE FLOW.",
+    "storyText": "The waterfall’s future depends on work carried out across the construction timeline. Travel from the shared time machine into a role’s challenge. Repair, test and verify your work to earn its unique key. Use the return watch and bring the key back to the Director.",
+    "storyNote": "A fictional learning story inspired by Jewel. The faults, time machine, dates and secret controls are game devices, not a record of real project defects or construction dates.",
+    "storyImage": "jewel-opening-poster.png",
+    "storyAlt": "Actual opening video frame looking up towards the Rain Vortex inlet and Jewel roof.",
     "steps": [
       [
-        "Explore Jewel together",
-        "Nine students begin in the present. Walk around and learn the controls. Then the waterfall stops and the team gathers at the time machine."
+        "Explore the present",
+        "Discover Jewel with NY, the Director, before choosing a role and travelling into its challenge."
       ],
       [
-        "Go back. Earn a key. Return.",
-        "The Director launches the eight roles. Finish and check your task to earn its key. Press the return watch, then hand the key to the Director."
+        "Do the work. Prove it.",
+        "Every mission has its own checks. In the team round, earn a key, use the return watch and hand it to the Director."
       ],
       [
-        "The Director restores the flow",
-        "Eight unique keys returned to the Director unlock the secret door. On the Director’s PC, the leader enters and presses the hidden button. Everyone sees the waterfall return."
+        "Bring all eight keys home",
+        "Eight unique keys returned to the Director unlock the secret door. A separate hidden button restores the waterfall."
       ]
     ],
-    "missionIntro": "Eight students work on different missions at the same time. Share clues and help without waiting for another role to finish. Each checked mission earns one key and unlocks its watch return. These AI sketches show planned ideas; a separate BIM slice has passed editor tests.",
-    "missionLabel": "EIGHT PLANNED MISSIONS",
+    "missionIntro": "Choose a role to see its task, its checks and an actual mission-introduction image. These are focused prototype challenges: the goal is to understand a decision, then prove the work is ready.",
+    "missionLabel": "EIGHT PLAYABLE ROLE MISSIONS",
     "missions": [
       {
         "id": "bim",
         "role": "BIM Coordinator",
-        "title": "Clear the Pipe Clash",
-        "setting": "A planned Jewel basement level with overhead M&E services.",
-        "stage": "Before the services are covered up.",
-        "objective": "Use Shrink Jetpack mode to find and clear a clash between the waterfall pipe and an air duct.",
-        "description": "Shrink and fly along the waterfall pipe. Find where it crosses the duct, open the repair menu and choose a fix. Return to check the new pipe route and access space.",
+        "title": "Above the Water Route",
+        "setting": "BIM Coordination Lab",
+        "stage": "2015 · Fictional construction timeline",
+        "objective": "Find and repair the pipe–duct clash without blocking inspection access.",
+        "description": "Follow the circulation pipe, shrink and fly to inspect its crossing, then choose a route repair. A final physical check must confirm both clearance and access.",
         "actions": [
-          "Follow the marked waterfall pipe.",
-          "Use Shrink Jetpack mode to find the pipe–duct clash and open its menu.",
-          "Choose a repair that clears the duct and keeps inspection access open."
+          "Follow the circulation pipe; use shrink/jetpack inspection to reach the overhead crossing.",
+          "Inspect the pipe–duct clash and choose a supplied repair from its interaction menu.",
+          "Physically revisit and verify duct clearance and the reserved inspection access."
         ],
-        "success": "The pipe clears the duct and marked access space. Inspect the changed route to confirm the repair.",
-        "futureEffect": "The waterfall pipe has a clear route, so the water services can be installed.",
-        "learning": "Fit services together, then check the repaired space.",
+        "success": "The repaired pipe clears the duct and reserved access space, and both are separately verified.",
+        "futureEffect": "A clear, accessible service route supports the fictional waterfall system.",
+        "learning": "A route is not coordinated until both clearance and access are checked.",
         "tag": "SHRINK. FLY. CLEAR THE CLASH.",
-        "alt": "AI-generated concept sketch: a tiny BIM Coordinator uses Shrink Jetpack mode to find a fictional waterfall circulation pipe–duct clash and select a repair from an interaction menu.",
-        "image": "mission-sketch-bim-v056.webp",
-        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
+        "alt": "Actual Unreal mission introduction: BIM Coordination Lab, 2015, showing the prototype BIM Coordinator training bay.",
+        "image": "jewel-mission-bim.png",
+        "caption": "ACTUAL UNREAL · MISSION INTRODUCTION · ENLARGE ↗",
         "storyID": "bim_coordinator",
-        "conceptSketch": true
+        "conceptSketch": false,
+        "mediaKind": "UNREAL · MISSION INTRODUCTION",
+        "isNew": false
       },
       {
         "id": "site",
         "role": "Site Engineer",
-        "title": "Lift the Equipment",
-        "setting": "A planned lifting area for waterfall pumps and service pipes.",
-        "stage": "Before the water system is tested.",
-        "objective": "Complete timed crane lifts of waterfall pump equipment and service pipes. Pass the safety checks before every lift.",
-        "description": "Read the lift plan, check the work zone and move each load to its marked place. Stop if a hazard appears. Unsafe lifts earn no success or speed advantage. Lift count and time limit still need playtesting.",
+        "title": "Lift the Waterfall System",
+        "setting": "Equipment Lifting Bay",
+        "stage": "2016 · Fictional construction timeline",
+        "objective": "Prepare and carry out a controlled pump lift.",
+        "description": "Match the pump to its pad, secure the lift zone and recheck the path. Stop at the obstruction, clear it and recheck before resuming.",
         "actions": [
-          "Match each pump unit and service component to the lift plan.",
-          "Check the lift zone, load path and safe access before each lift.",
-          "Move each load within the time limit. Stop and recheck if a hazard appears."
+          "Read the lift brief and match the pump to its destination pad.",
+          "Prepare the exclusion gate and load path and independently recheck them.",
+          "Raise and move the pump with the crane controls. At the authored obstruction, Stop, clear and recheck before Resume.",
+          "Lower onto the correct supported pad, then separately verify physical placement."
         ],
-        "success": "Every load is safely placed and checked. Unsafe lifts earn no completion or speed advantage.",
-        "futureEffect": "The waterfall pumps and service pipes reach the right places safely, ready for installation.",
-        "learning": "Plan each lift and keep people safe, even under time pressure.",
+        "success": "The correct pump is supported on its destination pad and its final placement is separately verified.",
+        "futureEffect": "The waterfall equipment reaches its supported installation point.",
+        "learning": "Safe preparation, controlled movement and final verification are separate decisions.",
         "tag": "CHECK. LIFT. PLACE SAFELY.",
-        "alt": "AI-generated concept sketch: the Site Engineer manages timed crane lifts of a fictional waterfall pump unit and service-pipe assemblies into marked positions beside a protected work zone. Illustrated counts are provisional.",
-        "image": "mission-sketch-site-v056.webp",
-        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
+        "alt": "Actual Unreal mission introduction: Equipment Lifting Bay, 2016, showing the prototype Site Engineer training bay.",
+        "image": "jewel-mission-site.png",
+        "caption": "ACTUAL UNREAL · MISSION INTRODUCTION · ENLARGE ↗",
         "storyID": "site_engineer",
-        "conceptSketch": true
+        "conceptSketch": false,
+        "mediaKind": "UNREAL · MISSION INTRODUCTION",
+        "isNew": false
       },
       {
         "id": "technical",
         "role": "Technical Engineer",
-        "title": "Check the Details",
-        "setting": "A planned model and drawing desk for waterfall equipment.",
-        "stage": "Before equipment is installed.",
-        "objective": "Compare waterfall-equipment specifications and model data with the training drawing. Fix the details that do not match.",
-        "description": "Check equipment IDs, specifications and connections against the supplied drawing. Fix the three data errors and check them again. Mechanical later tests how the system works.",
+        "title": "Check the Right Information",
+        "setting": "Drawing Review Bay",
+        "stage": "2015 · Fictional construction timeline",
+        "objective": "Bring three equipment records into agreement with the supplied drawing.",
+        "description": "Read the current drawing revision. Correct the equipment identity, specification and outlet connection, then recheck each current record.",
         "actions": [
-          "Read the training drawing and check its revision.",
-          "Compare equipment specifications, IDs and connections.",
-          "Use the drawing to fix the mismatches."
+          "Read supplied fictional drawing JEWEL-TRAIN-TEC-001 at current revision R03.",
+          "Compare and correct equipment identity, specification and outlet connection records.",
+          "Separately recheck the three current records; a subsequent edit invalidates that record’s prior check."
         ],
-        "success": "All three checks match the drawing. Review the corrected data before finishing.",
-        "futureEffect": "Correct equipment and connection details help the waterfall system pass its later tests.",
-        "learning": "Use the right drawing to check model data.",
+        "success": "All three records match the supplied drawing and have a current independent recheck.",
+        "futureEffect": "Consistent information helps the waterfall equipment connect as intended.",
+        "learning": "Correct information must be consistent, current and checked.",
         "tag": "MAKE THE MODEL MATCH.",
-        "alt": "AI-generated concept sketch: a Technical Engineer compares a fictional waterfall-service pump and connection identifiers with side-by-side training drawing and model data, correcting a highlighted mismatch.",
-        "image": "mission-sketch-technical-v056.webp",
-        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
+        "alt": "Actual Unreal mission introduction: Drawing Review Bay, 2015, showing the prototype Technical Engineer training bay.",
+        "image": "jewel-mission-technical.png",
+        "caption": "ACTUAL UNREAL · MISSION INTRODUCTION · ENLARGE ↗",
         "storyID": "technical_engineer",
-        "conceptSketch": true
+        "conceptSketch": false,
+        "mediaKind": "UNREAL · MISSION INTRODUCTION",
+        "isNew": false
       },
       {
         "id": "planning",
         "role": "Planning Engineer",
-        "title": "Plan the Delivery Route",
-        "setting": "A planned top-down 2D map of Jewel’s site roads.",
-        "stage": "Roads change as each building phase begins.",
-        "objective": "Place barriers and route arrows for each phase. Test a delivery vehicle carrying waterfall equipment.",
-        "description": "Work areas block the usual delivery route. On a top-down 2D map, place barriers and arrows to guide the truck around them. Keep walking and emergency routes open. Test the route and change the plan for the next phase.",
+        "title": "Keep the Delivery Moving",
+        "setting": "Site Access Control",
+        "stage": "2016 · Fictional construction timeline",
+        "objective": "Keep a delivery moving around a closed work zone.",
+        "description": "Use the top-down board to place two barriers and four arrows. Preserve pedestrian and emergency access, then run the delivery vehicle and improve the plan.",
         "actions": [
-          "Read the phase map, closed areas and required access routes.",
-          "Place barriers and route arrows from the entry to the delivery point.",
-          "Test the waterfall-equipment vehicle and fix any blocked or unsafe section."
+          "Read the one authored phase and its closed work zone.",
+          "Place two barriers and four direction arrows independently while protecting pedestrian and emergency strips.",
+          "Verify the layout and run the actual delivery vehicle trial.",
+          "Observe failure or arrival, revise/retest as needed, then separately compare and verify the unchanged successful plan."
         ],
-        "success": "The truck reaches its target in every phase. It avoids closed areas and keeps pedestrian and emergency routes open. Check the plan before finishing.",
-        "futureEffect": "Waterfall equipment reaches the site in time for installation and testing.",
-        "learning": "Adjust the road plan as the site changes, then test it.",
+        "success": "The actual vehicle reaches its destination and the unchanged successful plan is separately verified.",
+        "futureEffect": "A checked delivery route helps essential waterfall equipment reach the work area.",
+        "learning": "A delivery route must work without blocking other essential access.",
         "tag": "PLAN THE ROUTE. TEST THE TRUCK.",
-        "alt": "AI-generated concept sketch of a top-down 2D Planning Engineer game: phase-specific work zones, placed barriers and route arrows guide a waterfall-equipment delivery truck to water services while preserving pedestrian and emergency routes.",
-        "image": "mission-sketch-planning-v056.webp",
-        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
+        "alt": "Actual Unreal mission introduction: Site Access Control, 2016, showing the prototype Planning Engineer training bay.",
+        "image": "jewel-mission-planning.png",
+        "caption": "ACTUAL UNREAL · MISSION INTRODUCTION · ENLARGE ↗",
         "storyID": "planning_engineer",
-        "conceptSketch": true
+        "conceptSketch": false,
+        "mediaKind": "UNREAL · MISSION INTRODUCTION",
+        "isNew": false
       },
       {
         "id": "qaqc",
         "role": "QAQC Engineer",
-        "title": "Find and Check Repairs",
-        "setting": "A planned inspection area for waterfall services.",
-        "stage": "Before the installed services are tested.",
-        "objective": "Find a leaking connection, an incomplete seal and a wrong equipment tag. Choose fixes, then reinspect.",
-        "description": "Inspect the connection, seal and tag. Record each fault and choose a fix. Return to all three points to check the repairs before release.",
+        "title": "Fix. Reinspect. Release.",
+        "setting": "Services Inspection Bay",
+        "stage": "2017 · Fictional construction timeline",
+        "objective": "Repair three defects and prove the work is ready to release.",
+        "description": "Inspect a leaking connection, incomplete seal and incorrect equipment tag. Apply the repairs, revisit them and request release at the checklist board.",
         "actions": [
-          "Inspect the marked connection, seal and tag.",
-          "Record the three faults and choose the supplied fixes.",
-          "Reinspect each repair before release."
+          "Inspect the leaking connection, incomplete seal and incorrect equipment tag.",
+          "Apply supplied repairs in any order.",
+          "Physically reinspect each current repair.",
+          "Make the separate release request at the checklist board."
         ],
-        "success": "All three faults are fixed and checked again before release.",
-        "futureEffect": "The waterfall connections, seals and tags are ready for the system test.",
-        "learning": "A repair is only complete after it is checked.",
+        "success": "All three repairs have current reinspection evidence and the final release is approved.",
+        "futureEffect": "Checked connections and identification help the waterfall services reach handover.",
+        "learning": "A repair needs evidence from reinspection before release.",
         "tag": "FIND. FIX. CHECK AGAIN.",
-        "alt": "AI-generated concept sketch: a QAQC Engineer inspects a fictional waterfall-service installation with leaking-connection, incomplete-seal and incorrect-tag callouts, followed by fix and reinspection checks.",
-        "image": "mission-sketch-qaqc-v056.webp",
-        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
+        "alt": "Actual Unreal mission introduction: Services Inspection Bay, 2017, showing the prototype QAQC Engineer training bay.",
+        "image": "jewel-mission-qaqc.png",
+        "caption": "ACTUAL UNREAL · MISSION INTRODUCTION · ENLARGE ↗",
         "storyID": "qaqc_engineer",
-        "conceptSketch": true
+        "conceptSketch": false,
+        "mediaKind": "UNREAL · MISSION INTRODUCTION",
+        "isNew": false
       },
       {
         "id": "safety",
         "role": "Safety Engineer",
-        "title": "Make the Route Safe",
-        "setting": "A planned route to the waterfall equipment area.",
-        "stage": "Before the equipment team enters.",
-        "objective": "Find an unprotected edge, a blocked exit and entry into a lifting zone. Choose safety controls and recheck the route.",
-        "description": "Keep the route closed while you find the hazards and choose controls. Check the edge protection, exit and lifting-zone boundary before letting the team through.",
+        "title": "Open a Safe Route",
+        "setting": "Plant Access Route",
+        "stage": "2016 · Fictional construction timeline",
+        "objective": "Turn a hazardous access path into a verified protected route.",
+        "description": "Inspect edge protection, a blocked exit and lifting-zone access. Apply and recheck the controls, then walk the protected checkpoints before reopening.",
         "actions": [
-          "Find the unprotected edge, blocked exit and lifting-zone intrusion.",
-          "Choose the supplied controls and mark a safe route.",
-          "Recheck the route and zone boundaries before reopening access."
+          "Inspect missing edge protection, a blocked exit and lifting-zone access in any order.",
+          "Apply the supplied physical controls and separately recheck each.",
+          "Mark the protected route, walk its ordered checkpoints4→5→6 and return along it at normal size on the ground.",
+          "Explicitly verify and reopen at the board after checking actual passage."
         ],
-        "success": "All hazards are controlled and the protected route passes its checks before the team enters.",
-        "futureEffect": "The team can safely reach the waterfall equipment and carry out its work.",
-        "learning": "Make access safe before work starts.",
+        "success": "Controls are rechecked, the route is physically walked in order and the board confirms reopening.",
+        "futureEffect": "A verified route provides access to the fictional waterfall plant.",
+        "learning": "Seeing a hazard and installing a control are not the same as verifying a safe route.",
         "tag": "CHECK THE WAY IN.",
-        "alt": "AI-generated concept sketch: a Safety Engineer checks a fictional waterfall plant-access route with missing edge protection, a blocked exit and lifting-zone intrusion, then selects controls and rechecks protected access.",
-        "image": "mission-sketch-safety-v056.webp",
-        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
+        "alt": "Actual Unreal mission introduction: Plant Access Route, 2016, showing the prototype Safety Engineer training bay.",
+        "image": "jewel-mission-safety.png",
+        "caption": "ACTUAL UNREAL · MISSION INTRODUCTION · ENLARGE ↗",
         "storyID": "safety_engineer",
-        "conceptSketch": true,
-        "isNew": true
+        "conceptSketch": false,
+        "isNew": false,
+        "mediaKind": "UNREAL · MISSION INTRODUCTION"
       },
       {
         "id": "quantity",
         "role": "Quantity Surveyor",
-        "title": "Count Every Part",
-        "setting": "A planned drawing and cost desk for waterfall services.",
-        "stage": "Before pipes, fittings and equipment are ordered.",
-        "objective": "Measure the waterfall-service package, use the supplied rates and choose a complete quote within the training budget.",
-        "description": "Measure the marked items and check the units. Use the supplied example rates to work out the cost. Compare quotes for the same parts and requirements, so a low price does not hide missing items.",
+        "title": "Every Part Counts",
+        "setting": "Quantity & Procurement",
+        "stage": "2015 · Fictional construction timeline",
+        "objective": "Build a complete, correctly measured equipment package.",
+        "description": "Check quantities and units, calculate with supplied training rates and compare complete quotations. Verify each stage before the final scope-board check.",
         "actions": [
-          "Measure the marked pipes, fittings and equipment on the drawing.",
-          "Calculate costs with the supplied units and fictional rates.",
-          "Compare quotes for the same full package and training budget."
+          "Read the supplied scope and rates.",
+          "Measure/count the required pipe, fittings and equipment and verify units.",
+          "Calculate with supplied training credits, compare complete quotations and separately verify each stage.",
+          "Request the final complete-package check at the scope board."
         ],
-        "success": "Quantities, units, required parts and budget checks all pass. Check the selected package before finishing.",
-        "futureEffect": "All required waterfall pipes, fittings and equipment are included in the order.",
-        "learning": "Check the full package, not just the lowest price.",
+        "success": "The verified takeoff, estimate and complete quotation pass the final package check.",
+        "futureEffect": "A complete scope provides the parts needed for the waterfall system.",
+        "learning": "The lowest price is not enough if scope or units are wrong.",
         "tag": "COUNT THE PARTS. CHECK THE COST.",
-        "alt": "AI-generated concept sketch: a Quantity Surveyor measures a fictional waterfall-service drawing, applies supplied rates and compares pipe, fitting and pump-package quotation sheets for missing components.",
-        "image": "mission-sketch-quantity-v056.webp",
-        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
+        "alt": "Actual Unreal mission introduction: Quantity & Procurement, 2015, showing the prototype Quantity Surveyor training bay.",
+        "image": "jewel-mission-quantity.png",
+        "caption": "ACTUAL UNREAL · MISSION INTRODUCTION · ENLARGE ↗",
         "storyID": "quantity_surveyor",
-        "conceptSketch": true,
-        "isNew": true
+        "conceptSketch": false,
+        "isNew": false,
+        "mediaKind": "UNREAL · MISSION INTRODUCTION"
       },
       {
         "id": "mechanical",
         "role": "Mechanical Engineer",
-        "title": "Test the Water Loop",
-        "setting": "A planned pump and valve area with a small test loop.",
-        "stage": "After installation and drawing checks.",
-        "objective": "Trace the water circuit, find a pump or valve mismatch and choose a fix. Check the contained loop test.",
-        "description": "Follow the pump, valve and control links. Read the expected test results, choose the supplied fix and run the small loop test. This earns Mechanical’s key; the main waterfall waits for all eight returned keys and the Director’s hidden button.",
+        "title": "Prove the Water Circuit",
+        "setting": "Water Circuit Test Bay",
+        "stage": "2017 · Fictional construction timeline",
+        "objective": "Prove a contained water circuit responds as expected.",
+        "description": "Trace the pump, valve and return. Correct the restricted valve, run the test and compare the observed indicators with the expected response.",
         "actions": [
-          "Trace the circuit and read the expected test indicators.",
-          "Find the pump, valve or control mismatch and choose a fix.",
-          "Run the contained water-loop test and compare the results."
+          "Read the expected contained-loop response.",
+          "Trace pump→valve→control/return and correct the supplied restricted-valve mismatch.",
+          "Run the six-second test and observe the evolving flow/pressure/return indicators.",
+          "Separately compare and verify readiness using the unchanged physical state and recorded response."
         ],
-        "success": "The contained test matches the expected result. Mechanical earns its key and can return by watch. Only the Director’s final hidden button restores the main waterfall.",
-        "futureEffect": "The waterfall circuit passes its small test. Its key returns to the Director for the final hidden-button step.",
-        "learning": "Test how the system works after the other roles have checked its parts.",
+        "success": "The test response and unchanged physical circuit are separately verified as ready.",
+        "futureEffect": "The contained test checks one part of the waterfall story; the team finale restores the main flow.",
+        "learning": "A system change must be tested against its expected response.",
         "tag": "TRACE. FIX. TEST.",
-        "alt": "AI-generated concept sketch: a Mechanical Engineer diagnoses a fictional waterfall-service pump and valve circuit using supplied status indicators, selects a correction and verifies a contained loop test.",
-        "image": "mission-sketch-mechanical-v056.webp",
-        "caption": "AI CONCEPT SKETCH · PROPOSED MISSION · ENLARGE ↗",
+        "alt": "Actual Unreal mission introduction: Water Circuit Test Bay, 2017, showing the prototype Mechanical Engineer training bay.",
+        "image": "jewel-mission-mechanical.png",
+        "caption": "ACTUAL UNREAL · MISSION INTRODUCTION · ENLARGE ↗",
         "storyID": "mechanical_engineer",
-        "conceptSketch": true,
-        "isNew": true
+        "conceptSketch": false,
+        "isNew": false,
+        "mediaKind": "UNREAL · MISSION INTRODUCTION"
       }
     ],
-    "gameplayTitle": "SEE JEWEL\nIN THE GAME.",
-    "gameplayText": "Look through the trees towards the waterfall and terraces. Select a game view to enlarge it.",
+    "gameplayTitle": "STEP INSIDE\nJEWEL.",
+    "gameplayText": "Watch the opening journey through the waterfall, glass roof and planted terraces, ending with the moving trains. Then explore the role missions above.",
     "showcase": {
       "label": "Jewel upper-deck environment views",
       "views": [
@@ -633,7 +641,7 @@ window.KEYS_CONTENT = {
         "v055-upper-deck-waterfall.webp",
         "v055-upper-deck-garden.webp"
       ],
-      "caption": "Unreal game views · Select an image to enlarge it. Materials and planting are still being improved. Full missions are in development."
+      "caption": "Earlier Unreal exploration views · Select an image to enlarge. Character appearance and some scene details have since developed."
     },
     "gallery": [
       [
@@ -645,7 +653,7 @@ window.KEYS_CONTENT = {
       [
         "v046-ny-exploration.webp",
         "Meet the Director",
-        "The existing live Director character after New Game and cinematic skip. This is the current character in Jewel.",
+        "Earlier Director character during Jewel exploration; this is not the latest character revision.",
         "UNREAL v046 · NATIVE EXPLORATION"
       ],
       [
@@ -665,6 +673,18 @@ window.KEYS_CONTENT = {
         "Arriving at Jewel",
         "Native v046 arrival view. The broad paved approach faces the Rain Vortex basin.",
         "UNREAL V046 · GAME VIEW"
+      ],
+      [
+        "jewel-opening-poster.png",
+        "The Jewel opening",
+        "Actual decoded frame from the approved opening video.",
+        "UNREAL · OPENING CAPTURE"
+      ],
+      [
+        "jewel-mission-bim.png",
+        "BIM Coordination Lab",
+        "Actual role introduction, with the fictional training location and year.",
+        "UNREAL · MISSION INTRODUCTION"
       ]
     ],
     "controls": [
@@ -676,7 +696,7 @@ window.KEYS_CONTENT = {
       [
         "RUN",
         "Hold Shift",
-        "Hold LB"
+        "Hold RB"
       ],
       [
         "CROUCH / DESCEND",
@@ -696,7 +716,7 @@ window.KEYS_CONTENT = {
       [
         "JETPACK / LAND",
         "J in tiny mode",
-        "RB"
+        "LB"
       ],
       [
         "AIR DASH",
@@ -712,25 +732,30 @@ window.KEYS_CONTENT = {
         "INTERACT",
         "E",
         "X"
+      ],
+      [
+        "HOME / HELP",
+        "Esc",
+        "Back"
       ]
     ],
     "endLabel": "MEET THE CREW",
     "endTitle": "ONE DIRECTOR.\nEIGHT ROLES.",
-    "endText": "A student leader plays the Director. Eight other students play the roles. One time machine sends them back; eight return watches bring the keys home.",
-    "note": "Planned story and nine-PC setup. Native game views show earlier exploration; AI sketches show ideas. The time machine, Director launch, watch returns, key handover, secret door and hidden-button ending are not verified multiplayer features. Loading, reconnects, event-PC performance and Windows release tests are pending.",
+    "endText": "Different tasks. Different evidence. One shared result. The Director brings the team’s eight verified keys together for the final restoration.",
+    "note": "Educational game prototype. Tasks use fictional training data and simplified systems; they are not professional instructions or certification. Images are identified as gameplay, introduction captures or concept artwork. Real event hardware, physical controllers and nine-PC play still need testing.",
     "heroCredit": "Unreal home-menu artwork\nIllustration · not gameplay",
-    "storyCaption": "Existing v046 arrival view. Proposed machine site: beside this lower terrace, off the main path. No time machine is installed in this capture.",
-    "controlsNote": "Default controls shown; action buttons can be changed in Controls. Keyboard/mouse and Xbox switch automatically. Shrink before using the jetpack. Settings change movement and camera speeds. English only for now. Xbox Y changes size; it never restarts the game.",
+    "storyCaption": "Actual Unreal opening capture · A fictional story within a developing game world.",
+    "controlsNote": "Current local-demo controls. Shrink before using the jetpack. Home contains help and presentation controls. Earlier downloads may use different mappings; follow their in-game help. Physical-controller testing on event PCs is still pending.",
     "galleryIntro": "Explore the upper decks through trees, waterfall and planted terraces. Discover the Director and current menu below. Open an image to see the full view.",
-    "galleryLabel": "Upper-deck game captures · Current v046 Director + menu · Full mission puzzles proposed",
+    "galleryLabel": "Earlier exploration captures · Actual mission introductions · Prototype art",
     "subtitle": "THE LAST\nTIMELINE",
     "teamPlay": {
-      "label": "PLANNED · NINE-PLAYER TEAM MODE",
+      "label": "EVENT PLAN · NINE-PC VALIDATION PENDING",
       "title": "NINE STUDENTS.\nONE TEAM.",
-      "intro": "A student leader plays the Director on the host PC. Eight other students join on eight other PCs. Everyone explores Jewel first. The Director stays in the present while the others work on their missions. The target is 15–20 minutes for the round, including exploration and the ending; timing needs playtesting.",
+      "intro": "The intended exhibition round brings together one student Director and eight role players. Roles solve their own tasks, share clues and contribute different keys. The current local Presentation Demo lets a presenter show those roles on one PC.",
       "networkTitle": "9 PCs. ONE LOCAL NETWORK.",
-      "networkText": "Connect all nine PCs by network cable to a switch. PC 1 hosts and plays the Director. The eight student PCs join that same game.",
-      "networkNote": "Example station plan: one Director host and eight student PCs. Allow nine PC connections plus any network uplink.",
+      "networkText": "Planned venue setup: the Director hosts on one PC and eight role players join the same game over a local wired network.",
+      "networkNote": "Nine stations is an event plan, not a tested nine-PC capacity or performance claim.",
       "stations": [
         {
           "pc": 1,
@@ -804,92 +829,67 @@ window.KEYS_CONTENT = {
         "caption": "AI CONCEPT · PLANNED EVENT SETUP",
         "text": "One Director host plus eight student PCs. This illustrated room is a setup idea, not the confirmed venue. Use the same tested build and a venue-approved wired network."
       },
-      "directorTitle": "THE DIRECTOR’S JOB",
-      "directorText": "The student leader guides the team, checks readiness and starts the time machine. Watch progress, share clues and receive the keys. Open the final door only after all eight different keys are back.",
+      "directorTitle": "A Director who connects the team",
+      "directorText": "The Director remains in the present, coordinates the shared launch and receives each returned key. The final door and hidden button are separate actions after all eight handovers.",
       "teamSteps": [
         [
-          "Explore the present",
-          "All nine students explore Jewel. The waterfall stops, and the Director brings the team to the time machine."
+          "Gather and launch",
+          "Explore Jewel, choose distinct roles and gather at the shared time machine."
         ],
         [
-          "Launch together",
-          "Students stand on eight marked pads. The Director checks ready status and starts the machine from the control desk."
+          "Work independently",
+          "Solve each role’s own task and verify the result. Share clues without requiring another role to finish first."
         ],
         [
-          "Finish your mission",
-          "The eight roles work at the same time. Share clues, ask for hints and retry without waiting for another mission. Complete and check your task to earn its unique key."
+          "Return and hand over",
+          "Use the return watch and separately hand each unique key to the Director."
         ],
         [
-          "Press the return watch",
-          "After the mission is checked, use the watch to return to the Director. An early rescue or reconnect never awards a key."
-        ],
-        [
-          "Bring all eight keys home",
-          "Give each key to the Director. A machine light and team board show each contribution. Early finishers can explore and share clues. Returning twice cannot add another key."
-        ],
-        [
-          "Open the secret door",
-          "The Director opens the door and presses the hidden button. Every player sees the waterfall return."
-        ],
-        [
-          "See what your team achieved",
-          "See the team’s eight contributions. Each role player sees their own result, not a ranking across roles they did not play. The 15–20 minute target needs testing."
+          "Restore the flow",
+          "With all eight keys received, the Director opens the secret door and activates the hidden button."
         ]
       ],
       "eventTitle": "EVENT-DAY SETUP · PLANNED",
       "eventSteps": [
         [
-          "Prepare nine stations",
-          "Set one student leader’s PC as the Director host, plus eight other student PCs. Give each station a screen, keyboard and mouse. Install the same tested Windows game version on all nine PCs."
+          "Prepare the room",
+          "Agree the footprint, power and wired-network access with the venue."
         ],
         [
-          "Connect the local network",
-          "Use a venue-approved wired network and switch. Allow nine PC connections plus any uplink. Test the host while it runs the Director and all eight connections."
+          "Test the same game version",
+          "Install one verified version on all stations and rehearse joining before visitors arrive."
         ],
         [
-          "Join and choose roles",
-          "Start the Director host on PC 1. Join the eight student PCs. Give each student a different role and check all nine controls."
-        ],
-        [
-          "Explore, gather and launch",
-          "Let the team explore Jewel first. Gather all eight students at the time machine. The Director checks readiness and launches them. Mission timers start after control returns in the past."
-        ],
-        [
-          "Return and finish together",
-          "Students complete tasks and press their watches to return with keys. The Director receives all eight, opens the secret door and presses the hidden button. Staff help with questions or lost connections."
-        ],
-        [
-          "Reset for the next team",
-          "Staff end the round and clear roles, keys, watch states and results. Check all nine stations before the next group."
+          "Guide each group",
+          "Introduce the roles, help with controls and confirm a clean reset between sessions."
         ]
       ],
-      "testTitle": "TEST BEFORE THE EVENT",
+      "testTitle": "Before a nine-PC event",
       "tests": [
-        "Run a full nine-PC rehearsal: shared Jewel exploration, ready check, launch, eight missions, watch returns and the Director’s final button.",
-        "Check normal and skipped travel scenes, controls, collision, loading and frame rate on the event PCs. Measure the round length.",
-        "Test a student disconnecting during launch, a mission or watch return. Rejoining must keep the right role and progress without extra keys.",
-        "Test the Director host stopping. Staff need recovery or a clean restart; automatic host recovery is not promised.",
-        "Check that only the Director can launch, accept the final set of keys, open the door and press the hidden button. A rescue return must never count as mission completion."
+        "Test Host and Join on the actual venue PCs and approved local network.",
+        "Rehearse role selection, full missions, return watches, handovers and the finale.",
+        "Check physical controllers, clear access, frame rate and reset time.",
+        "Measure a full round before deciding the station schedule."
       ],
-      "status": "Plan only. Nine-player networking, time-machine travel, watches, key handover, staff reset and event-PC performance have not been verified. The hidden-button ending replaces the earlier gear-repair idea for this revised team story. A Windows release is still pending."
+      "status": "The eight missions and team finale exist in the prototype. Full nine-PC exhibition play, real LAN reliability and event-hardware performance remain to be tested. The local presentation and the earlier public preview are different builds."
     },
     "storyConcepts": [
-      {
-        "id": "location",
-        "image": "time-machine-location-v062.webp",
-        "title": "One machine beside the waterfall",
-        "alt": "AI concept sketch of an original eight-position time machine beside the lower Jewel arrival terrace, with the Director at its control desk.",
-        "caption": "AI CONCEPT · PLANNED LOCATION",
-        "text": "Proposed site: beside the lower arrival terrace facing the Rain Vortex. Place the game-built deck off the main path. Check space for nine characters, collision and clear access before fixing the location."
-      },
       {
         "id": "return-story",
         "image": "time-watch-story-v062.webp",
         "title": "Earn it. Return it. Restore the flow.",
         "alt": "AI four-panel concept story: complete a BIM task, press a return watch, give a key to the Director, then open a secret door and press the hidden button to restart the waterfall.",
-        "caption": "AI CONCEPT · PLANNED STORY",
-        "text": "A checked mission earns one key and unlocks its watch return. The Director counts eight different returned keys, opens the secret door and presses the hidden button. The whole team shares the final waterfall reveal."
+        "caption": "CONCEPT ART · THE TEAM STORY",
+        "text": "An illustration of the team journey: verify a mission, return by watch, hand over its key and restore the waterfall. This artwork is not a game screenshot."
       }
-    ]
+    ],
+    "video": {
+      "src": "jewel-opening.mp4",
+      "poster": "jewel-opening-poster.png",
+      "title": "The Jewel opening",
+      "label": "ACTUAL UNREAL CAPTURE · 24 SECONDS · SILENT",
+      "caption": "A short edited opening capture with flowing water and moving trains. This video shows the environment opening, not the later mission sequences.",
+      "transcript": "The camera travels from the waterfall basin to the circular inlet and glass roof, through the planted terraces, then across two moving trains before returning to the Director. The video has no speech or soundtrack."
+    }
   }
 };

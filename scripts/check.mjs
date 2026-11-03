@@ -11,6 +11,8 @@ vm.runInNewContext(source,context);
 let errors=[];
 const assert=(value,message)=>{if(!value)errors.push(message);};
 const data=context.window.KEYS_CONTENT;
+const fiveContract=JSON.parse(readFileSync(new URL('./five-keys-contract.json',import.meta.url),'utf8'));
+assert(JSON.stringify(data.five)===JSON.stringify(fiveContract),'Preserve every existing Five Keys content field, mission, video, gallery and outcome.');
 assert(data.five.missions.length===5,'Godot must explain five missions.');
 assert(data.eight.missions.length===8,'Unreal must explain eight missions.');
 assert(data.eight.missions[7].role==='Mechanical Engineer','The newest website brief uses Mechanical Engineer as role eight.');
@@ -23,8 +25,8 @@ for(const mission of data.eight.missions){
   assert(mission.objective?.trim()&&mission.success?.trim(),`${mission.role}: proposed mission needs an objective and completion check.`);
   assert(mission.setting?.trim()&&mission.stage?.trim()&&mission.futureEffect?.trim(),`${mission.role}: proposed time-travel mission needs its place, review moment and future effect.`);
   assert(/waterfall/i.test(mission.futureEffect||''),`${mission.role}: explain how the proposed correction helps restore the fictional waterfall.`);
-  assert(mission.conceptSketch===true&&new RegExp(`^mission-sketch-${mission.id}-v\\d{3}\\.webp$`).test(mission.image),`${mission.role}: show its versioned mission concept sketch first.`);
-  assert(/concept sketch/i.test(mission.alt)&&/CONCEPT SKETCH/.test(mission.caption)&&/PROPOSED MISSION/.test(mission.caption),`${mission.role}: concept artwork must be distinguished from gameplay.`);
+  assert(mission.conceptSketch===false&&mission.image===`jewel-mission-${mission.id}.png`,`${mission.role}: use the pinned actual mission introduction.`);
+  assert(/Actual Unreal mission introduction/.test(mission.alt)&&/ACTUAL UNREAL/.test(mission.caption)&&/MISSION INTRODUCTION/.test(mission.caption),`${mission.role}: identify native introduction pixels accurately.`);
 }
 assert(new Set(data.eight.missions.map(m=>m.image)).size===8,'Each Eight Keys mission needs its own sketch.');
 const missionText=id=>{
@@ -34,9 +36,9 @@ const missionText=id=>{
 const bimText=missionText('bim');
 assert([/shrink/i,/jetpack/i,/menu/i,/clash/i,/waterfall/i].every(pattern=>pattern.test(bimText)),'BIM must explain Shrink Jetpack inspection, clash identification, menu repair and its waterfall connection.');
 const siteText=missionText('site');
-assert([/timed|timer|time[- ]limit/i,/crane|lift/i,/equipment|component/i,/safe|safety|exclusion/i,/waterfall|water[- ]service/i].every(pattern=>pattern.test(siteText)),'Site must explain timed water-service equipment lifting with safety checks.');
+assert([/pump/i,/crane|lift/i,/stop/i,/recheck/i,/waterfall/i].every(pattern=>pattern.test(siteText)),'Site explains the actual controlled pump lift and Stop/recheck safety checks.');
 const planningText=missionText('planning');
-assert([/top[- ]down/i,/2\s*-?\s*d\b/i,/barrier/i,/arrow/i,/test|verif/i,/delivery|vehicle/i].every(pattern=>pattern.test(planningText)),'Planning must explain the top-down 2D diversion, barriers, arrows and delivery-route test.');
+assert([/top[- ]down/i,/barrier/i,/arrow/i,/test|verif/i,/delivery|vehicle/i].every(pattern=>pattern.test(planningText)),'Planning explains the actual top-down diversion, barriers, arrows and delivery-route test.');
 const finaleText=[data.eight.storyText,...data.eight.steps.flat(),data.eight.prototype.pending].join(' ');
 assert([/eight unique keys/i,/returned/i,/director/i,/secret door/i,/hidden button/i].every(pattern=>pattern.test(finaleText)),'The revised finale needs eight unique returned keys, the Director, secret door and hidden button.');
 assert(!/\bportal\b|balcony gear/i.test(finaleText),'The revised Eight Keys journey uses the time machine and hidden button.');
@@ -59,7 +61,7 @@ for(const [edition,d] of Object.entries(data)){
 const provenance=JSON.parse(readFileSync(new URL('../MEDIA-PROVENANCE.json',import.meta.url),'utf8'));
 for(const mission of data.eight.missions){
   const entry=provenance.assets.find(item=>item.file===`assets/${mission.image}`);
-  assert(entry?.edition==='eight-keys'&&/AI.generated.*concept sketch/i.test(entry.kind),`${mission.role}: mission artwork needs AI concept-sketch provenance.`);
+  assert(entry?.edition==='eight-keys'&&entry.kind==='native Unreal mission introduction capture'&&entry.role===mission.storyID&&entry.source?.sha256&&entry.transform?.byte_exact_copy===true,`${mission.role}: actual introduction image requires pinned native provenance.`);
 }
 for(const entry of provenance.assets){
   const path=join(root,entry.file);
@@ -85,9 +87,11 @@ for(const entry of provenance.assets){
 }
 const jetpack=data.eight.controls.find(row=>row[0]==='JETPACK / LAND');
 const dash=data.eight.controls.find(row=>row[0]==='AIR DASH');
-assert(jetpack?.[2]==='RB'&&dash?.[2]==='D-pad Up','Current default Xbox mappings must distinguish RB jetpack from D-pad Up air dash.');
-assert(data.eight.prototype.note.includes('not available here yet'),'Unreal browser play and portable download must remain clearly pending.');
-assert(data.eight.prototype.pending.includes('unique-key')&&data.eight.storyNote.includes('fictional'),'Planned unique keys and fictional story context must be explicit.');
+assert(jetpack?.[2]==='LB'&&data.eight.controls.find(row=>row[0]==='RUN')?.[2]==='Hold RB'&&dash?.[2]==='D-pad Up','Current local Xbox mappings are RB Run and LB Jetpack; other mappings retained.');
+assert(/earlier public Windows preview/i.test(data.eight.prototype.note)&&/does not contain all features/i.test(data.eight.prototype.note)&&/does not run in a browser/i.test(data.eight.prototype.note),'Distinguish earlier public preview, current local demonstration and browser availability.');
+assert(/does not collect team keys/i.test(data.eight.prototype.pending)&&data.eight.storyNote.includes('fictional'),'Independent demo resets must be separate from the team finale and fictional story.');
+assert(/nine-PC.*remain to be tested/i.test(data.eight.teamPlay.status),'Nine-PC event operation is pending, not accepted.');
+assert(data.eight.video.src==='jewel-opening.mp4'&&data.eight.video.poster==='jewel-opening-poster.png'&&data.eight.video.transcript.length>80,'Opening video, genuine poster and visual description provided.');
 for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
   if(!/^(https?:|data:)/.test(match[1]))assert(existsSync(join(root,match[1].split(/[?#]/,1)[0])),`Missing HTML dependency ${match[1]}`);
 }
@@ -103,4 +107,4 @@ for(const name of readdirSync(join(root,'assets'))){
   if(name.endsWith('.mp4'))assert(readFileSync(path).subarray(4,8).toString()==='ftyp',`${name} is not an MP4 container.`);
 }
 assert(!/\b(?:[A-Z]:[\\/]|\.\.[\\/])/.test(source),'Public content must not expose absolute local paths.');
-if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else{console.log(`Static checks passed: 13 mission briefs, stable Five/Eight role IDs, proposed objectives and verification, current controls/release status, current-build gallery link, all linked assets, ${provenance.assets.length} media hashes, native source identities, MP4 containers, relative paths and media sizes.`);}
+if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else{console.log(`Static checks passed:13 mission briefs, exact Five Keys content, stable role IDs, actual mission media, current controls/local-versus-team status, earlier-public-preview limit, all linked assets,${provenance.assets.length} media hashes, MP4 containers, fonts, relative paths and media sizes.`);}

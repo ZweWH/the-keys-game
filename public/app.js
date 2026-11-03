@@ -31,13 +31,22 @@
     });
     const target = document.querySelector('#mission-panel');
     target.setAttribute('aria-labelledby',missionID(current,index));
-    const objective = mission.objective ? `<div class="mission-objective"><span class="eyebrow">${current === 'eight' ? 'PLANNED GOAL' : 'GOAL'}</span><p>${escape(mission.objective)}</p></div>` : '';
-    const success = mission.success ? `<div class="mission-success"><strong>Complete when${current === 'eight' ? ' · planned' : ''}</strong><p>${escape(mission.success)}</p></div>` : '';
-    const setting = mission.setting ? `<div class="mission-setting"><span class="eyebrow">${current === 'eight' ? 'PLANNED SETTING' : 'SETTING'}</span><p>${escape(mission.setting)}</p><span>${escape(mission.stage)}</span></div>` : '';
-    const future = mission.futureEffect ? `<div class="mission-future"><strong>${current === 'eight' ? 'How it helps the waterfall · planned' : 'The teamwork lesson'}</strong><p>${escape(mission.futureEffect)}</p></div>` : '';
+    const objective = mission.objective ? `<div class="mission-objective"><span class="eyebrow">GOAL</span><p>${escape(mission.objective)}</p></div>` : '';
+    const success = mission.success ? `<div class="mission-success"><strong>Complete when</strong><p>${escape(mission.success)}</p></div>` : '';
+    const setting = mission.setting ? `<div class="mission-setting"><span class="eyebrow">SETTING</span><p>${escape(mission.setting)}</p><span>${escape(mission.stage)}</span></div>` : '';
+    const future = mission.futureEffect ? `<div class="mission-future"><strong>${current === 'eight' ? 'Its part in the story' : 'The teamwork lesson'}</strong><p>${escape(mission.futureEffect)}</p></div>` : '';
     const picture = `<img src="${asset(mission.image)}" alt="${escape(mission.alt)}" width="1600" height="900"><span class="image-tag">${escape(mission.caption || 'Actual Godot gameplay')}</span>`;
-    const image = mission.conceptSketch ? `<button class="mission-image mission-sketch" type="button" data-mission-sketch aria-label="Enlarge concept sketch: ${escape(mission.title)}">${picture}</button>` : `<div class="mission-image">${picture}</div>`;
-    target.innerHTML = `${image}${setting}${objective}<div class="mission-copy"><div><span class="eyebrow">${escape(mission.tag)}</span><h3>${escape(mission.title)}</h3><p>${escape(mission.description)}</p></div><div class="mission-actions"><span class="eyebrow">${current === 'eight' ? 'PLANNED STEPS' : 'YOUR STEPS'}</span><ol>${mission.actions.map(action=>`<li>${escape(action)}</li>`).join('')}</ol>${success}<div class="learning"><strong>What you learn</strong><br>${escape(mission.learning)}</div>${future}</div></div>`;
+    const image = current === 'eight' ? `<button class="mission-image mission-capture" type="button" data-mission-capture aria-label="Enlarge actual mission introduction: ${escape(mission.title)}">${picture}</button>` : mission.conceptSketch ? `<button class="mission-image mission-sketch" type="button" data-mission-sketch aria-label="Enlarge concept sketch: ${escape(mission.title)}">${picture}</button>` : `<div class="mission-image">${picture}</div>`;
+    target.innerHTML = `${image}${setting}${objective}<div class="mission-copy"><div><span class="eyebrow">${escape(mission.tag)}</span><h3>${escape(mission.title)}</h3><p>${escape(mission.description)}</p></div><div class="mission-actions"><span class="eyebrow">YOUR STEPS</span><ol>${mission.actions.map(action=>`<li>${escape(action)}</li>`).join('')}</ol>${success}<div class="learning"><strong>What you learn</strong><br>${escape(mission.learning)}</div>${future}</div></div>`;
+    target.querySelector('[data-mission-capture]')?.addEventListener('click',event=>{
+      lastMediaTrigger = event.currentTarget;
+      mediaKind.textContent = mission.mediaKind;
+      mediaTitle.textContent = mission.title;
+      mediaCaption.textContent = `${mission.alt} Prototype training scene; the displayed year is part of the fictional story.`;
+      imageNavigation.hidden = true;
+      mediaBody.innerHTML = `<img src="${asset(mission.image)}" alt="${escape(mission.alt)}">`;
+      dialog.showModal();
+    });
     target.querySelector('[data-mission-sketch]')?.addEventListener('click',event=>{
       lastMediaTrigger = event.currentTarget;
       mediaKind.textContent = 'AI CONCEPT SKETCH · PROPOSED MISSION';
@@ -51,6 +60,15 @@
 
   function videoCard() {
     const data = editions[current];
+    if (current === 'eight' && data.video) {
+      const video = data.video;
+      const views = data.showcase.views.map(name=>{
+        const index = data.gallery.findIndex(item=>item[0] === name);
+        const [image,title,caption] = data.gallery[index];
+        return `<button class="jewel-view" type="button" data-gallery="${index}" aria-label="Enlarge earlier exploration view: ${escape(title)}"><img src="${asset(image)}" alt="${escape(caption)}" width="1600" height="900" loading="lazy"><span class="jewel-view-title"><strong>${escape(title)}</strong><span aria-hidden="true">↗</span></span></button>`;
+      }).join('');
+      return `<figure class="opening-film"><video controls playsinline preload="metadata" poster="${asset(video.poster)}" width="1248" height="702" aria-label="${escape(video.title)} — silent opening video" aria-describedby="opening-description"><source src="${asset(video.src)}" type="video/mp4">Your browser does not support this video. <a href="${asset(video.src)}">Open the MP4</a>.</video><figcaption><span class="eyebrow">${escape(video.label)}</span><h3>${escape(video.title)}</h3><p>${escape(video.caption)}</p></figcaption></figure><details class="film-description"><summary>Visual description</summary><p id="opening-description">${escape(video.transcript)}</p></details><details class="earlier-views"><summary>More views of Jewel <span>Earlier exploration captures</span></summary><div class="jewel-showcase">${views}</div><p class="video-note">${escape(data.showcase.caption)}</p></details>`;
+    }
     if (data.showcase) {
       return `<div class="jewel-showcase" aria-label="${escape(data.showcase.label)}">${data.showcase.views.map(name=>{
         const index = data.gallery.findIndex(item=>item[0] === name);
@@ -109,15 +127,16 @@
     if (!update) return '';
     const imageIndex = data.gallery.findIndex(item=>item[0] === update.image);
     return `<section class="chapter prototype-update" id="current-build" aria-labelledby="prototype-title">
-      <div class="prototype-dateline"><span class="chapter-number">SHOWN BUILD / ${escape(update.version)}</span><time datetime="${escape(update.date)}">${escape(update.dateLabel)}</time></div>
-      <div class="prototype-layout"><div class="prototype-copy reveal"><span class="eyebrow">${escape(update.eyebrow || 'THE CURRENT UNREAL PROTOTYPE')}</span><h2 class="display" id="prototype-title">${lines(update.title)}</h2><p class="body-copy">${escape(update.intro)}</p><a class="text-link" href="#missions">See the mission plans <span aria-hidden="true">↓</span></a></div><figure class="prototype-image reveal"><button type="button" data-gallery="${imageIndex}" aria-label="Enlarge the current prototype capture"><img src="${asset(update.image)}" alt="${escape(update.alt)}" width="1600" height="900" loading="lazy"><span class="enlarge-label">VIEW GAME IMAGE <span aria-hidden="true">↗</span></span></button><figcaption>${escape(update.caption)}</figcaption></figure></div>
+      <div class="prototype-dateline"><span class="chapter-number">05 / THE LOCAL DEMONSTRATION</span><time datetime="${escape(update.date)}">${escape(update.dateLabel)}</time></div>
+      <div class="prototype-layout"><div class="prototype-copy reveal"><span class="eyebrow">${escape(update.eyebrow || 'THE CURRENT UNREAL PROTOTYPE')}</span><h2 class="display" id="prototype-title">${lines(update.title)}</h2><p class="body-copy">${escape(update.intro)}</p><a class="text-link" href="#missions">Explore the missions <span aria-hidden="true">↑</span></a></div><figure class="prototype-image reveal"><button type="button" data-gallery="${imageIndex}" aria-label="Enlarge the actual mission introduction"><img src="${asset(update.image)}" alt="${escape(update.alt)}" width="1600" height="900" loading="lazy"><span class="enlarge-label">VIEW GAME IMAGE <span aria-hidden="true">↗</span></span></button><figcaption>${escape(update.caption)}</figcaption></figure></div>
       <div class="prototype-features">${update.features.map(([title,text],i)=>`<article class="reveal"><span class="number">0${i+1}</span><h3>${escape(title)}</h3><p>${escape(text)}</p></article>`).join('')}</div>
-      <p class="prototype-pending"><strong>STILL TO BUILD</strong>${escape(update.pending)}</p><p class="prototype-note">${escape(update.note)}</p>
+      <p class="prototype-pending"><strong>DEMO & TEAM ROUND</strong>${escape(update.pending)}</p><div class="prototype-availability"><h3>Prototype availability</h3><p>${escape(update.note)}</p><a class="text-link" href="${escape(update.availabilityUrl)}" target="_blank" rel="noopener noreferrer">Earlier Windows preview <span aria-hidden="true">↗</span></a></div>
     </section>`;
   }
 
   function renderEdition(id, updateURL = true) {
     if (!(id in editions)) return;
+    panel.querySelectorAll('video').forEach(video=>video.pause());
     current = id;
     selectedVideo = 0;
     const data = editions[id];
@@ -140,15 +159,15 @@
     panel.innerHTML = `
       <section class="hero" id="overview" aria-labelledby="hero-title">
         <img class="hero-image" src="${asset(data.hero)}" alt="${escape(data.heroAlt)}" width="1920" height="1080" fetchpriority="high">
-        <div class="hero-content"><div class="eyebrow">WOH HUP · BCAA OPEN HOUSE 2027</div><h1 id="hero-title"${id === 'eight' ? ' class="jewel-game-title"' : ''} aria-label="${escape(data.name)}">${id === 'eight' ? `<span class="title-middle">${escape(data.word)}</span><span class="hero-subtitle">${lines(data.subtitle)}</span>` : `<span>THE</span><span class="title-middle">${escape(data.word)}</span><span>KEYS.</span><span class="five-game-subtitle">${escape(data.subtitle)}</span>`}</h1><p class="hero-tagline">${data.headline}</p><p class="hero-description">${data.description}</p><div class="hero-actions">${primary}<a class="button button-outline" href="${id === 'five' ? '#gameplay' : '#team-play'}">${id === 'five' ? '<span class="play-triangle" aria-hidden="true"></span>Watch gameplay' : 'How the team plays <span aria-hidden="true">↓</span>'}</a></div></div>
+        <div class="hero-content"><div class="eyebrow">WOH HUP · BCAA OPEN HOUSE 2027</div><h1 id="hero-title"${id === 'eight' ? ' class="jewel-game-title"' : ''} aria-label="${escape(data.name)}">${id === 'eight' ? `<span class="title-middle">${escape(data.word)}</span><span class="hero-subtitle">${lines(data.subtitle)}</span>` : `<span>THE</span><span class="title-middle">${escape(data.word)}</span><span>KEYS.</span><span class="five-game-subtitle">${escape(data.subtitle)}</span>`}</h1><p class="hero-tagline">${data.headline}</p><p class="hero-description">${data.description}</p><div class="hero-actions">${primary}<a class="button button-outline" href="${id === 'five' ? '#gameplay' : '#gameplay'}">${id === 'five' ? '<span class="play-triangle" aria-hidden="true"></span>Watch gameplay' : 'Watch the opening <span aria-hidden="true">↓</span>'}</a></div></div>
         <div class="image-credit">${lines(data.heroCredit || 'Development capture')}</div><div class="hero-bottom"><span class="hero-status"><span class="status-dot" aria-hidden="true"></span>${data.status}</span><a class="scroll-link" href="#story">THE STORY <span aria-hidden="true">↓</span></a></div>
       </section>
       <section class="chapter intro" aria-labelledby="intro-title"><div class="chapter-number">01 / ${data.label}</div><div class="intro-layout reveal"><h2 class="display" id="intro-title">${lines(data.intro)}</h2><div><p class="intro-copy">${data.introText}</p>${data.afterGame ? '<a class="outcomes-teaser" href="#next-chapter">Your report, study options & badge <span aria-hidden="true">↓</span></a>' : ''}</div></div><div class="facts">${data.facts.map(([value,label])=>`<div class="fact"><strong>${value}</strong><span>${label}</span></div>`).join('')}</div></section>
-      ${teamPlaySection(data)}
-      ${prototypeSection(data)}
       <section class="chapter story" id="story" aria-labelledby="story-title"><div class="chapter-number">02 / THE STORY</div><div class="story-layout"><div class="reveal"><span class="eyebrow">${data.storyLabel}</span><h2 class="display" id="story-title">${lines(data.storyTitle)}</h2><p class="body-copy">${data.storyText}</p>${data.storyNote ? `<p class="story-note">${escape(data.storyNote)}</p>` : ''}</div><figure class="story-image-wrap reveal"><img src="${asset(data.storyImage)}" alt="${data.storyAlt}" width="1600" height="900" loading="lazy"><figcaption class="small-caption">${escape(data.storyCaption || '')}</figcaption></figure></div><div class="story-steps">${data.steps.map(([title,text],i)=>`<article class="story-step reveal"><span class="number">0${i+1}</span><h3>${title}</h3><p>${text}</p></article>`).join('')}</div>${storyConcepts(data)}</section>
       <section class="chapter missions" id="missions" aria-labelledby="missions-title"><div class="chapter-number">03 / ${data.missionLabel}</div><div class="section-head"><h2 id="missions-title" class="display">FIND YOUR ROLE.</h2><p>${data.missionIntro}</p></div><div class="mission-layout"><div class="mission-tabs" role="tablist" aria-label="${data.name} missions" aria-orientation="vertical">${data.missions.map((mission,i)=>`<button id="${missionID(id,i)}" type="button" class="mission-tab" role="tab" aria-controls="mission-panel" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}" data-mission="${i}"><span class="mission-index">0${i+1}</span><span>${mission.role}</span>${mission.isNew ? '<span class="new-tag">NEW</span>' : ''}<span class="mission-arrow" aria-hidden="true">↗</span></button>`).join('')}</div><div class="mission-panel" id="mission-panel" role="tabpanel" tabindex="0"></div></div></section>
       <section class="chapter gameplay" id="gameplay" aria-labelledby="gameplay-title"><div class="chapter-number">04 / ${id === 'five' ? 'PLAY THE ORIGINAL' : 'INSIDE DEVELOPMENT'}</div><div class="gameplay-layout"><div class="reveal"><h2 class="display" id="gameplay-title">${lines(data.gameplayTitle)}</h2><p class="body-copy">${data.gameplayText}</p>${id === 'five' ? playLink('Play in browser') : '<a class="button button-outline" href="#crew-title">Meet the crew <span aria-hidden="true">↓</span></a>'}</div><div id="video-area">${videoCard()}</div></div><details class="controls-details"><summary>Controls <span class="muted">Keyboard + mouse / Xbox</span></summary><div class="controls-grid">${data.controls.map(([action,key,pad])=>`<div class="control"><span>${action}</span>${key}<br><em>Xbox: ${pad}</em></div>`).join('')}</div><p class="controls-note">${escape(data.controlsNote || '')}</p></details></section>
+      ${prototypeSection(data)}
+      ${teamPlaySection(data)}
       ${afterGameSection(data)}
       ${id === 'five' ? `<section class="chapter gallery" id="gallery" aria-labelledby="gallery-title"><div class="chapter-number">${data.afterGame ? '06' : '05'} / THROUGH THE LENS</div><div class="section-head"><h2 class="display" id="gallery-title">A WORLD TO DISCOVER.</h2><p>${escape(data.galleryIntro || '')}</p></div><div class="gallery-grid">${data.gallery.map(([image,title,caption],i)=>`<button class="gallery-item reveal" type="button" data-gallery="${i}" aria-label="Enlarge image: ${escape(title)}"><div class="gallery-photo"><img src="${asset(image)}" alt="${escape(caption)}" width="1600" height="900" loading="lazy"></div><h3>${title}</h3><p>${caption}</p></button>`).join('')}</div><p class="gallery-label">${escape(data.galleryLabel || '')}</p></section>` : ''}
       ${id === 'eight' ? `<section class="crew" aria-labelledby="crew-title"><span class="eyebrow">${data.endLabel}</span><h2 class="display" id="crew-title">${lines(data.endTitle)}</h2><p>${data.endText}</p><figure class="crew-art"><div class="crew-poster"><img src="${asset('crew-v7.webp')}" alt="JEWEL: THE LAST TIMELINE crew concept: Director, BIM Coordinator, Site Engineer, Technical Engineer, Planning Engineer, QAQC Engineer, Safety Engineer, Quantity Surveyor and Mechanical Engineer." width="1920" height="707" loading="lazy"><span class="crew-game-title" aria-hidden="true"><strong>WOH HUP | JEWEL: THE LAST TIMELINE</strong><span>One Director. Eight roles.</span></span><span class="crew-director-label" aria-hidden="true">Director</span><span class="crew-mechanical-label" aria-hidden="true">Mechanical<br>Engineer</span></div><figcaption>Character concept art · Swipe to see the full crew on small screens.</figcaption></figure></section>` : `<section class="end-cta" style="--end-image:url('assets/godot-waterfall.webp')" aria-labelledby="end-title"><span class="eyebrow">${data.endLabel}</span><h2 id="end-title" class="display">${lines(data.endTitle)}</h2><p>${data.endText}</p>${playLink('Play The Five Keys')}</section>`}
@@ -164,7 +183,7 @@
         document.querySelector('#overview').scrollIntoView();
       }
       history.replaceState({edition:id},'',url);
-      document.querySelector('#edition-announcement').textContent = `${data.name} selected. ${data.missions.length} ${id === 'eight' ? 'planned ' : ''}missions to explore.`;
+      document.querySelector('#edition-announcement').textContent = `${data.name} selected. ${data.missions.length} ${id === 'eight' ? 'prototype ' : ''}missions to explore.`;
     }
   }
 

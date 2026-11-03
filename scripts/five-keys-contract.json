@@ -1,0 +1,348 @@
+{
+  "name": "THE FIVE KEYS: BEYOND THE LOCK",
+  "word": "FIVE",
+  "subtitle": "BEYOND THE LOCK",
+  "engine": "Godot",
+  "label": "THE ORIGINAL ADVENTURE",
+  "status": "PLAYABLE BROWSER DEMO",
+  "hero": "godot-hub.webp",
+  "heroAlt": "The original Godot Jewel hub, waterfall, portal road and five-key final door.",
+  "headline": "Five roles. One adventure.",
+  "description": "Step through the portals. Discover your strengths. Bring the waterfall back to life.",
+  "primary": "Play in browser",
+  "intro": "TRY FIVE\nBUILDING ROLES.",
+  "introText": "Buildings start with people. Try five roles, from finding a hidden pipe clash to checking finished work.",
+  "facts": [
+    [
+      "05",
+      "ROLES TO DISCOVER"
+    ],
+    [
+      "05",
+      "KEYS TO COLLECT"
+    ],
+    [
+      "01",
+      "WATERFALL TO RESTORE"
+    ]
+  ],
+  "storyLabel": "BEYOND THE LOCK",
+  "storyTitle": "BRING THE\nWATER BACK.",
+  "storyText": "The waterfall has stopped. Follow five portals and solve each construction challenge to earn a key. Open the final door and bring the water back.",
+  "storyImage": "godot-road.webp",
+  "storyAlt": "Glowing role portals along the original Godot adventure road.",
+  "steps": [
+    [
+      "Follow the portals",
+      "Play the five roles in order."
+    ],
+    [
+      "Earn every key",
+      "Solve all five challenges to open the final door."
+    ],
+    [
+      "Restore the waterfall",
+      "Reach the balcony, align the flow gear and bring the water back."
+    ]
+  ],
+  "missionIntro": "Five playable missions. Choose a role to see your task and how to finish it.",
+  "missionLabel": "PLAYABLE GODOT MISSIONS",
+  "missions": [
+    {
+      "id": "bim",
+      "role": "BIM Coordinator",
+      "title": "Shrink & Fix",
+      "objective": "Shrink into the apartment service space and resolve the pipe–duct clash.",
+      "success": "Restore clearance, then open the handover tablet to record your BIM result and earn the key.",
+      "tag": "SEE THE BIG PICTURE. GO SMALL.",
+      "description": "Enter an apartment and shrink through a low hatch. Find the blue pipe crossing an orange air duct, then move its route to clear the clash.",
+      "actions": [
+        "Explore the apartment and ceiling services.",
+        "Shrink to reach the hidden pipe-and-duct clash.",
+        "Reroute the pipe and open the handover report."
+      ],
+      "learning": "Plan space, fit services together and check your work.",
+      "image": "godot-bim.webp",
+      "alt": "Godot BIM mission showing the pipe and duct coordination challenge.",
+      "setting": "A residential apartment and its ceiling-service space.",
+      "stage": "Coordination review",
+      "futureEffect": "The pipe must fit beside other services. Check the new route after fixing the clash."
+    },
+    {
+      "id": "site",
+      "role": "Site Engineer",
+      "title": "Crane & Place",
+      "objective": "Read the lifting plan and place all three PPVC modules in their correct bays and orientations.",
+      "success": "Clear the lifting zone and safely secure P01, P02 and P03 in the matching A1, A2 and B1 bays.",
+      "tag": "EVERY LIFT HAS A PLAN.",
+      "description": "Read the lifting plan and keep the lift zone clear. Match three modules to their bays, turn them the right way and lower them into place.",
+      "actions": [
+        "Read the PPVC module number and target bay.",
+        "Check the lift zone before moving the load.",
+        "Guide, rotate and place all three modules."
+      ],
+      "learning": "Read plans, lift safely and place loads with care.",
+      "image": "godot-site.webp",
+      "alt": "The Godot crane mission with a module suspended above its target bay.",
+      "setting": "A PPVC installation area with numbered modules and drawing bays.",
+      "stage": "Drawing to installation",
+      "futureEffect": "The module number, bay and direction must match the plan."
+    },
+    {
+      "id": "technical",
+      "role": "Technical Engineer",
+      "title": "Spec Detective",
+      "objective": "Compare the model with the approved training drawing and correct the pipe, door and pump data.",
+      "success": "All three technical details match the supplied drawing.",
+      "tag": "THE DETAILS MAKE THE DIFFERENCE.",
+      "description": "Compare the digital model with the approved training drawing. Find and fix three details that do not match.",
+      "actions": [
+        "Check the pipe diameter against the drawing.",
+        "Correct the door identification tag.",
+        "Match the pump flow to the training specification."
+      ],
+      "learning": "Use drawings to check model data.",
+      "image": "godot-technical.webp",
+      "alt": "The Godot technical mission drawing and model data checking interface.",
+      "setting": "A digital-model checking station beside the training drawing.",
+      "stage": "Information review",
+      "futureEffect": "Small data errors can affect later work. Check the model against the drawing."
+    },
+    {
+      "id": "planning",
+      "role": "Planning Engineer",
+      "title": "Plan the Build",
+      "objective": "Put construction tasks in the correct order and keep useful work moving during a delivery delay.",
+      "success": "Prepare the base → lift the PPVC module → connect services → inspect and release. During the delay, choose to prepare the next empty bay.",
+      "tag": "THINK THREE MOVES AHEAD.",
+      "description": "Put the work in order. When a delivery is late, choose another task that is ready to start.",
+      "actions": [
+        "Prepare the base before lifting the module.",
+        "Connect services, then inspect and release.",
+        "Use the delay to prepare the next empty bay."
+      ],
+      "learning": "Plan the order of work and handle delays.",
+      "image": "godot-planning.webp",
+      "alt": "The Godot planning mission showing the construction sequence choices.",
+      "setting": "A construction-sequence board and the next available work bay.",
+      "stage": "Work sequencing",
+      "futureEffect": "Start work only when the earlier tasks are done. A delay is no reason to skip a step."
+    },
+    {
+      "id": "qaqc",
+      "role": "QAQC Engineer",
+      "title": "Build & Check",
+      "objective": "Inspect the finished room, correct three defects and verify the repairs before handover.",
+      "success": "Align the window frame, close the pipe-opening gap and correct the door tag, then choose “Reinspect then release”.",
+      "tag": "FINISHED IS ONLY THE BEGINNING.",
+      "description": "Find a frame gap, an unsealed pipe opening and a wrong door tag. Record each defect, choose a fix and check the work again.",
+      "actions": [
+        "Find and record all three defects.",
+        "Apply the matching corrections.",
+        "Reinspect the corrected work before release."
+      ],
+      "learning": "Find defects, fix them and check the repairs.",
+      "image": "godot-qaqc.webp",
+      "alt": "Godot QAQC gameplay inspecting a residential room for defects.",
+      "setting": "A finished room ready for its handover check.",
+      "stage": "Inspection and release",
+      "futureEffect": "Finding a defect is the first step. Fix it, then return to check the repair."
+    }
+  ],
+  "gameplayTitle": "WATCH.\nTHEN PLAY.",
+  "gameplayText": "Play in your browser on a desktop or laptop, using a keyboard and mouse or an Xbox controller.",
+  "videos": [
+    {
+      "src": "godot-crane.mp4",
+      "poster": "godot-site.webp",
+      "title": "Crane & Place",
+      "label": "GODOT GAMEPLAY · SITE ENGINEER",
+      "caption": "Actual Godot gameplay capture: a scripted demonstration of the crane and PPVC module placement. Historical prototype recording · approximately 16 seconds."
+    },
+    {
+      "src": "godot-technical.mp4",
+      "poster": "godot-technical.webp",
+      "title": "Spec Detective",
+      "label": "GODOT GAMEPLAY · TECHNICAL ENGINEER",
+      "caption": "Actual Godot gameplay capture: compare training drawing information and correct the model data. Historical scripted demonstration · approximately 22 seconds."
+    },
+    {
+      "src": "godot-planning.mp4",
+      "poster": "godot-planning.webp",
+      "title": "Plan the Build",
+      "label": "GODOT GAMEPLAY · PLANNING ENGINEER",
+      "caption": "Actual Godot gameplay capture: arrange the construction sequence and respond to a delivery delay. Historical scripted demonstration · approximately 15 seconds."
+    },
+    {
+      "src": "godot-qaqc.mp4",
+      "poster": "godot-qaqc.webp",
+      "title": "Build & Check",
+      "label": "GODOT GAMEPLAY · QAQC ENGINEER",
+      "caption": "Actual Godot gameplay capture: inspect the training room, choose corrections and reinspect. Historical scripted demonstration · approximately 26 seconds."
+    }
+  ],
+  "afterGame": {
+    "title": "PLAY. LEARN.\nFIND YOUR NEXT STEP.",
+    "intro": "At the open house, we plan to give you a report card and a role badge. Your report links your game results to roles and study options to explore.",
+    "reportImage": "godot-team-report.webp",
+    "reportCaption": "Example Godot report · demonstration results, not a student’s personal report.",
+    "reportSteps": [
+      [
+        "Discover your strengths",
+        "See where your game decisions stood out and how they connect to construction roles."
+      ],
+      [
+        "Explore your future",
+        "Learn about each role and think about what interests you. Your results can help start a career conversation."
+      ],
+      [
+        "Find a learning path",
+        "Use your report to discuss subjects and courses with a BCA Academy course adviser."
+      ]
+    ],
+    "reportNote": "The demo compares decision accuracy for Site, Technical, Planning and QAQC. BIM completion is recorded separately. Printed report cards and study guidance are planned for the open house.",
+    "paths": [
+      {
+        "role": "BIM Coordinator",
+        "focus": "Digital models and how building services fit together.",
+        "course": "Diploma in Digital Engineering",
+        "url": "https://www.bcaa.edu.sg/what-we-offer/academic-programmes/Details/diploma-in-digital-engineering",
+        "color": "#62a9d4"
+      },
+      {
+        "role": "Site Engineer",
+        "focus": "Building methods, basic engineering and site teamwork.",
+        "course": "Diploma in Construction Engineering (Digital)",
+        "url": "https://www.bcaa.edu.sg/what-we-offer/academic-programmes/diploma/diploma-list/Details/diploma-in-construction-engineering-%28digital%29",
+        "color": "#f5ad54"
+      },
+      {
+        "role": "Technical Engineer",
+        "focus": "Drawings, model data and digital construction.",
+        "course": "Diploma in Construction Engineering (Digital)",
+        "url": "https://www.bcaa.edu.sg/what-we-offer/academic-programmes/diploma/diploma-list/Details/diploma-in-construction-engineering-%28digital%29",
+        "color": "#81c5a4"
+      },
+      {
+        "role": "Planning Engineer",
+        "focus": "Planning work, schedules and site teams.",
+        "course": "Diploma in Construction Engineering (Digital)",
+        "url": "https://www.bcaa.edu.sg/what-we-offer/academic-programmes/diploma/diploma-list/Details/diploma-in-construction-engineering-%28digital%29",
+        "color": "#b39bd6"
+      },
+      {
+        "role": "QAQC Engineer",
+        "focus": "Checking building work against the drawings and requirements.",
+        "course": "Diploma in Construction Engineering (Digital)",
+        "url": "https://www.bcaa.edu.sg/what-we-offer/academic-programmes/diploma/diploma-list/Details/diploma-in-construction-engineering-%28digital%29",
+        "color": "#e99d91"
+      }
+    ],
+    "pathwayNote": "These are suggested courses to explore. Check the official pages for entry requirements and speak with a course adviser about study and work experience.",
+    "badgeTitle": "TAKE YOUR\nROLE HOME.",
+    "badgeText": "A role badge is planned as a keepsake with your report card. Each of the five designs represents a construction role.",
+    "badgeImage": "godot-badges-product.webp",
+    "badgeCaption": "3D previews of the five badge designs. Photos will be added when finished badges are ready."
+  },
+  "gallery": [
+    [
+      "godot-hub.webp",
+      "The journey begins",
+      "The original Jewel-inspired hub and the five-key door."
+    ],
+    [
+      "godot-shrink.webp",
+      "A different perspective",
+      "Shrink to explore the hidden building services."
+    ],
+    [
+      "godot-site.webp",
+      "Lift. Rotate. Place.",
+      "The Site Engineer’s PPVC crane challenge."
+    ],
+    [
+      "godot-technical.webp",
+      "Follow the evidence",
+      "Model information meets the training drawing."
+    ],
+    [
+      "godot-planning.webp",
+      "Plan what happens next",
+      "Choose the right construction sequence."
+    ],
+    [
+      "godot-qaqc.webp",
+      "Check every detail",
+      "Inspect, correct and reinspect the room."
+    ],
+    [
+      "godot-gear-repair.webp",
+      "The final repair",
+      "Repair the fictional flow gear beyond the door."
+    ],
+    [
+      "godot-waterfall.webp",
+      "Bring the flow back",
+      "The waterfall at the heart of the adventure."
+    ],
+    [
+      "godot-team-report.webp",
+      "Your strengths, revealed",
+      "Example Godot report using demonstration results.",
+      "GODOT · EXAMPLE REPORT"
+    ],
+    [
+      "godot-badges-product.webp",
+      "A role to take home",
+      "3D render of the five role badge designs planned as student keepsakes.",
+      "ROLE BADGES · 3D DESIGN PREVIEW"
+    ],
+    [
+      "godot-badges-front.webp",
+      "Five roles. Five designs.",
+      "Front-view 3D render of BIM, Site, Technical, Planning and QAQC badges.",
+      "ROLE BADGES · 3D DESIGN PREVIEW"
+    ]
+  ],
+  "controls": [
+    [
+      "MOVE / LOOK",
+      "WASD + mouse",
+      "Sticks"
+    ],
+    [
+      "SPRINT",
+      "Shift",
+      "L3"
+    ],
+    [
+      "DOUBLE JUMP",
+      "Space",
+      "A"
+    ],
+    [
+      "SHRINK / GROW",
+      "Q",
+      "B"
+    ],
+    [
+      "INTERACT",
+      "E",
+      "X"
+    ],
+    [
+      "PAUSE",
+      "Esc",
+      "Menu"
+    ]
+  ],
+  "endLabel": "YOUR FIRST KEY IS WAITING",
+  "endTitle": "READY TO\nFIND YOUR ROLE?",
+  "endText": "Five roles. Five keys. One shared adventure.",
+  "note": "THE FIVE KEYS: BEYOND THE LOCK is the website title for the original playable demo. The browser game and its captures keep their earlier title. Its defects and example numbers are fictional. Report handouts, study guidance and role badges are planned for the open house.",
+  "heroCredit": "Actual Godot gameplay",
+  "storyCaption": "Follow the portal road in the original Godot demo.",
+  "controlsNote": "The crane uses a separate hoist control context. Follow the on-screen prompts. Desktop or laptop recommended.",
+  "galleryIntro": "Game views, an example report and role badge designs. Select an image to enlarge it.",
+  "galleryLabel": "Godot gameplay captures · Example report · 3D badge design previews"
+}

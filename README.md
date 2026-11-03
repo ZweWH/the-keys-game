@@ -1,3 +1,17 @@
+# Current showcase update — 4 November 2026
+
+This candidate keeps the established two-edition website and GitHub Pages target. Five Keys content and browser-game hosting are unchanged. Jewel now describes eight implemented scoped missions, the separate eight-key team finale, the current one-PC Presentation Demo and its controls. Nine-PC event play remains an unverified event plan.
+
+Actual role-introduction images replace proposed mission sketches in the primary mission tabs. Existing sketches and media remain in the asset archive and provenance. The opening MP4 and its decoded-frame poster are exact copies of approved sources; the silent video has a visual description and native playback controls. Older exploration pictures remain clearly labelled. No screenshot claims to show the pending new BIM character.
+
+Run `npm run check` for syntax, thirteen mission records, exact Five Keys content/media, all asset hashes, current controls, status distinctions and the source-only interaction/template checks. `node scripts/serve.mjs` can preview the staged candidate when the owning task is ready. Browser, responsive visual, keyboard and full video playback checks remain a separate final review. No hosting migration or publication is performed by staging.
+
+The public Windows preview is earlier than the latest local work. Its link must not imply that it includes all features shown on the page. Current local source uses RB Run/LB Jetpack; the older preview retains its own in-game instructions.
+
+Earlier dated records below describe their historical scope.
+
+---
+
 # The Keys — game showcase
 
 [Live website](https://zwewh.github.io/the-keys-game/) · [Five Keys student outcomes](https://zwewh.github.io/the-keys-game/?edition=five#next-chapter)

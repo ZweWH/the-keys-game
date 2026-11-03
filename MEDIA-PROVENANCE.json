@@ -1873,6 +1873,228 @@
         "color_adjustments": false,
         "AI_image_alteration": false
       }
+    },
+    {
+      "file": "assets/jewel-opening-poster.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal opening MP4 decoded frame",
+      "bytes": 1184153,
+      "sha256": "ad86e4e321594b900cb96157bac98d8971e8865e4f826a8eb2ba0967bb10c710",
+      "source": {
+        "file": "local-reference/train-presentation-v094/video-recovery-45684/decoded-samples-b1799b15f376416a800ffcf68a47054a/encoded-frame-0086.png",
+        "bytes": 1184153,
+        "sha256": "ad86e4e321594b900cb96157bac98d8971e8865e4f826a8eb2ba0967bb10c710"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "encoded_frame": 86
+    },
+    {
+      "file": "assets/jewel-opening.mp4",
+      "edition": "eight-keys",
+      "kind": "native Unreal editorial opening video",
+      "bytes": 13636695,
+      "sha256": "f7711607ff66fe64341c70bf5449fb46a42f4f445bf3168e2c94a4a167dce26d",
+      "source": {
+        "file": "builds/Jewel-v094-trains/Jewel-Train-Opening-v094.mp4",
+        "bytes": 13636695,
+        "sha256": "f7711607ff66fe64341c70bf5449fb46a42f4f445bf3168e2c94a4a167dce26d"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "format": {
+        "container": "MP4",
+        "codec": "H.264",
+        "audio": "silent",
+        "native_pixels": [
+          1248,
+          702
+        ],
+        "fps": 24,
+        "frames": 566,
+        "seconds": 23.583333333333332
+      },
+      "limitations": [
+        "Silent",
+        "Two1/24-second preceding-frame holds; loading start trimmed",
+        "Earlier opening capture; not later character or mission gameplay"
+      ]
+    },
+    {
+      "file": "assets/jewel-mission-bim.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal mission introduction capture",
+      "bytes": 866746,
+      "sha256": "ce67d1142eb56f942194e3da5c25f9159272cedd962065c1f1918bff325b4f68",
+      "source": {
+        "file": "local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/bim_coordinator-natural-location-year.png",
+        "bytes": 866746,
+        "sha256": "ce67d1142eb56f942194e3da5c25f9159272cedd962065c1f1918bff325b4f68"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "role": "bim_coordinator",
+      "purpose": "location-year",
+      "accepted_visual_record": "local-reference/mission-intros-v097/operator-visual-review-38304.json"
+    },
+    {
+      "file": "assets/jewel-mission-site.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal mission introduction capture",
+      "bytes": 845036,
+      "sha256": "6f8896800d85eb34557cfd2ae5b71cc542fe893e6c33b9e31191f3b29924d426",
+      "source": {
+        "file": "local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/site_engineer-natural-location-year.png",
+        "bytes": 845036,
+        "sha256": "6f8896800d85eb34557cfd2ae5b71cc542fe893e6c33b9e31191f3b29924d426"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "role": "site_engineer",
+      "purpose": "location-year",
+      "accepted_visual_record": "local-reference/mission-intros-v097/operator-visual-review-38304.json"
+    },
+    {
+      "file": "assets/jewel-mission-technical.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal mission introduction capture",
+      "bytes": 879269,
+      "sha256": "7fe43c3fcf29b23d8994c09455d8e3b22f2127ff64aaa803196c57d7d4ab3935",
+      "source": {
+        "file": "local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/technical_engineer-natural-location-year.png",
+        "bytes": 879269,
+        "sha256": "7fe43c3fcf29b23d8994c09455d8e3b22f2127ff64aaa803196c57d7d4ab3935"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "role": "technical_engineer",
+      "purpose": "location-year",
+      "accepted_visual_record": "local-reference/mission-intros-v097/operator-visual-review-38304.json"
+    },
+    {
+      "file": "assets/jewel-mission-planning.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal mission introduction capture",
+      "bytes": 901731,
+      "sha256": "7c54e5212888c547513bb8fb58136a4047af6d20c70a8a8af17adf7452199713",
+      "source": {
+        "file": "local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/planning_engineer-natural-location-year.png",
+        "bytes": 901731,
+        "sha256": "7c54e5212888c547513bb8fb58136a4047af6d20c70a8a8af17adf7452199713"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "role": "planning_engineer",
+      "purpose": "location-year",
+      "accepted_visual_record": "local-reference/mission-intros-v097/operator-visual-review-38304.json"
+    },
+    {
+      "file": "assets/jewel-mission-qaqc.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal mission introduction capture",
+      "bytes": 901538,
+      "sha256": "18c5ec2c74bf571caef87fdcf82e7c9f1dc939a1dbcadf9e208775b3d38efe95",
+      "source": {
+        "file": "local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/qaqc_engineer-natural-location-year.png",
+        "bytes": 901538,
+        "sha256": "18c5ec2c74bf571caef87fdcf82e7c9f1dc939a1dbcadf9e208775b3d38efe95"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "role": "qaqc_engineer",
+      "purpose": "location-year",
+      "accepted_visual_record": "local-reference/mission-intros-v097/operator-visual-review-38304.json"
+    },
+    {
+      "file": "assets/jewel-mission-safety.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal mission introduction capture",
+      "bytes": 904140,
+      "sha256": "ba02256bbff2fedea2c6783e2e352e8a960f30e29772ee7107342e240fdded23",
+      "source": {
+        "file": "local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/safety_engineer-natural-location-year.png",
+        "bytes": 904140,
+        "sha256": "ba02256bbff2fedea2c6783e2e352e8a960f30e29772ee7107342e240fdded23"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "role": "safety_engineer",
+      "purpose": "location-year",
+      "accepted_visual_record": "local-reference/mission-intros-v097/operator-visual-review-38304.json"
+    },
+    {
+      "file": "assets/jewel-mission-quantity.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal mission introduction capture",
+      "bytes": 917622,
+      "sha256": "45eca48ed5f32fd16bde76e2286234b7f6c04ab7aeb616891ff3a250ae198e84",
+      "source": {
+        "file": "local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/quantity_surveyor-natural-location-year.png",
+        "bytes": 917622,
+        "sha256": "45eca48ed5f32fd16bde76e2286234b7f6c04ab7aeb616891ff3a250ae198e84"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "role": "quantity_surveyor",
+      "purpose": "location-year",
+      "accepted_visual_record": "local-reference/mission-intros-v097/operator-visual-review-38304.json"
+    },
+    {
+      "file": "assets/jewel-mission-mechanical.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal mission introduction capture",
+      "bytes": 866099,
+      "sha256": "a53296bb853c029f184f2dc33f00c8d4f8d088a8ec0fdc6f53babd3fd68e7523",
+      "source": {
+        "file": "local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/mechanical_engineer-natural-location-year.png",
+        "bytes": 866099,
+        "sha256": "a53296bb853c029f184f2dc33f00c8d4f8d088a8ec0fdc6f53babd3fd68e7523"
+      },
+      "transform": {
+        "byte_exact_copy": true,
+        "crop": null,
+        "color_adjustments": false,
+        "AI_image_alteration": false
+      },
+      "role": "mechanical_engineer",
+      "purpose": "location-year",
+      "accepted_visual_record": "local-reference/mission-intros-v097/operator-visual-review-38304.json"
     }
   ]
 }

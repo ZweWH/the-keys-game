@@ -1,0 +1,38 @@
+/* Scoped additions preserve the Five Keys edition's layout and interactions. */
+body[data-edition=eight] .opening-film{margin:0;min-width:0;background:#0a231e;border:1px solid var(--line)}
+body[data-edition=eight] .opening-film video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
+body[data-edition=eight] .opening-film figcaption{padding:22px 24px}
+body[data-edition=eight] .opening-film h3{font-family:var(--display);font-size:38px;line-height:1.05;margin:12px 0}
+body[data-edition=eight] .opening-film p{font-size:14px;line-height:1.8;color:#c4d1c7;margin:0}
+body[data-edition=eight] .opening-film .eyebrow{font-size:10px;line-height:1.7;letter-spacing:1.1px}
+body[data-edition=eight] .film-description,body[data-edition=eight] .earlier-views{border-bottom:1px solid var(--line);padding:18px 0}
+body[data-edition=eight] .film-description summary,body[data-edition=eight] .earlier-views summary{cursor:pointer;font-size:13px;line-height:1.7;color:var(--gold)}
+body[data-edition=eight] .earlier-views summary span{display:block;font-size:11px;color:var(--muted);margin-left:18px}
+body[data-edition=eight] .film-description p{font-size:13px;line-height:1.8;color:#c4d1c7;max-width:62ch}
+body[data-edition=eight] .earlier-views .jewel-showcase{margin-top:18px}
+body[data-edition=eight] .mission-capture{display:block;position:relative;width:100%;border:1px solid var(--line);padding:0;background:#061713;text-align:left}
+body[data-edition=eight] .mission-capture img{display:block;width:100%;height:auto}
+body[data-edition=eight] .mission-capture .image-tag{position:static;display:block;max-width:none;padding:12px 14px;font-size:10px;line-height:1.6;letter-spacing:.8px;background:#0a231e}
+body[data-edition=eight] .body-copy,body[data-edition=eight] .intro-copy{font-size:15px;line-height:1.85}
+body[data-edition=eight] .mission-copy p,body[data-edition=eight] .mission-actions li,body[data-edition=eight] .mission-setting p,body[data-edition=eight] .mission-objective p{font-size:14px;line-height:1.8}
+body[data-edition=eight] .prototype-availability{margin-top:32px;max-width:78ch}
+body[data-edition=eight] .prototype-availability h3{font-family:var(--display);font-size:32px;line-height:1.1;color:var(--gold)}
+body[data-edition=eight] .prototype-availability p{font-size:14px;line-height:1.9;color:#c4d1c7}
+body[data-edition=eight] .prototype-features p{font-size:14px}
+body[data-edition=eight] .prototype-pending{font-size:13px}
+body[data-edition=eight] .team-play{border-top:1px solid var(--line)}
+body[data-edition=eight] .team-round{grid-template-columns:repeat(4,minmax(0,1fr))}
+body[data-edition=eight] .mission-tabs,body[data-edition=eight] .mission-panel,body[data-edition=eight] #video-area{min-width:0}
+body[data-edition=eight] summary:focus-visible,body[data-edition=eight] .mission-capture:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
+@media(max-width:720px){
+ body[data-edition=eight] .opening-film figcaption{padding:18px}
+ body[data-edition=eight] .opening-film h3{font-size:32px}
+ body[data-edition=eight] .opening-film .eyebrow{font-size:9px}
+ body[data-edition=eight] .mission-tab{font-size:12px;min-height:54px;line-height:1.5}
+ body[data-edition=eight] .hero-description{font-size:14px;line-height:1.7;max-width:320px}
+ body[data-edition=eight] .mission-capture .image-tag{font-size:9px}
+ body[data-edition=eight] .prototype-features article{grid-template-columns:24px minmax(0,1fr)}
+ body[data-edition=eight] .prototype-pending{grid-template-columns:minmax(0,1fr)}
+ body[data-edition=eight] .team-heading .display{overflow-wrap:normal}
+ body[data-edition=eight] .team-round{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
