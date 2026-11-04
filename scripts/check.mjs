@@ -58,7 +58,7 @@ const crewStart=html.indexOf('<figure class="crew" id="crew-title">');
 const crew=crewStart>=0?html.slice(crewStart,html.indexOf('</figure>',crewStart)+9):'';
 assert(crew.includes('src="assets/crew-v7.webp"'),'Crew artwork retains the original group image underneath the updated characters.');
 assert(/<svg[^>]*class="crew-overlay"/i.test(crew),'Crew artwork uses a separate character overlay.');
-for(const file of ['crew-director-cartoon-v103.png','crew-bim-cartoon-v103.png']) {
+for(const file of ['crew-director-cartoon-v104.png','crew-bim-cartoon-v103.png']) {
   assert((crew.match(new RegExp(`href="assets/${file.replace('.', '\\.') }"`,'g'))||[]).length===1,`Crew artwork contains exactly one ${file} overlay.`);
 }
 assert(/cartoon illustrations based on their game characters/i.test(crew)&&/earlier concepts/i.test(crew),'Crew caption identifies the new illustrations and earlier concepts.');
