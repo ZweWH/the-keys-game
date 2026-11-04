@@ -24,7 +24,7 @@ const choiceCards=[...landing.matchAll(/<a class="choice-card"[\s\S]*?<\/a>/g)].
 assert(choiceCards.length===2,'The game choices remain separate links.');
 for(const [index,card] of choiceCards.entries()) {
   assert(/<dl class="choice-facts">/.test(card),`Choice ${index+1}: provide an accessible fact list.`);
-  for(const label of ['Players','Style','Play']) assert(new RegExp(`<dt>${label}<\\/dt>`,'i').test(card),`Choice ${index+1}: include ${label} comparison.`);
+  for(const label of ['Players','Style','Play','Missions']) assert(new RegExp(`<dt>${label}<\\/dt>`,'i').test(card),`Choice ${index+1}: include ${label} comparison.`);
 }
 assert(/1 student\s*·\s*1 PC/i.test(choiceCards[0]||'')&&/5 roles in order/i.test(choiceCards[0]||'')&&/personal report/i.test(choiceCards[0]||''),'Five Keys comparison explains its one-student setup, five roles and report.');
 assert(/9 students\s*·\s*9 PCs planned/i.test(choiceCards[1]||'')&&/8 engineers/i.test(choiceCards[1]||'')&&/leader/i.test(choiceCards[1]||''),'Jewel comparison explains its planned nine-PC team setup.');
@@ -37,7 +37,7 @@ const eventFigures=[...html.matchAll(/<figure class="event-imagination">[\s\S]*?
 for(const [image,gameplay] of [['five-event-concept-20261104.png','godot-site.webp'],['nine-pc-event-v062.webp','v055-upper-deck-cover.webp']]){
   const figure=eventFigures.find(item=>item.includes(`src="assets/${image}"`));
   assert(figure&&/AI concept/i.test(figure),`${image}: identify the event illustration as AI concept art.`);
-  assert(figure&&figure.includes(`href="assets/${gameplay}"`),`${image}: show the selected genuine game capture on the monitors.`);
+  assert(figure&&(figure.includes(`href="assets/${gameplay}"`)||figure.includes(`src="assets/${gameplay}"`)),`${image}: show the selected genuine game capture on the monitors.`);
   assert(figure&&/capture|gameplay/i.test(figure)&&/placed|overlay|overlaid/i.test(figure),`${image}: disclose that the real game image was placed into the imagined scene.`);
 }
 const jewelEvent=eventFigures.find(item=>item.includes('src="assets/nine-pc-event-v062.webp"'))||'';
