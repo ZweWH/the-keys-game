@@ -2109,6 +2109,81 @@
         "prompt": "Create a high-quality wide landscape concept illustration for a university open house website: a single student at one desktop PC playing a colorful, friendly cartoon construction-career adventure, with a supportive event guide nearby. A small display of five distinct construction-role badge mockups sits on the table. Modern clean exhibition booth, warm welcoming lighting, dark forest green and muted gold accents. Show exactly one active gameplay station; no text, logos, legible screens, QR codes, or watermarks. This is an imagined future event, not documentary photography."
       },
       "transform": {"byte_exact_copy": true}
+    },
+    {
+      "file": "assets/jewel-bim-v101-idle.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal BIM v101 runtime capture",
+      "sha256": "2a64c25fc8320b48291076e7c1209459250734b162a782265871704a5c608f5a",
+      "bytes": 801594,
+      "caption": "The updated BIM Coordinator standing in the local v101 prototype test area.",
+      "source": {
+        "file": "local-reference/bim-flight-v101/review/db241f26a1474f78b501e449dd2e321f/candidate-BIM-idle-front-verified.png",
+        "sha256": "2a64c25fc8320b48291076e7c1209459250734b162a782265871704a5c608f5a",
+        "bytes": 801594
+      },
+      "transform": {"byte_exact_copy": true, "crop": null, "color_adjustments": false},
+      "accepted_visual_record": "local-reference/bim-flight-v101/runtime-acceptance.json"
+    },
+    {
+      "file": "assets/jewel-bim-v101-hover.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal BIM v101 runtime capture",
+      "sha256": "fc4bc97245c30da228588909d099d022288f54c4bfc57547ab627c89de34c740",
+      "bytes": 835131,
+      "caption": "The updated BIM Coordinator hovering in the local v101 prototype test lane.",
+      "source": {
+        "file": "local-reference/bim-flight-v101/review/db241f26a1474f78b501e449dd2e321f/candidate-BIM-hover-side-verified.png",
+        "sha256": "fc4bc97245c30da228588909d099d022288f54c4bfc57547ab627c89de34c740",
+        "bytes": 835131
+      },
+      "transform": {"byte_exact_copy": true, "crop": null, "color_adjustments": false},
+      "accepted_visual_record": "local-reference/bim-flight-v101/runtime-acceptance.json"
+    },
+    {
+      "file": "assets/jewel-bim-v101-flight.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal BIM v101 runtime capture",
+      "sha256": "09e0471df34764d95ab182861617bdc4637d4cd7bd94e71d774da169231f6d41",
+      "bytes": 822152,
+      "caption": "The updated BIM Coordinator flying forward in the local v101 prototype test lane.",
+      "source": {
+        "file": "local-reference/bim-flight-v101/review/db241f26a1474f78b501e449dd2e321f/candidate-BIM-cruise-side-verified.png",
+        "sha256": "09e0471df34764d95ab182861617bdc4637d4cd7bd94e71d774da169231f6d41",
+        "bytes": 822152
+      },
+      "transform": {"byte_exact_copy": true, "crop": null, "color_adjustments": false},
+      "accepted_visual_record": "local-reference/bim-flight-v101/runtime-acceptance.json"
+    },
+    {
+      "file": "assets/jewel-technical-v097-gameplay.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal earlier mission gameplay capture",
+      "sha256": "1b65cf1e4cb5f8999eb38592456ee8ae11d91b6e5616be7fe93e72d960176dc1",
+      "bytes": 908194,
+      "caption": "An earlier v097 editor capture after Technical Engineer equipment-information checks.",
+      "source": {
+        "file": "local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/technical-genuinely-completed-clean-gameplay-verified.png",
+        "sha256": "1b65cf1e4cb5f8999eb38592456ee8ae11d91b6e5616be7fe93e72d960176dc1",
+        "bytes": 908194
+      },
+      "transform": {"byte_exact_copy": true, "crop": null, "color_adjustments": false},
+      "accepted_visual_record": "local-reference/mission-intros-v097/runtime-acceptance.json"
+    },
+    {
+      "file": "assets/jewel-planning-v086-gameplay.png",
+      "edition": "eight-keys",
+      "kind": "native Unreal earlier mission gameplay capture",
+      "sha256": "b1e8e79a53554c62e54a11e9ccfa8e7b93edba1019539c9bc2021fd2a094c1d2",
+      "bytes": 963856,
+      "caption": "An earlier v086 editor capture of the Planning Engineer delivery-route vehicle test.",
+      "source": {
+        "file": "local-reference/role-missions-v086/review/e08c56d49f434ff7b4a01cbad4ea0a66/Planning-running-actual-delivery-verified.png",
+        "sha256": "b1e8e79a53554c62e54a11e9ccfa8e7b93edba1019539c9bc2021fd2a094c1d2",
+        "bytes": 963856
+      },
+      "transform": {"byte_exact_copy": true, "crop": null, "color_adjustments": false},
+      "accepted_visual_record": "local-reference/role-missions-v086/visual-review-skip34368.json"
     }
   ]
 }

@@ -101,6 +101,28 @@ for(const [edition,d] of Object.entries(data)){
   }
 }
 const provenance=JSON.parse(readFileSync(new URL('../MEDIA-PROVENANCE.json',import.meta.url),'utf8'));
+const latestGameplayStart=html.indexOf('id="latest-gameplay"');
+assert(latestGameplayStart>html.indexOf('id="option-two"')&&latestGameplayStart<html.indexOf('id="presentation-flow"'),'Latest gameplay must appear within Jewel, not Five Keys or the landing page.');
+const latestGameplay=html.slice(latestGameplayStart,html.indexOf('</section>',latestGameplayStart));
+assert(/editor/i.test(latestGameplay)&&/test (?:lane|camera)/i.test(latestGameplay)&&/prototype/i.test(latestGameplay),'BIM v101 imagery must identify its local editor prototype and test setting.');
+for(const [name,sourceName,sha256] of [
+  ['idle','idle-front','2a64c25fc8320b48291076e7c1209459250734b162a782265871704a5c608f5a'],
+  ['hover','hover-side','fc4bc97245c30da228588909d099d022288f54c4bfc57547ab627c89de34c740'],
+  ['flight','cruise-side','09e0471df34764d95ab182861617bdc4637d4cd7bd94e71d774da169231f6d41']
+]){
+  const file=`assets/jewel-bim-v101-${name}.png`;
+  const entry=provenance.assets.find(item=>item.file===file);
+  assert(latestGameplay.includes(file),`BIM ${name} is displayed in Jewel's latest gameplay section.`);
+  assert(entry?.edition==='eight-keys'&&entry.kind==='native Unreal BIM v101 runtime capture'&&entry.sha256===sha256&&entry.source?.sha256===sha256&&entry.source?.file===`local-reference/bim-flight-v101/review/db241f26a1474f78b501e449dd2e321f/candidate-BIM-${sourceName}-verified.png`&&entry.transform?.byte_exact_copy===true,`${file}: preserve accepted v101 review pixels and provenance exactly.`);
+}
+for(const [file,source,sha256,version] of [
+  ['assets/jewel-technical-v097-gameplay.png','local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/technical-genuinely-completed-clean-gameplay-verified.png','1b65cf1e4cb5f8999eb38592456ee8ae11d91b6e5616be7fe93e72d960176dc1','v097'],
+  ['assets/jewel-planning-v086-gameplay.png','local-reference/role-missions-v086/review/e08c56d49f434ff7b4a01cbad4ea0a66/Planning-running-actual-delivery-verified.png','b1e8e79a53554c62e54a11e9ccfa8e7b93edba1019539c9bc2021fd2a094c1d2','v086']
+]){
+  const entry=provenance.assets.find(item=>item.file===file);
+  assert(latestGameplay.includes(file)&&latestGameplay.includes(version),`${file}: display and date earlier gameplay appropriately.`);
+  assert(entry?.edition==='eight-keys'&&entry.kind==='native Unreal earlier mission gameplay capture'&&entry.sha256===sha256&&entry.source?.sha256===sha256&&entry.source?.file===source&&entry.transform?.byte_exact_copy===true,`${file}: retain the selected earlier native gameplay evidence exactly.`);
+}
 for(const [file,kind] of [['assets/godot-site.webp','native Godot capture'],['assets/v055-upper-deck-cover.webp','user-supplied native Unreal screenshot']]){
   assert(provenance.assets.some(entry=>entry.file===file&&entry.kind===kind),`${file}: event monitor image needs native gameplay provenance.`);
 }
