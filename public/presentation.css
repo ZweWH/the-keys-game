@@ -47,3 +47,7 @@ body[data-view="home"] .view-nav{display:none}
 @media(max-width:720px){.crew-lineup{min-width:960px}}
 
 @media(max-width:720px){.choice-hero h1{font-size:clamp(2.35rem,10vw,5rem)}}
+
+.choice-facts ul{margin:0;padding-left:1.1rem}
+.choice-facts li+li{margin-top:.15rem}
+@media(min-width:721px){@supports(grid-template-rows:subgrid){.choice-grid{row-gap:.55rem}.choice-card{display:grid;grid-row:span 9;grid-template-rows:subgrid}.choice-facts{display:contents}.choice-facts div:first-child{border-top:1px solid rgba(225,235,225,.24);padding-top:.8rem}.choice-facts div:last-child{border-bottom:1px solid rgba(225,235,225,.24);padding-bottom:.8rem}}}

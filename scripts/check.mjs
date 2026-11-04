@@ -24,7 +24,7 @@ const choiceCards=[...landing.matchAll(/<a class="choice-card"[\s\S]*?<\/a>/g)].
 assert(choiceCards.length===2,'The game choices remain separate links.');
 for(const [index,card] of choiceCards.entries()) {
   assert(/<dl class="choice-facts">/.test(card),`Choice ${index+1}: provide an accessible fact list.`);
-  for(const label of ['Players','Style','Play','Missions']) assert(new RegExp(`<dt>${label}<\\/dt>`,'i').test(card),`Choice ${index+1}: include ${label} comparison.`);
+  for(const label of ['Players','Style','Play','Missions','Roles']) assert(new RegExp(`<dt>${label}<\\/dt>`,'i').test(card),`Choice ${index+1}: include ${label} comparison.`);
 }
 assert(/1 student\s*·\s*1 PC/i.test(choiceCards[0]||'')&&/5 roles in order/i.test(choiceCards[0]||'')&&/personal report/i.test(choiceCards[0]||''),'Five Keys comparison explains its one-student setup, five roles and report.');
 assert(/9 students\s*·\s*9 PCs planned/i.test(choiceCards[1]||'')&&/8 engineers/i.test(choiceCards[1]||'')&&/leader/i.test(choiceCards[1]||''),'Jewel comparison explains its planned nine-PC team setup.');
