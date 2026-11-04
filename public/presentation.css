@@ -51,3 +51,5 @@ body[data-view="home"] .view-nav{display:none}
 .choice-facts ul{margin:0;padding-left:1.1rem}
 .choice-facts li+li{margin-top:.15rem}
 @media(min-width:721px){@supports(grid-template-rows:subgrid){.choice-grid{row-gap:.55rem}.choice-card{display:grid;grid-row:span 9;grid-template-rows:subgrid}.choice-facts{display:contents}.choice-facts div:first-child{border-top:1px solid rgba(225,235,225,.24);padding-top:.8rem}.choice-facts div:last-child{border-bottom:1px solid rgba(225,235,225,.24);padding-bottom:.8rem}}}
+
+.choice-card:hover{transform:none}
