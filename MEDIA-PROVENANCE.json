@@ -2095,6 +2095,20 @@
       "role": "mechanical_engineer",
       "purpose": "location-year",
       "accepted_visual_record": "local-reference/mission-intros-v097/operator-visual-review-38304.json"
+    },
+    {
+      "file": "assets/five-event-concept-20261104.png",
+      "edition": "five-keys",
+      "kind": "AI-generated single-player event concept illustration",
+      "sha256": "146106e37f30be868db8c471ced583fdf6c6dd6c70fad81153a5982ae9313535",
+      "bytes": 2300030,
+      "dimensions": [1672, 941],
+      "caption": "Imagined single-player event station; the displayed game and badges are illustrative, not actual gameplay or a confirmed venue.",
+      "source": {
+        "method": "Built-in image_gen, 4 November 2026; generated image copied unchanged",
+        "prompt": "Create a high-quality wide landscape concept illustration for a university open house website: a single student at one desktop PC playing a colorful, friendly cartoon construction-career adventure, with a supportive event guide nearby. A small display of five distinct construction-role badge mockups sits on the table. Modern clean exhibition booth, warm welcoming lighting, dark forest green and muted gold accents. Show exactly one active gameplay station; no text, logos, legible screens, QR codes, or watermarks. This is an imagined future event, not documentary photography."
+      },
+      "transform": {"byte_exact_copy": true}
     }
   ]
 }

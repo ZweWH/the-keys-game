@@ -13,9 +13,22 @@ const assert=(value,message)=>{if(!value)errors.push(message);};
 const data=context.window.KEYS_CONTENT;
 const fiveContract=JSON.parse(readFileSync(new URL('./five-keys-contract.json',import.meta.url),'utf8'));
 const sectionOrder=['id="overview"','id="option-one"','id="option-two"','id="presentation-flow"'].map(id=>html.indexOf(id));
-assert(sectionOrder.every(index=>index>=0)&&sectionOrder.every((index,i)=>i===0||index>sectionOrder[i-1]),'Showcase flow must be hero, Option 1, Option 2, then comparison.');
-for(const anchor of ['#option-one','#option-two','#presentation-flow'])assert(html.includes(`href="${anchor}"`),`Showcase navigation missing ${anchor}`);
-assert(/The Keys:\s*<br>.*Event Day.*<br>Game Options/s.test(html),'Hero must identify the event-day options.');
+assert(sectionOrder.every(index=>index>=0)&&sectionOrder.every((index,i)=>i===0||index>sectionOrder[i-1]),'Choice and both option sections must exist in order.');
+for(const view of ['home','five','eight'])assert(html.includes(`data-view-switch="${view}"`),`Navigation missing ${view} view`);
+assert(/Choose your<br><em>game adventure\./i.test(html),'Landing screen must invite a game choice.');
+assert(!/<strong>THE KEYS\s*<span>\| A Construction Adventure/i.test(html),'Do not use The Keys as umbrella branding.');
+assert(/id="option-one"[^>]*\bhidden/.test(html)&&/id="option-two"[^>]*\bhidden/.test(html),'Game pages start hidden until selected.');
+const landing=html.slice(html.indexOf('id="overview"'),html.indexOf('id="option-one"'));
+assert((landing.match(/class="choice-card"/g)||[]).length===2,'Landing must present exactly two game choices.');
+for(const [id,expected] of [['option-one',data.five.hero],['option-two',data.eight.hero]]){
+  const start=html.indexOf(`id="${id}"`);
+  const cover=html.slice(start,html.indexOf('game-cover-content',start));
+  assert(cover.includes(`assets/${expected}`),`${id}: retain its established cover image.`);
+}
+for(const [image,label] of [['five-event-concept-20261104.png','AI concept'],['nine-pc-event-v062.webp','AI concept']]){
+  const figure=html.match(new RegExp(`<figure[^>]*>\\s*<img src="assets/${image.replace(/[.]/g,'\\.')}"[\\s\\S]*?<\\/figure>`));
+  assert(figure&&figure[0].includes(label),`${image}: identify the event illustration as AI concept art.`);
+}
 assert(html.includes('https://the-five-keys-demo.decent-bat-2665.chatgpt.site/'),'Five Keys browser demo link missing.');
 assert(/planned event reward/i.test(html)&&/QR/i.test(html)&&/planned/i.test(html),'Physical badge and course QR must be identified as planned.');
 assert(/BIM completion is recorded separately/i.test(html)&&/not as a career aptitude test/i.test(html),'Report description must preserve BIM and career-assessment limits.');
@@ -23,7 +36,7 @@ assert(/nine-PC venue LAN setup still needs testing/i.test(html),'Nine-PC event 
 assert(/fictional story/i.test(html)&&/not claims about the real Jewel/i.test(html),'Jewel story and faults must be labelled fictional.');
 assert(/<video controls playsinline preload="metadata"/.test(html)&&/jewel-opening\.mp4/.test(html),'Opening film must retain native playback controls.');
 assert(/<table>/.test(html)&&/<caption>/.test(html)&&/<th scope="row">/.test(html),'Comparison needs a labelled table with row headers.');
-assert(/Woh Hup · The Keys Project/.test(html)&&/Back to top/.test(html),'Showcase footer and back-to-top link are required.');
+assert(/Woh Hup/.test(html)&&/BCAA Open House Showcase/.test(html)&&/Back to top/.test(html),'Showcase footer and back-to-top link are required.');
 assert(JSON.stringify(data.five)===JSON.stringify(fiveContract),'Preserve every existing Five Keys content field, mission, video, gallery and outcome.');
 assert(data.five.missions.length===5,'Godot must explain five missions.');
 assert(data.eight.missions.length===8,'Unreal must explain eight missions.');
