@@ -20,15 +20,32 @@ assert(!/<strong>THE KEYS\s*<span>\| A Construction Adventure/i.test(html),'Do n
 assert(/id="option-one"[^>]*\bhidden/.test(html)&&/id="option-two"[^>]*\bhidden/.test(html),'Game pages start hidden until selected.');
 const landing=html.slice(html.indexOf('id="overview"'),html.indexOf('id="option-one"'));
 assert((landing.match(/class="choice-card"/g)||[]).length===2,'Landing must present exactly two game choices.');
+const choiceCards=[...landing.matchAll(/<a class="choice-card"[\s\S]*?<\/a>/g)].map(match=>match[0]);
+assert(choiceCards.length===2,'The game choices remain separate links.');
+for(const [index,card] of choiceCards.entries()) {
+  assert(/<dl class="choice-facts">/.test(card),`Choice ${index+1}: provide an accessible fact list.`);
+  for(const label of ['Players','Style','Play']) assert(new RegExp(`<dt>${label}<\\/dt>`,'i').test(card),`Choice ${index+1}: include ${label} comparison.`);
+}
+assert(/1 student\s*·\s*1 PC/i.test(choiceCards[0]||'')&&/5 roles in order/i.test(choiceCards[0]||'')&&/personal report/i.test(choiceCards[0]||''),'Five Keys comparison explains its one-student setup, five roles and report.');
+assert(/9 students\s*·\s*9 PCs planned/i.test(choiceCards[1]||'')&&/8 engineers/i.test(choiceCards[1]||'')&&/leader/i.test(choiceCards[1]||''),'Jewel comparison explains its planned nine-PC team setup.');
 for(const [id,expected] of [['option-one',data.five.hero],['option-two',data.eight.hero]]){
   const start=html.indexOf(`id="${id}"`);
   const cover=html.slice(start,html.indexOf('game-cover-content',start));
   assert(cover.includes(`assets/${expected}`),`${id}: retain its established cover image.`);
 }
-for(const [image,label] of [['five-event-concept-20261104.png','AI concept'],['nine-pc-event-v062.webp','AI concept']]){
-  const figure=html.match(new RegExp(`<figure[^>]*>\\s*<img src="assets/${image.replace(/[.]/g,'\\.')}"[\\s\\S]*?<\\/figure>`));
-  assert(figure&&figure[0].includes(label),`${image}: identify the event illustration as AI concept art.`);
+const eventFigures=[...html.matchAll(/<figure class="event-imagination">[\s\S]*?<\/figure>/g)].map(match=>match[0]);
+for(const [image,gameplay] of [['five-event-concept-20261104.png','godot-site.webp'],['nine-pc-event-v062.webp','v055-upper-deck-cover.webp']]){
+  const figure=eventFigures.find(item=>item.includes(`src="assets/${image}"`));
+  assert(figure&&/AI concept/i.test(figure),`${image}: identify the event illustration as AI concept art.`);
+  assert(figure&&figure.includes(`href="assets/${gameplay}"`),`${image}: show the selected genuine game capture on the monitors.`);
+  assert(figure&&/capture|gameplay/i.test(figure)&&/placed|overlay|overlaid/i.test(figure),`${image}: disclose that the real game image was placed into the imagined scene.`);
 }
+const jewelEvent=eventFigures.find(item=>item.includes('src="assets/nine-pc-event-v062.webp"'))||'';
+assert((jewelEvent.match(/<image href="assets\/v055-upper-deck-cover\.webp"/g)||[]).length===9,'Jewel event illustration uses genuine game captures on all nine monitors.');
+assert(/earlier Jewel gameplay/i.test(jewelEvent)&&/nine-PC setup still needs testing/i.test(jewelEvent),'Jewel event image explains the capture age and untested event setup.');
+assert(/href="event-monitors\.css/.test(html),'Event monitor overlays require their layout stylesheet.');
+const monitorCSS=readFileSync(join(root,'event-monitors.css'),'utf8');
+assert(/\.event-screen-overlay\s*\{[^}]*position:\s*absolute/s.test(monitorCSS)&&/clip-path="url\(#five-monitor-screen\)"/.test(html),'Event monitor images need their positioned overlay and Five Keys monitor clipping.');
 assert(html.includes('https://the-five-keys-demo.decent-bat-2665.chatgpt.site/'),'Five Keys browser demo link missing.');
 assert(/planned event reward/i.test(html)&&/QR/i.test(html)&&/planned/i.test(html),'Physical badge and course QR must be identified as planned.');
 assert(/BIM completion is recorded separately/i.test(html)&&/not as a career aptitude test/i.test(html),'Report description must preserve BIM and career-assessment limits.');
@@ -84,6 +101,9 @@ for(const [edition,d] of Object.entries(data)){
   }
 }
 const provenance=JSON.parse(readFileSync(new URL('../MEDIA-PROVENANCE.json',import.meta.url),'utf8'));
+for(const [file,kind] of [['assets/godot-site.webp','native Godot capture'],['assets/v055-upper-deck-cover.webp','user-supplied native Unreal screenshot']]){
+  assert(provenance.assets.some(entry=>entry.file===file&&entry.kind===kind),`${file}: event monitor image needs native gameplay provenance.`);
+}
 for(const mission of data.eight.missions){
   const entry=provenance.assets.find(item=>item.file===`assets/${mission.image}`);
   assert(entry?.edition==='eight-keys'&&entry.kind==='native Unreal mission introduction capture'&&entry.role===mission.storyID&&entry.source?.sha256&&entry.transform?.byte_exact_copy===true,`${mission.role}: actual introduction image requires pinned native provenance.`);

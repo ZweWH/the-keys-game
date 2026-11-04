@@ -31,3 +31,9 @@ body[data-view="home"] .view-nav{display:none}
 @media(max-width:720px){.choice-hero{min-height:calc(100vh - 80px)}.choice-hero .hero-content{padding:65px 5vw 80px}.choice-grid{grid-template-columns:1fr}.choice-card{min-height:150px}.game-cover{min-height:540px;height:72vh}.game-cover-content{padding:110px 5vw 70px}.cover-title{font-size:clamp(3rem,11vw,5rem)}.game-cover>img{object-position:60% center}.view-nav a{padding:.4rem .15rem}.event-imagination img{max-height:none}}
 @media(prefers-reduced-motion:reduce){.game-cover>img,.game-cover-content{animation:none}.choice-card{transition:none}}
 .event-imagination img{object-fit:contain;background:#e2e8df}
+
+/* The same three points make the two games easy to compare. */
+.choice-facts{display:grid;gap:.45rem;margin:.5rem 0 1rem;padding:.8rem 0;border-top:1px solid rgba(225,235,225,.24);border-bottom:1px solid rgba(225,235,225,.24)}
+.choice-facts div{display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:.6rem;align-items:baseline;font-size:.8rem;line-height:1.35}
+.choice-facts dt{color:#e2bf7b;font-weight:700}
+.choice-facts dd{margin:0;color:#f4f7ef}
