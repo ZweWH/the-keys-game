@@ -15,7 +15,7 @@ const fiveContract=JSON.parse(readFileSync(new URL('./five-keys-contract.json',i
 const sectionOrder=['id="overview"','id="option-one"','id="option-two"'].map(id=>html.indexOf(id));
 assert(sectionOrder.every(index=>index>=0)&&sectionOrder.every((index,i)=>i===0||index>sectionOrder[i-1]),'Choice and both option sections must exist in order.');
 for(const view of ['home','five','eight'])assert(html.includes(`data-view-switch="${view}"`),`Navigation missing ${view} view`);
-assert(/Choose your<br><em>game adventure\./i.test(html),'Landing screen must invite a game choice.');
+assert(/Step Into the<br><em>World of Construction<\/em>/i.test(html),'Landing screen must show the requested title.');
 assert(!/<strong>THE KEYS\s*<span>\| A Construction Adventure/i.test(html),'Do not use The Keys as umbrella branding.');
 assert(/id="option-one"[^>]*\bhidden/.test(html)&&/id="option-two"[^>]*\bhidden/.test(html),'Game pages start hidden until selected.');
 const landing=html.slice(html.indexOf('id="overview"'),html.indexOf('id="option-one"'));
