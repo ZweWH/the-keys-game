@@ -3,44 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071b18">
-  <meta name="description" content="Play THE FIVE KEYS: BEYOND THE LOCK or discover JEWEL: THE LAST TIMELINE, an Unreal prototype with eight engineering missions.">
-  <meta property="og:title" content="The Keys — Two adventures">
-  <meta property="og:description" content="Play THE FIVE KEYS: BEYOND THE LOCK or discover JEWEL: THE LAST TIMELINE, an Unreal prototype with eight engineering missions.">
+  <meta name="theme-color" content="#0b2925">
+  <meta name="description" content="Two construction game experiences for the BCAA Open House: The Five Keys and Jewel: The Last Timeline.">
+  <meta property="og:title" content="The Keys: Event Day Game Options">
+  <meta property="og:description" content="Explore construction careers through two interactive game experiences.">
   <meta property="og:type" content="website">
-  <title>THE FIVE KEYS: BEYOND THE LOCK & JEWEL: THE LAST TIMELINE</title>
+  <title>The Keys | A Construction Adventure</title>
   <link rel="icon" href="assets/key.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="outcomes.css">
-  <link rel="stylesheet" href="showcase.css?v=20261029-beyond-lock">
-  <link rel="stylesheet" href="latest.css?v=20261104">
-  <link rel="preload" href="assets/jewel-home-menu-cover-v065.webp" as="image">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="presentation.css?v=20261104">
   <script src="content.js?v=20261104" defer></script>
-  <script src="app.js?v=20261104" defer></script>
+  <script src="presentation.js?v=20261104" defer></script>
 </head>
-<body data-edition="eight">
+<body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="#overview" aria-label="The Keys home"><img src="assets/wohhup-logo.png" alt="Woh Hup" width="49" height="49"><span>THE KEYS<span class="brand-small">A CONSTRUCTION ADVENTURE</span></span></a>
-    <nav class="desktop-nav" aria-label="Main navigation"><a href="#story">The story</a><a href="#missions">Missions</a><a href="#gameplay">Gameplay</a><a href="#event-setup" id="team-nav" hidden>Event setup</a><a href="#next-chapter" id="outcomes-nav" hidden>Your next step</a><a href="#gallery" id="gallery-nav" hidden>Gallery</a></nav>
-    <a class="header-play" href="https://the-five-keys-demo.decent-bat-2665.chatgpt.site/" target="_blank" rel="noopener noreferrer">Play The Five Keys <span aria-hidden="true">↗</span></a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#overview"><img src="assets/wohhup-logo.png" alt="Woh Hup" width="49" height="49"><span><strong>THE KEYS <span>| A Construction Adventure</span></strong><small>Choose Your Event Day Adventure</small></span></a>
+    <nav aria-label="Main navigation"><a href="#option-one">Option 1: The Five Keys</a><a href="#option-two">Option 2: Jewel Timeline</a><a href="#presentation-flow">Presentation Flow</a></nav>
   </header>
-  <div class="edition-bar">
-    <span class="edition-label">CHOOSE YOUR ADVENTURE</span>
-    <div class="edition-tabs" role="tablist" aria-label="Game version">
-      <button id="tab-five" class="edition-tab" type="button" role="tab" aria-selected="false" aria-controls="edition-panel" tabindex="-1" data-edition="five" aria-label="OPTION 01 THE FIVE KEYS: BEYOND THE LOCK"><span class="option-label">OPTION 01</span><span class="edition-tab-title">THE FIVE KEYS<span class="edition-subtitle">Beyond the Lock</span></span></button>
-      <button id="tab-eight" class="edition-tab" type="button" role="tab" aria-selected="true" aria-controls="edition-panel" tabindex="0" data-edition="eight" aria-label="OPTION 02 JEWEL: THE LAST TIMELINE"><span class="option-label">OPTION 02</span><span class="edition-tab-title">JEWEL<span class="edition-subtitle">The Last Timeline</span></span></button>
-    </div>
-  </div>
   <main id="main">
-    <div id="edition-panel" role="tabpanel" aria-labelledby="tab-eight" tabindex="0"></div>
-    <noscript><div class="noscript"><h1>THE FIVE KEYS: BEYOND THE LOCK & JEWEL: THE LAST TIMELINE</h1><p>Enable JavaScript to switch adventures and explore the missions.</p><a href="https://the-five-keys-demo.decent-bat-2665.chatgpt.site/">Play The Five Keys: Beyond the Lock</a></div></noscript>
+    <section class="hero" id="overview" aria-labelledby="hero-title">
+      <img src="assets/jewel-home-menu-cover-v065.webp" alt="Illustration of the Director looking towards Jewel’s Rain Vortex" fetchpriority="high">
+      <div class="hero-shade"></div><div class="hero-content"><p class="eyebrow light">WOH HUP · BCAA OPEN HOUSE SHOWCASE</p><h1 id="hero-title">The Keys:<br><em>Event Day</em><br>Game Options</h1><p class="hero-description">Two unique ways for students to explore construction careers through interactive gameplay.</p><div class="actions"><a class="button button-gold" href="#option-one">Explore Option 1 <span>(Single Player) ↓</span></a><a class="button button-outline" href="#option-two">Explore Option 2 <span>(Multiplayer) ↓</span></a></div></div><p class="hero-credit">JEWEL HOME-MENU ILLUSTRATION · NOT GAMEPLAY</p>
+    </section>
+    <section class="option option-one" id="option-one" aria-labelledby="five-title">
+      <div class="wrap"><div class="section-top"><p class="section-number">01 / THE FIRST ADVENTURE</p><span class="badge">SINGLE-PLAYER <b>·</b> STYLIZED CARTOON STYLE <b>·</b> CAREER DISCOVERY</span></div>
+        <div class="intro-grid"><div><p class="eyebrow">ONE PLAYER. FIVE PERSPECTIVES.</p><h2 id="five-title">THE FIVE KEYS:<br><em>BEYOND THE LOCK</em></h2><p class="lead">A one-player journey through five construction roles, with friendly cartoon-style graphics and practical challenges.</p><a class="button button-dark" href="https://the-five-keys-demo.decent-bat-2665.chatgpt.site/" target="_blank" rel="noopener noreferrer">Play The Five Keys Demo <span aria-hidden="true">↗</span></a><p class="small-note">Browser demo · The first download is approximately 93 MB.</p></div><figure class="intro-image"><img src="assets/godot-hub.webp" alt="The Five Keys game hub and key door" loading="lazy"><figcaption>Actual game capture · The Five Keys hub</figcaption></figure></div>
+        <div class="subhead"><div><p class="eyebrow">FIVE TASKS, FIVE ROLES</p><h3>Discover the work behind the build.</h3></div><p>Students take on the roles in order. Each completed mission earns a key.</p></div>
+        <div class="role-grid five-roles" id="five-roles"></div>
+        <div class="reward-layout" id="next-chapter"><div><p class="eyebrow">THE REWARD</p><h3>Play, reflect,<br>find your next step.</h3><p>The demo generates a personal report from the player’s results. It compares decision accuracy for Site, Technical, Planning and QAQC; BIM completion is recorded separately. Use it to start a conversation, not as a career aptitude test.</p><p><strong>Planned event reward:</strong> a custom 3D-printed role badge with a QR code on the back linking to BCA course information for that role. Badge production and the role-specific QR handout are planned.</p></div><div class="reward-pictures"><figure><img src="assets/godot-team-report.webp" alt="Example report with demonstration results" loading="lazy"><figcaption>Example report · demonstration results</figcaption></figure><figure><img src="assets/godot-badges-product.webp" alt="3D designs of five role badges" loading="lazy"><figcaption>Badge designs · 3D preview, not finished badges</figcaption></figure></div></div>
+        <details class="media-details" id="gallery"><summary>See Five Keys photos and gameplay clips <span>+ VIEW MEDIA</span></summary><div id="five-media"></div></details>
+      </div>
+    </section>
+    <section class="option option-two" id="option-two" aria-labelledby="eight-title">
+      <div class="wrap"><div class="section-top"><p class="section-number">02 / THE TEAM ADVENTURE</p><span class="badge badge-dark">9-PLAYER MULTIPLAYER LAN <b>·</b> REALISTIC CHANGI JEWEL <b>·</b> TIME TRAVEL RESCUE</span></div>
+        <div class="intro-grid jewel-intro"><div><p class="eyebrow">CHANGE THE PAST. RESTORE THE FLOW.</p><h2 id="eight-title">JEWEL:<br><em>THE LAST TIMELINE</em></h2><p class="lead">Inspired by <i>Avengers: Endgame</i>, a team travels back to fix engineering problems and bring the waterfall back to life.</p><p>In this fictional story, a past construction mistake stops the Rain Vortex. The students must find and check the problems before returning to the future with their keys.</p><p class="story-note">The story, faults and time travel are fictional; they are not claims about the real Jewel.</p></div><figure class="intro-image"><img src="assets/jewel-opening-poster.png" alt="A frame from the Jewel game opening, looking towards the Rain Vortex roof" loading="lazy"><figcaption>Actual game capture · Opening film</figcaption></figure></div>
+        <div class="film-layout" id="gameplay"><div><p class="eyebrow">SEE THE WORLD</p><h3>Step inside Jewel.</h3><p>Watch the short opening before the team begins its journey.</p><p class="small-note">Actual 24-second opening · silent · recorded before the later role introductions and BIM character update.</p></div><figure><video controls playsinline preload="metadata" poster="assets/jewel-opening-poster.png" aria-describedby="film-description"><source src="assets/jewel-opening.mp4" type="video/mp4">Your browser cannot play the video. <a href="assets/jewel-opening.mp4">Open the video</a>.</video><figcaption id="film-description">The camera moves through Jewel’s waterfall and gardens, then past moving trains. No speech or soundtrack.</figcaption></figure></div>
+        <div class="team-block" id="team-play"><div class="subhead" id="event-setup"><div><p class="eyebrow">EVENT DAY SETUP · PLANNED</p><h3>Nine students.<br>One team.</h3></div><p>Nine students play at the same time on nine individual PCs: one student leader and eight engineering role players.</p></div><div class="team-grid"><article><span>01 / LEADER</span><h4>Guide the team.</h4><p>The leader hosts, operates the time machine, coordinates progress and receives the keys.</p></article><article><span>02 / EIGHT ENGINEERS</span><h4>Work on your mission.</h4><p>Each student takes a different role and completes an independent mission in the past.</p></article><article><span>03 / PEER SUPPORT</span><h4>Share what you know.</h4><p>Students who finish early can share clues and help teammates. Direct control of another player’s mission has not been verified.</p></article></div><p class="status-note"><strong>Current status:</strong> Eight scoped missions, the team ending and a Host/Join foundation exist in the prototype. The full nine-PC venue LAN setup still needs testing.</p></div>
+        <div class="subhead" id="missions"><div><p class="eyebrow">EIGHT ENGINEERING ROLES</p><h3>Different tasks.<br>One shared goal.</h3></div><p>Each role checks its work and earns a unique key. The images show actual prototype mission introductions; the dates are fictional.</p></div><div class="role-grid eight-roles" id="eight-roles"></div>
+        <div class="ending"><div><p class="eyebrow">THE ENDING</p><h3>Eight keys.<br>One last action.</h3><ol class="ending-steps"><li>Complete and verify each mission to collect a unique key.</li><li>Use the watch to travel back to the future.</li><li>Hand the keys to the leader.</li><li>The leader uses all eight keys to open the secret door, then presses the hidden button to restore the waterfall.</li></ol></div><figure><img src="assets/time-watch-story-v062.webp" alt="Four-panel concept showing a mission, return watch, key handover and secret door" loading="lazy"><figcaption>Concept art · Team story illustration, not gameplay</figcaption></figure></div>
+        <figure class="crew" id="crew-title"><img src="assets/crew-v7.webp" alt="Concept artwork of the Director and eight engineering roles" loading="lazy"><figcaption>Character concept art · One leader, eight roles</figcaption></figure>
+        <div class="demo-note" id="current-build"><strong>Presenting today:</strong> The current local one-PC Presentation Demo lets a presenter approach a role and enter its mission. Returning or restarting a mission in this mode does not collect team keys. The older public Windows download does not contain every feature shown here.</div>
+        <details class="media-details" id="jewel-media-details"><summary>See more Jewel images and event sketches <span>+ VIEW MEDIA</span></summary><div id="jewel-media"></div></details>
+      </div>
+    </section>
+    <section class="comparison" id="presentation-flow" aria-labelledby="comparison-title"><div class="wrap"><p class="section-number">03 / PRESENTATION FLOW</p><div class="subhead"><div><p class="eyebrow">TWO OPTIONS, ONE PURPOSE</p><h2 id="comparison-title">Choose the adventure.</h2></div><p>Start with one student exploring five roles, then introduce a team working together to restore the flow.</p></div><div class="table-wrap"><table><caption>Event day game options at a glance</caption><thead><tr><th scope="col">Feature</th><th scope="col">Option 1: The Five Keys</th><th scope="col">Option 2: Jewel: The Last Timeline</th></tr></thead><tbody><tr><th scope="row">Players</th><td>Single player · 1 PC</td><td>Team of 9 · 9 PCs planned</td></tr><tr><th scope="row">Visual style</th><td>Stylized / cartoon</td><td>Realistic Jewel-inspired setting</td></tr><tr><th scope="row">Theme</th><td>Career exploration and report</td><td>Time-travel rescue inspired by Avengers: Endgame</td></tr><tr><th scope="row">Roles</th><td>5 roles in sequence</td><td>8 engineering roles + 1 leader</td></tr><tr><th scope="row">Takeaway</th><td>Personal report; role badge and course QR planned</td><td>Teamwork, coordination and handover</td></tr></tbody></table></div><p class="comparison-note">Both are prototypes. The nine-PC setup, physical badges and course QR handout need event preparation and testing.</p></div></section>
+    <noscript><p class="noscript">Enable JavaScript to see all role cards and media. <a href="https://the-five-keys-demo.decent-bat-2665.chatgpt.site/">Play The Five Keys Demo</a>.</p></noscript>
   </main>
-  <footer class="site-footer">
-    <div class="footer-top"><a class="footer-wordmark" href="#overview">ONE TEAM.<br><span>EVERY KEY.</span></a><div><p>A digital construction adventure<br>for BCAA Open House 2027.</p><p class="muted">Explore the people who build our world.</p></div><a class="back-top" href="#overview" aria-label="Back to top">↑</a></div>
-    <div class="footer-bottom"><span>WOH HUP · THE KEYS PROJECT</span><div><button type="button" data-switch="five">The Five Keys: Beyond the Lock</button><button type="button" data-switch="eight">JEWEL: The Last Timeline</button></div><span>Fictional game challenges.</span></div>
-  </footer>
-  <dialog id="media-dialog" aria-labelledby="media-title"><div class="dialog-head"><div><span id="media-kind" class="eyebrow"></span><h2 id="media-title"></h2></div><button id="close-dialog" class="icon-button" type="button" aria-label="Close media">✕</button></div><div id="media-body"></div><div class="dialog-foot"><p id="media-caption" aria-live="polite"></p><div id="image-navigation"><button id="previous-image" class="icon-button" type="button" aria-label="Previous screenshot">←</button><span id="image-count"></span><button id="next-image" class="icon-button" type="button" aria-label="Next screenshot">→</button></div></div></dialog>
-  <div class="sr-only" id="edition-announcement" role="status" aria-live="polite"></div>
+  <footer><div class="wrap footer-inner"><p>Woh Hup · The Keys Project <span>| BCAA Open House Showcase</span></p><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
