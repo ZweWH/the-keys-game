@@ -50,7 +50,7 @@ assert(html.includes('https://the-five-keys-demo.decent-bat-2665.chatgpt.site/')
 assert(/planned event reward/i.test(html)&&/QR/i.test(html)&&/planned/i.test(html),'Physical badge and course QR must be identified as planned.');
 assert(/BIM completion is recorded separately/i.test(html)&&/not as a career aptitude test/i.test(html),'Report description must preserve BIM and career-assessment limits.');
 assert(/nine-PC venue LAN setup still needs testing/i.test(html),'Nine-PC event play must not be claimed as tested.');
-assert(/fictional story/i.test(html)&&/not claims about the real Jewel/i.test(html),'Jewel story and faults must be labelled fictional.');
+assert(/story, faults and time travel are fictional/i.test(html)&&/not claims about the real Jewel/i.test(html),'Jewel story and faults must be labelled fictional.');
 assert(/<video controls playsinline preload="metadata"/.test(html)&&/jewel-opening\.mp4/.test(html),'Opening film must retain native playback controls.');
 assert(!html.includes('id="presentation-flow"'),'Keep the comparison on the home choice cards, not at the end of Jewel.');
 assert(!html.includes('id="latest-gameplay"'),'The recently added character gameplay gallery stays removed.');
