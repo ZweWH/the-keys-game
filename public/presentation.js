@@ -14,7 +14,6 @@
   document.querySelector('#jewel-media').innerHTML = `<p class="small-note">Actual game views and concept art are labelled below. Earlier captures may show older character designs.</p><div class="media-grid">${gallery(eight)}${figure(event.image,event.alt,`${event.caption} · ${event.text}`)}</div>`;
   // Three views share the same document; ordinary links keep keyboard and browser navigation natural.
   const views = {home: document.getElementById('overview'), five: document.getElementById('option-one'), eight: document.getElementById('option-two')};
-  const comparison = document.getElementById('presentation-flow');
   const navLinks = document.querySelectorAll('.view-nav [data-view-switch]');
   const links = document.querySelectorAll('[data-view-switch]');
   const detectView = () => {
@@ -22,13 +21,12 @@
     if (edition === 'five' || edition === 'eight') return edition;
     const hash = location.hash;
     if (['#option-one', '#five-details', '#five-roles', '#gallery', '#next-chapter'].includes(hash)) return 'five';
-    if (['#option-two', '#eight-details', '#team-play', '#event-setup', '#missions', '#gameplay', '#crew-title', '#current-build', '#presentation-flow', '#story'].includes(hash)) return 'eight';
+    if (['#option-two', '#eight-details', '#team-play', '#event-setup', '#missions', '#gameplay', '#crew-title', '#current-build', '#presentation-flow', '#latest-gameplay', '#story'].includes(hash)) return 'eight';
     return 'home';
   };
   const showView = (name, target) => {
     Object.entries(views).forEach(([key, section]) => { section.hidden = key !== name; });
     document.body.dataset.view = name;
-    comparison.hidden = name !== 'eight';
     navLinks.forEach(link => {
       if (link.dataset.viewSwitch === name) link.setAttribute('aria-current', 'page');
       else link.removeAttribute('aria-current');
@@ -43,6 +41,8 @@
     let target = location.hash.slice(1);
     if (view !== 'home' && target === 'overview') target = `option-${view === 'five' ? 'one' : 'two'}`;
     if (target === 'story') target = view === 'five' ? 'option-one' : 'option-two';
+    if (target === 'presentation-flow') target = view === 'five' ? 'option-one' : 'option-two';
+    if (view === 'eight' && target === 'latest-gameplay') target = 'gameplay';
     if (view === 'five' && target === 'missions') target = 'five-roles';
     if (view === 'five' && target === 'gameplay') { document.getElementById('gallery').open = true; target = 'gallery'; }
     showView(view, target || (view === 'home' ? 'overview' : `option-${view === 'five' ? 'one' : 'two'}`));

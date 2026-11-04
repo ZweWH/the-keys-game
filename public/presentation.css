@@ -38,14 +38,10 @@ body[data-view="home"] .view-nav{display:none}
 .choice-facts dt{color:#e2bf7b;font-weight:700}
 .choice-facts dd{margin:0;color:#f4f7ef}
 
-/* Current Jewel prototype: actual gameplay captures, separate from concept artwork. */
-.latest-gameplay .subhead{margin-top:6rem}
-.latest-gameplay-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
-.latest-gameplay-grid figure{min-width:0}
-.latest-gameplay-grid img{width:100%;aspect-ratio:16/9;object-fit:contain;background:#102a25}
-.latest-gameplay-grid figcaption{font-size:.8rem;line-height:1.5}
-.latest-gameplay-grid figcaption strong{color:var(--ink)}
-.latest-gameplay-note{font-size:.8rem;color:#4c6259;margin:1.5rem 0 0}
-.latest-gameplay-mission-title{font-size:1.1rem;margin:2.5rem 0 1rem}
-.latest-gameplay-missions{grid-template-columns:repeat(2,minmax(0,1fr));max-width:70%}
-@media(max-width:720px){.latest-gameplay .subhead{margin-top:4rem}.latest-gameplay-grid{grid-template-columns:1fr;gap:1.5rem}.latest-gameplay-missions{max-width:none}}
+/* Keep the earlier seven crew concepts while updating NY and Chien. */
+.crew-lineup{position:relative}
+.crew-scroll{overflow-x:auto}
+.crew-scroll:focus-visible{outline:3px solid #dbac4f;outline-offset:4px}
+.crew .crew-original{width:100%;height:auto;max-height:none;object-fit:contain}
+.crew-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+@media(max-width:720px){.crew-lineup{min-width:960px}}

@@ -13,7 +13,7 @@ let count = 0;
 const check = (ok, message) => { if (!ok) throw new Error(message); count++; };
 
 function render(hash = '', search = '') {
-  const ids = ['five-roles', 'eight-roles', 'five-media', 'jewel-media', 'overview', 'option-one', 'option-two', 'presentation-flow', 'gallery', 'team-play', 'missions', 'gameplay', 'event-setup'];
+  const ids = ['five-roles', 'eight-roles', 'five-media', 'jewel-media', 'overview', 'option-one', 'option-two', 'gallery', 'team-play', 'missions', 'gameplay', 'event-setup'];
   const nodes = Object.fromEntries(ids.map(id => [id, {
     innerHTML: '', hidden: false, scrolled: false, open: false,
     scrollIntoView() { this.scrolled = true; }
@@ -82,7 +82,7 @@ result.details.handler();
 check(result.pauses === priorPauseCount + 1, 'Closing media pauses contained video');
 
 check(result.document.body.dataset.view === 'home' && !result.nodes.overview.hidden && result.nodes['option-one'].hidden && result.nodes['option-two'].hidden, 'Landing starts as its own view');
-check(result.nodes['presentation-flow'].hidden, 'Comparison does not appear on landing');
+check(!html.includes('id="presentation-flow"'), 'Comparison is absent from the Jewel page');
 function activate(fixture, view) {
   let prevented = false;
   fixture.links.find(link => link.dataset.viewSwitch === view).handler({preventDefault() { prevented = true; }});
@@ -93,7 +93,7 @@ check(result.document.body.dataset.view === 'five' && !result.nodes['option-one'
 check(result.location.search === '?edition=five' && result.location.hash === '#option-one', 'Five Keys selection creates a shareable link');
 check(result.links[1].attrs['aria-current'] === 'page' && !result.links[0].attrs['aria-current'], 'Current navigation is announced');
 activate(result, 'eight');
-check(result.document.body.dataset.view === 'eight' && !result.nodes['option-two'].hidden && result.nodes['option-one'].hidden && !result.nodes['presentation-flow'].hidden, 'Jewel selection shows its game and comparison');
+check(result.document.body.dataset.view === 'eight' && !result.nodes['option-two'].hidden && result.nodes['option-one'].hidden, 'Jewel selection shows only its game');
 check(result.location.search === '?edition=eight' && result.location.hash === '#option-two', 'Jewel selection creates a shareable link');
 activate(result, 'home');
 check(result.document.body.dataset.view === 'home' && result.location.search === '' && result.location.hash === '', 'Home returns to the game choice');
@@ -105,6 +105,8 @@ check(render('#story', '?edition=five').topScrolls.some(s => s.view === 'five' &
 check(render('#story', '?edition=eight').topScrolls.some(s => s.view === 'eight' && s.top === 0), 'Older Jewel story link reaches Option 2');
 check(render('#overview', '?edition=five').topScrolls.some(s => s.view === 'five' && s.top === 0), 'Older Five Keys overview link reaches its game cover');
 check(render('#overview', '?edition=eight').topScrolls.some(s => s.view === 'eight' && s.top === 0), 'Older Jewel overview link reaches its game cover');
+check(render('#presentation-flow', '?edition=eight').topScrolls.some(s => s.view === 'eight' && s.top === 0), 'Older Jewel comparison link reaches its game cover');
+check(render('#latest-gameplay', '?edition=eight').nodes.gameplay.scrolled, 'Older latest-gameplay link reaches the Jewel video');
 check(render('#missions', '?edition=five').nodes['five-roles'].scrolled, 'Older Five Keys missions link reaches its role cards');
 const fiveGameplay = render('#gameplay', '?edition=five').nodes.gallery;
 check(fiveGameplay.scrolled && fiveGameplay.open, 'Older Five Keys gameplay link opens its media');

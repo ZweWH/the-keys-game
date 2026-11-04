@@ -12,7 +12,7 @@ let errors=[];
 const assert=(value,message)=>{if(!value)errors.push(message);};
 const data=context.window.KEYS_CONTENT;
 const fiveContract=JSON.parse(readFileSync(new URL('./five-keys-contract.json',import.meta.url),'utf8'));
-const sectionOrder=['id="overview"','id="option-one"','id="option-two"','id="presentation-flow"'].map(id=>html.indexOf(id));
+const sectionOrder=['id="overview"','id="option-one"','id="option-two"'].map(id=>html.indexOf(id));
 assert(sectionOrder.every(index=>index>=0)&&sectionOrder.every((index,i)=>i===0||index>sectionOrder[i-1]),'Choice and both option sections must exist in order.');
 for(const view of ['home','five','eight'])assert(html.includes(`data-view-switch="${view}"`),`Navigation missing ${view} view`);
 assert(/Choose your<br><em>game adventure\./i.test(html),'Landing screen must invite a game choice.');
@@ -52,7 +52,17 @@ assert(/BIM completion is recorded separately/i.test(html)&&/not as a career apt
 assert(/nine-PC venue LAN setup still needs testing/i.test(html),'Nine-PC event play must not be claimed as tested.');
 assert(/fictional story/i.test(html)&&/not claims about the real Jewel/i.test(html),'Jewel story and faults must be labelled fictional.');
 assert(/<video controls playsinline preload="metadata"/.test(html)&&/jewel-opening\.mp4/.test(html),'Opening film must retain native playback controls.');
-assert(/<table>/.test(html)&&/<caption>/.test(html)&&/<th scope="row">/.test(html),'Comparison needs a labelled table with row headers.');
+assert(!html.includes('id="presentation-flow"'),'Keep the comparison on the home choice cards, not at the end of Jewel.');
+assert(!html.includes('id="latest-gameplay"'),'The recently added character gameplay gallery stays removed.');
+const crewStart=html.indexOf('<figure class="crew" id="crew-title">');
+const crew=crewStart>=0?html.slice(crewStart,html.indexOf('</figure>',crewStart)+9):'';
+assert(crew.includes('src="assets/crew-v7.webp"'),'Crew artwork retains the original group image underneath the updated characters.');
+assert(/<svg[^>]*class="crew-overlay"/i.test(crew),'Crew artwork uses a separate character overlay.');
+for(const file of ['crew-ny-v101-concept.png','jewel-bim-v101-idle.png']) {
+  assert((crew.match(new RegExp(`href="assets/${file.replace('.', '\\.') }"`,'g'))||[]).length===1,`Crew artwork contains exactly one ${file} overlay.`);
+}
+assert(/Director is an illustration/i.test(crew)&&/actual game character/i.test(crew)&&/earlier concepts/i.test(crew),'Crew caption distinguishes the Director illustration, actual BIM character and earlier concepts.');
+assert(/<text[^>]*>Director<\/text>/i.test(crew)&&/<text[^>]*>BIM Coordinator<\/text>/i.test(crew)&&!/<text[^>]*>(?:NY|Chien)<\/text>/i.test(crew),'Crew labels use role names only.');
 assert(/Woh Hup/.test(html)&&/BCAA Open House Showcase/.test(html)&&/Back to top/.test(html),'Showcase footer and back-to-top link are required.');
 assert(JSON.stringify(data.five)===JSON.stringify(fiveContract),'Preserve every existing Five Keys content field, mission, video, gallery and outcome.');
 assert(data.five.missions.length===5,'Godot must explain five missions.');
@@ -101,28 +111,6 @@ for(const [edition,d] of Object.entries(data)){
   }
 }
 const provenance=JSON.parse(readFileSync(new URL('../MEDIA-PROVENANCE.json',import.meta.url),'utf8'));
-const latestGameplayStart=html.indexOf('id="latest-gameplay"');
-assert(latestGameplayStart>html.indexOf('id="option-two"')&&latestGameplayStart<html.indexOf('id="presentation-flow"'),'Latest gameplay must appear within Jewel, not Five Keys or the landing page.');
-const latestGameplay=html.slice(latestGameplayStart,html.indexOf('</section>',latestGameplayStart));
-assert(/editor/i.test(latestGameplay)&&/test (?:lane|camera)/i.test(latestGameplay)&&/prototype/i.test(latestGameplay),'BIM v101 imagery must identify its local editor prototype and test setting.');
-for(const [name,sourceName,sha256] of [
-  ['idle','idle-front','2a64c25fc8320b48291076e7c1209459250734b162a782265871704a5c608f5a'],
-  ['hover','hover-side','fc4bc97245c30da228588909d099d022288f54c4bfc57547ab627c89de34c740'],
-  ['flight','cruise-side','09e0471df34764d95ab182861617bdc4637d4cd7bd94e71d774da169231f6d41']
-]){
-  const file=`assets/jewel-bim-v101-${name}.png`;
-  const entry=provenance.assets.find(item=>item.file===file);
-  assert(latestGameplay.includes(file),`BIM ${name} is displayed in Jewel's latest gameplay section.`);
-  assert(entry?.edition==='eight-keys'&&entry.kind==='native Unreal BIM v101 runtime capture'&&entry.sha256===sha256&&entry.source?.sha256===sha256&&entry.source?.file===`local-reference/bim-flight-v101/review/db241f26a1474f78b501e449dd2e321f/candidate-BIM-${sourceName}-verified.png`&&entry.transform?.byte_exact_copy===true,`${file}: preserve accepted v101 review pixels and provenance exactly.`);
-}
-for(const [file,source,sha256,version] of [
-  ['assets/jewel-technical-v097-gameplay.png','local-reference/mission-intros-v097/review/07a48357ea7b400d9a3580cefd8993f9/technical-genuinely-completed-clean-gameplay-verified.png','1b65cf1e4cb5f8999eb38592456ee8ae11d91b6e5616be7fe93e72d960176dc1','v097'],
-  ['assets/jewel-planning-v086-gameplay.png','local-reference/role-missions-v086/review/e08c56d49f434ff7b4a01cbad4ea0a66/Planning-running-actual-delivery-verified.png','b1e8e79a53554c62e54a11e9ccfa8e7b93edba1019539c9bc2021fd2a094c1d2','v086']
-]){
-  const entry=provenance.assets.find(item=>item.file===file);
-  assert(latestGameplay.includes(file)&&latestGameplay.includes(version),`${file}: display and date earlier gameplay appropriately.`);
-  assert(entry?.edition==='eight-keys'&&entry.kind==='native Unreal earlier mission gameplay capture'&&entry.sha256===sha256&&entry.source?.sha256===sha256&&entry.source?.file===source&&entry.transform?.byte_exact_copy===true,`${file}: retain the selected earlier native gameplay evidence exactly.`);
-}
 for(const [file,kind] of [['assets/godot-site.webp','native Godot capture'],['assets/v055-upper-deck-cover.webp','user-supplied native Unreal screenshot']]){
   assert(provenance.assets.some(entry=>entry.file===file&&entry.kind===kind),`${file}: event monitor image needs native gameplay provenance.`);
 }

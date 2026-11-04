@@ -2184,6 +2184,21 @@
       },
       "transform": {"byte_exact_copy": true, "crop": null, "color_adjustments": false},
       "accepted_visual_record": "local-reference/role-missions-v086/visual-review-skip34368.json"
+    },
+    {
+      "file": "assets/crew-ny-v101-concept.png",
+      "edition": "eight-keys",
+      "kind": "AI-generated NY character illustration",
+      "sha256": "00cb46c2b64b0507db5852a618985e2a5663d76dc1853746e8ab8912571bb829",
+      "bytes": 1152089,
+      "dimensions": [887, 1774],
+      "caption": "AI interpretation of the current NY Director character for the crew artwork; not an in-game screenshot.",
+      "source": {
+        "file": "design/evidence/director-mixamo-v064/images/complete/01a-new-Director-straight-front.png",
+        "sha256": "e310b6183aa58e90bc44dea376223e2497b94254cbca98ff21ceec01ff6bfb1",
+        "method": "Built-in image_gen with game capture reference; transparent character illustration"
+      },
+      "prompt": "Create a transparent-background, full-body character cutout for a construction game crew lineup. The input image is the authoritative reference for NY, the Director: match his face and identity, white hard hat, dark green Woh Hup jacket with pale reflective shoulder strips and yellow side accents, blue trousers, black work boots, natural adult proportions, and front-facing relaxed stance. Preserve this game character's recognisable appearance closely; do not use the exaggerated cartoon proportions of older crew artwork. Keep the whole body and feet fully visible, no extra props, no text, no added characters or shadows outside the figure."
     }
   ]
 }
