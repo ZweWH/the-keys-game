@@ -58,10 +58,10 @@ const crewStart=html.indexOf('<figure class="crew" id="crew-title">');
 const crew=crewStart>=0?html.slice(crewStart,html.indexOf('</figure>',crewStart)+9):'';
 assert(crew.includes('src="assets/crew-v7.webp"'),'Crew artwork retains the original group image underneath the updated characters.');
 assert(/<svg[^>]*class="crew-overlay"/i.test(crew),'Crew artwork uses a separate character overlay.');
-for(const file of ['crew-ny-v101-concept.png','jewel-bim-v101-idle.png']) {
+for(const file of ['crew-director-cartoon-v103.png','crew-bim-cartoon-v103.png']) {
   assert((crew.match(new RegExp(`href="assets/${file.replace('.', '\\.') }"`,'g'))||[]).length===1,`Crew artwork contains exactly one ${file} overlay.`);
 }
-assert(/Director is an illustration/i.test(crew)&&/actual game character/i.test(crew)&&/earlier concepts/i.test(crew),'Crew caption distinguishes the Director illustration, actual BIM character and earlier concepts.');
+assert(/cartoon illustrations based on their game characters/i.test(crew)&&/earlier concepts/i.test(crew),'Crew caption identifies the new illustrations and earlier concepts.');
 assert(/<text[^>]*>Director<\/text>/i.test(crew)&&/<text[^>]*>BIM Coordinator<\/text>/i.test(crew)&&!/<text[^>]*>(?:NY|Chien)<\/text>/i.test(crew),'Crew labels use role names only.');
 assert(/Woh Hup/.test(html)&&/BCAA Open House Showcase/.test(html)&&/Back to top/.test(html),'Showcase footer and back-to-top link are required.');
 assert(JSON.stringify(data.five)===JSON.stringify(fiveContract),'Preserve every existing Five Keys content field, mission, video, gallery and outcome.');
